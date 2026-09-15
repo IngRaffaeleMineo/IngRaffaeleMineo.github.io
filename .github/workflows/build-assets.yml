@@ -1,0 +1,61 @@
+name: Build website assets and CV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.bootstrap/**'
+      - 'cv/Raffaele_Mineo_Academic_CV.tex'
+      - '.github/workflows/build-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Reconstruct website data, CV source and portrait
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets cv
+          if compgen -G '.bootstrap/profile.part.*' > /dev/null; then
+            cat .bootstrap/profile.part.* | base64 -d | gzip -d > profile-data.js
+          fi
+          if compgen -G '.bootstrap/cv.part.*' > /dev/null; then
+            cat .bootstrap/cv.part.* | base64 -d | gzip -d > cv/Raffaele_Mineo_Academic_CV.tex
+          fi
+          if compgen -G '.bootstrap/photo.part.*' > /dev/null; then
+            cat .bootstrap/photo.part.* | base64 -d > assets/raffaele-mineo.jpg
+          fi
+
+      - name: Install XeLaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-xetex texlive-latex-extra texlive-fonts-recommended fonts-liberation
+
+      - name: Build academic CV PDF
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd cv
+          xelatex -interaction=nonstopmode -halt-on-error Raffaele_Mineo_Academic_CV.tex
+          xelatex -interaction=nonstopmode -halt-on-error Raffaele_Mineo_Academic_CV.tex
+          rm -f *.aux *.log *.out
+
+      - name: Commit generated website assets and CV
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profile-data.js assets/raffaele-mineo.jpg cv/Raffaele_Mineo_Academic_CV.tex cv/Raffaele_Mineo_Academic_CV.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m 'Build website assets and academic CV'
+            git push
+          fi
