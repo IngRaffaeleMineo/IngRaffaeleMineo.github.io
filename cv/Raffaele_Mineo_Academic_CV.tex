@@ -54,6 +54,13 @@
 & \small\textit{#4}
 \end{tabularx}\vspace{3.2pt}}
 
+\newcommand{\cvphase}[3]{%
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{25mm}X@{}}
+\textcolor{GoldAccent}{\textbf{#1}} &
+\textbf{\color{Navy}#2}\\[-1pt]
+& \small\color{BodyGrey}#3
+\end{tabularx}\vspace{2pt}}
+
 \begin{document}
 \thispagestyle{fancy}
 
@@ -79,7 +86,7 @@
 \href{https://www.researchgate.net/profile/Raffaele-Mineo}{ResearchGate} \quad|\quad
 \href{https://it.linkedin.com/in/raffaelemineo}{LinkedIn} \quad|\quad
 \href{https://unict.academia.edu/RaffaeleMineo}{Academia.edu}}\\[1pt]
-{\scriptsize\color{BodyGrey}Last updated: 15 September 2026}
+{\scriptsize\color{BodyGrey}Last updated: 29 September 2026}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.18\linewidth}
 \vspace{0pt}
@@ -114,6 +121,16 @@ I develop artificial intelligence methods that connect perception with clinicall
 \item \textbf{Applied machine intelligence:} cognitive assessment, industrial inspection, predictive reliability, anomaly detection, volcanology and data-driven engineering systems.
 \end{itemize}
 
+\section{Research trajectory}
+\cvphase{2026}{Efficient deep models}{Knowledge distillation, post-training and mixed-precision quantization, sparsification and pruning for efficient vision models and deployment under compute constraints.}
+\cvphase{2025}{Adaptive medical AI}{Vision-language prompt tuning, personalized continual/incremental learning and federated learning for data-efficient medical image analysis.}
+\cvphase{2024}{Digital cognitive assessment}{Computer vision for cognitive screening, including facial micro-movement analysis and eye-gaze modeling for automated neurocognitive assessment.}
+\cvphase{2023--2026}{Italian Sign Language, multimodal communication \& privacy-aware sensing}{Multimodal LIS recognition for healthcare communication using RGB, depth, skeleton and radar sensing; MultiMedaLIS, radar-based recognition and SignEval benchmarks/challenges.}
+\cvphase{2022--2023}{Cardiovascular imaging \& computational physiology}{Coronary angiography, stenosis assessment and non-invasive FFR/iFR estimation, establishing the methodological foundations of the STARFLOW research line.}
+\cvphase{2020--2021}{Volcanic seismology \& anomaly detection}{Deep learning for seismic anomaly detection and volcanic-unrest analysis with INGV/EUROVOLC, including the VolUnD toolkit and machine-learning database activities.}
+\cvphase{2020}{Thoracic imaging \& lung analysis}{Deep-learning and computer-vision methods for lung and thoracic imaging, extending early medical-imaging work beyond neuroimaging.}
+\cvphase{2019--2020}{Neuroimaging \& brain dynamics}{Early research on brain data and representation learning across EEG and fMRI, with emphasis on spatio-temporal patterns and neuroimaging analysis.}
+
 \section{Patents, inventions and technology transfer}
 \cvrole{2026}{Angiographic image processing method and system}{Italian patent no. 102024000014434; PCT/IB2025/056252; WO 2025/262634 A1}{Italian patent granted by UIBM on 20 July 2026. The patent family protects AI-based angiographic processing underpinning the STARFLOW line of research.}
 \cvrole{pending}{Biometric safety system and method for estimating a user hazard condition and triggering an emergency stop}{Italian patent application — under review}{Inventors include Raffaele Mineo, Paolo Soda, Simone Palazzo and Concetto Spampinato.}
@@ -143,11 +160,12 @@ I develop artificial intelligence methods that connect perception with clinicall
 \subsection{Journal reviewing}
 \begin{itemize}
 \item IEEE Transactions on Medical Imaging (TMI), since 2025
+\item Pattern Recognition (Elsevier)
+\item Nature Communications, since 2025
 \item IEEE Open Journal of the Computer Society (OJCS), since 2025
 \item Computer Vision and Image Understanding (CVIU), since 2023
 \item Machine Vision and Applications (MVAP), since 2023
 \item ACM Transactions on Intelligent Systems and Technology (TIST), since 2024
-\item Nature Communications, since 2025
 \item BioData Mining, since 2026
 \item Disability and Rehabilitation: Assistive Technology, since 2026
 \item Frontiers in Digital Health, since 2026
@@ -162,11 +180,16 @@ I develop artificial intelligence methods that connect perception with clinicall
 \end{itemize}
 \subsection{Volunteering, mentoring and research advising}
 \begin{itemize}
+\item Research Advisor — RISE-MICCAI Publication Accelerator (2027)
+\item Mentor — Open Hackathons
 \item Mentor — GreenMindAI Catania Hackathon 2025
+\item Proctor Ambassador — IEEEXtreme 20.0 (2026)
 \item Student Volunteer — ACM Multimedia 2025
-\item Proctor — IEEEXtreme 20.0 (2026)
-\item Research Advisor — RISE-MICCAI 2027 Publication Accelerator
 \end{itemize}
+
+\section{Awards, grants and recognition}
+\cvrole{2025}{ICCV Broadening Participation Grant}{IEEE/CVF International Conference on Computer Vision (ICCV 2025)}{Broadening-participation support associated with ICCV 2025.}
+\cvrole{2025}{ACM Multimedia Student Travel Grant}{ACM Multimedia 2025}{Student travel support associated with ACM Multimedia 2025.}
 
 \section{Peer-reviewed journal articles}
 \cvpub{2024}{Non-invasive physiological assessment of intermediate coronary stenoses from plain angiography through artificial intelligence: the STARFLOW system \textcolor{GoldAccent}{\textsuperscript{*}}}{Ovidio De Filippo*, \textbf{Raffaele Mineo}*, Michele Millesimo, Wojciech Wańha, Federica Proietto Salanitri, Antonio Greco, Antonio Maria Leone, Luca Franchin, Simone Palazzo, Giorgio Quadri, Domenico Tuttolomondo, Enrico Fabris, Gianluca Campo, Alessandra Truffa Giachet, Francesco Bruno, Mario Iannaccone, Giacomo Boccuzzi, Nicola Gaibazzi, Ferdinando Varbella, Wojciech Wojakowski, Michele Maremmani, Guglielmo Gallone, Gianfranco Sinagra, Davide Capodanno, Giuseppe Musumeci, Paolo Boretto, Pawel Pawlus, Andrea Saglietto, Francesco Burzotta, Marco Aldinucci, Daniela Giordano, Gaetano Maria De Ferrari, Concetto Spampinato, Fabrizio D'Ascenzo}{European Heart Journal-Quality of Care and Clinical Outcomes}
