@@ -47,3 +47,5 @@ a{color:inherit}img{max-width:100%;display:block}.container{width:min(var(--max)
 @media (max-width:520px){.research-phase{grid-template-columns:1fr;gap:5px}}
 
 .hero-motto{margin:20px 0 0;max-width:760px;color:#E9C895;font-family:Georgia,"Times New Roman",serif;font-size:16px;font-style:italic;line-height:1.55}
+
+.motto-emoji{font-style:normal;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;display:inline-block}
