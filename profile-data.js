@@ -104,14 +104,13 @@ window.PROFILE_DATA = {
       "Area Chair — MICCAI 2026",
       "Area Chair — IJCNN 2027",
       "Organizing Committee — IEEE ISBI 2026, Associate to Technical Program Chairs",
-      "Paper Selection Committee — IPMI 2027",
-      "Lead Post-Day Workshops & Challenges Chair — MIDL 2027"
+      "Paper Selection Committee — IPMI 2027"
     ],
     "Workshops, challenges & special sessions": [
-      "Lead Organizer — IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”",
-      "Workshop Chair — ICCV 2025: 1st International Workshop on Multimodal Sign Language Recognition + 1st SignEval Challenge",
-      "Workshop Chair — ACM Multimedia 2025: 2nd International Workshop on Personalized Incremental Learning in Medicine",
-      "Workshop Chair — CVPR 2026: 2nd International Workshop on Multimodal Sign Language Recognition + 2nd SignEval Challenge"
+      "Organizer — IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”",
+      "Organizer — ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025) + SignEval 2025 Challenge",
+      "Organizer — ACM Multimedia 2025: (PILM ’25) International Workshop on Personalized Incremental Learning in Medicine",
+      "Organizer — CVPR 2026: 2nd Workshop on Multimodal Sign Language Recognition (MSLR) + SignEval 2026 Challenge"
     ],
     "Journal reviewing": [
       "IEEE Transactions on Medical Imaging (TMI), since 2025",
@@ -124,8 +123,8 @@ window.PROFILE_DATA = {
       "BioData Mining, since 2026",
       "Disability and Rehabilitation: Assistive Technology, since 2026",
       "Frontiers in Digital Health, since 2026",
-      "IJCCE, since 2026",
-      "JIIM, since 2026",
+      "International Journal of Cognitive Computing in Engineering (IJCCE), since 2026",
+      "Journal of Imaging Informatics in Medicine (JIIM), since 2026",
       "IEEE Transactions on Biomedical Engineering (TBME), since 2026"
     ],
     "Conference reviewing": [
@@ -150,13 +149,14 @@ window.PROFILE_DATA = {
       "Research Advisor — RISE-MICCAI Publication Accelerator (2027)",
       "Mentor — Open Hackathons",
       "Mentor — GreenMindAI Catania Hackathon 2025",
-      "Proctor & Proctor Ambassador — IEEEXtreme 20.0 (2026)",
+      "Proctor — IEEEXtreme 20.0 (2026)",
+      "Proctor Ambassador — IEEEXtreme 20.0 (2026)",
       "Student Volunteer — ACM Multimedia 2025"
     ]
   },
   "recognition": [
-    {"year":"2025","title":"ICCV Broadening Participation Grant","org":"IEEE/CVF International Conference on Computer Vision (ICCV 2025)","text":"Broadening-participation support associated with ICCV 2025."},
-    {"year":"2025","title":"ACM Multimedia Student Travel Grant","org":"ACM Multimedia 2025","text":"Student travel support associated with ACM Multimedia 2025."}
+    {"year":"2025","title":"ICCV 2025 Broadening Participation (BP) Travel Support","org":"IEEE/CVF International Conference on Computer Vision (ICCV 2025)","text":"Travel support awarded through the ICCV 2025 Broadening Participation program."},
+    {"year":"2025","title":"ACM Multimedia 2025 Student Travel Award","org":"33rd ACM International Conference on Multimedia (ACM Multimedia 2025)","text":"Student travel award from ACM SIGMM / the ACM Multimedia 2025 organizing committee."}
   ],
   "memberships": [
     "CVPL / PeRCeiVe research community (since 2019)",
@@ -164,8 +164,8 @@ window.PROFILE_DATA = {
     "IEEE Signal Processing Society (SPS), since 2025",
     "Association for Computing Machinery (ACM), since 2025",
     "ACM SIGMM, since 2025",
-    "IEEE PAMI Technical Community, since 2026",
-    "IEEE Bio Imaging and Image Processing (BIIP) Technical Committee, since 2026"
+    "IEEE Computer Society Technical Community on Pattern Analysis and Machine Intelligence (TCPAMI), since 2026",
+    "IEEE Engineering in Medicine and Biology Society (EMBS) Technical Committee on Biomedical Imaging and Image Processing (BIIP), since 2026"
   ],
   "collaborations": [
     "Istituto Nazionale di Geofisica e Vulcanologia (INGV) — Catania, Italy",
