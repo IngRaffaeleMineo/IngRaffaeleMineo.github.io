@@ -274,7 +274,7 @@ window.PROFILE_DATA = {
   ],
   "publications": [
     {
-      "title": "SignEval 2026 Challenges Results",
+      "title": "SignEval 2026 Challenge Results",
       "authors": "Ahmed Abul Hasanaath, Raffaele Mineo, Hamzah Luqman, Sarah Alyami, Maad Alowaifeer, Amelia Sorrenti, Gaia Caligiore, Sabina Fontana, Egidio Ragonese, Giovanni Bellitto, Federica Proietto Salanitri, Concetto Spampinato, Motaz Alfarraj, Mufti Mahmud, Simone Palazzo, Nour Imane Zeghib",
       "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops",
       "acronym": "CVPRW",
