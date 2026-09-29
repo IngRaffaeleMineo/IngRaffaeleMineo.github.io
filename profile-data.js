@@ -108,9 +108,9 @@ window.PROFILE_DATA = {
     ],
     "Workshops, challenges & special sessions": [
       "Organizer — IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”",
-      "Organizer — ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025) + SignEval 2025 Challenge",
+      "Organizer — ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025)",
       "Organizer — ACM Multimedia 2025: (PILM ’25) International Workshop on Personalized Incremental Learning in Medicine",
-      "Organizer — CVPR 2026: 2nd Workshop on Multimodal Sign Language Recognition (MSLR) + SignEval 2026 Challenge"
+      "Workshop Chair — CVPR 2026: 2nd Multimodal Sign Language Recognition Workshop (MSLR 2026)"
     ],
     "Journal reviewing": [
       "IEEE Transactions on Medical Imaging (TMI), since 2025",
@@ -151,11 +151,11 @@ window.PROFILE_DATA = {
       "Mentor — GreenMindAI Catania Hackathon 2025",
       "Proctor — IEEEXtreme 20.0 (2026)",
       "Proctor Ambassador — IEEEXtreme 20.0 (2026)",
-      "Student Volunteer — ACM Multimedia 2025"
+      "Student Volunteer — 33rd ACM International Conference on Multimedia (ACM Multimedia 2025)"
     ]
   },
   "recognition": [
-    {"year":"2025","title":"ICCV 2025 Broadening Participation (BP) Travel Support","org":"IEEE/CVF International Conference on Computer Vision (ICCV 2025)","text":"Travel support awarded through the ICCV 2025 Broadening Participation program."},
+    {"year":"2025","title":"ICCV 2025 Broadening Participation (BP) Support","org":"IEEE/CVF International Conference on Computer Vision (ICCV 2025)","text":"Recipient of support through the ICCV 2025 Broadening Participation program, which provides travel and/or registration support."},
     {"year":"2025","title":"ACM Multimedia 2025 Student Travel Award","org":"33rd ACM International Conference on Multimedia (ACM Multimedia 2025)","text":"Student travel award from ACM SIGMM / the ACM Multimedia 2025 organizing committee."}
   ],
   "memberships": [
