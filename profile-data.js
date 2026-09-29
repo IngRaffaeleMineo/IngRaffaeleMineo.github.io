@@ -1,12 +1,12 @@
 window.PROFILE_DATA = {
-  "name": "Raffaele Mineo",
+  "name": "Dr. Eng. Raffaele Mineo",
   "role": "Postdoctoral Researcher in Artificial Intelligence",
   "affiliation": "Department of Electrical, Electronic and Computer Engineering (DIEEI), University of Catania",
   "location": "Catania, Italy",
   "email": "raffaele.mineo[at]phd.unict.it",
   "emailHref": "raffaele.mineo@phd.unict.it",
-  "tagline": "Multimodal AI, medical imaging, privacy-aware sensing, efficient learning and edge intelligence.",
-  "researchStatement": "I develop artificial intelligence methods that connect perception with clinically and operationally meaningful information. My work spans cardiovascular imaging and virtual physiology, multimodal and radar-based sign language understanding, continual and federated learning, vision-language adaptation, and efficient AI for resource-constrained hardware.",
+  "tagline": "Medical AI, multimodal sensing, adaptive learning and efficient deep learning.",
+  "researchStatement": "My research spans cardiovascular imaging and virtual physiology, multimodal and radar-based sign language recognition, cognitive assessment, continual and federated learning, vision-language adaptation, and efficient deep learning for embedded and resource-constrained systems.",
   "links": [
     {
       "label": "Google Scholar",
@@ -126,7 +126,7 @@ window.PROFILE_DATA = {
       "link": "https://ieeexplore.ieee.org/abstract/document/10582501/"
     },
     {
-      "title": "Non-invasive physiological assessment …: the STARFLOW system",
+      "title": "Non-invasive physiological assessment of intermediate coronary stenoses from plain angiography through artificial intelligence: the STARFLOW system",
       "venue": "European Heart Journal – Quality of Care and Clinical Outcomes",
       "year": 2025,
       "label": "Clinical translation",
@@ -163,20 +163,20 @@ window.PROFILE_DATA = {
   ],
   "service": {
     "Editorial roles": [
-      "Associate Editor — Frontiers in Communication (2026–)",
-      "Lead Guest Editor — Cognitive Computation, Special Issue “Cognitive and Multimodal Sign Language Processing: Recognition, Understanding, Translation, Generation, and Inclusive Interaction” (2026)"
+      "Associate Editor - Frontiers in Communication (2026–)",
+      "Lead Guest Editor - Cognitive Computation, Special Issue “Cognitive and Multimodal Sign Language Processing: Recognition, Understanding, Translation, Generation, and Inclusive Interaction” (2026)"
     ],
     "Area / program leadership": [
-      "Area Chair — MICCAI 2026",
-      "Area Chair — IJCNN 2027",
-      "Organizing Committee — IEEE ISBI 2026, Associate to Technical Program Chairs",
-      "Paper Selection Committee — IPMI 2027"
+      "Area Chair - MICCAI 2026",
+      "Area Chair - IJCNN 2027",
+      "Organizing Committee - IEEE ISBI 2026, Associate to Technical Program Chairs",
+      "Paper Selection Committee - IPMI 2027"
     ],
     "Workshops, challenges & special sessions": [
-      "Organizer — IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”",
-      "Organizer — ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025), featuring the SignEval 2025 Challenge",
-      "Organizer — ACM Multimedia 2025: (PILM ’25) International Workshop on Personalized Incremental Learning in Medicine",
-      "Workshop Chair — CVPR 2026: 2nd Workshop on Multimodal Sign Language Recognition (MSLR), featuring SignEval 2026: The Second Multimodal Sign Language Recognition Challenge"
+      "Organizer - IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”",
+      "Organizer - ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025), featuring the SignEval 2025 Challenge",
+      "Organizer - ACM Multimedia 2025: (PILM ’25) International Workshop on Personalized Incremental Learning in Medicine",
+      "Workshop Chair - CVPR 2026: 2nd Workshop on Multimodal Sign Language Recognition (MSLR), featuring SignEval 2026: The Second Multimodal Sign Language Recognition Challenge"
     ],
     "Journal reviewing": [
       "IEEE Transactions on Medical Imaging (TMI), since 2025",
@@ -212,12 +212,12 @@ window.PROFILE_DATA = {
       "MICCAI AFRICAI 2026"
     ],
     "Volunteering & mentoring": [
-      "Research Advisor — RISE-MICCAI 2027 Publication Accelerator",
-      "Mentor — Open Hackathons",
-      "Mentor — GreenMindAI Catania Hackathon 2025",
-      "Proctor — IEEEXtreme 20.0 (2026)",
-      "Proctor Ambassador — IEEEXtreme 20.0 (2026)",
-      "Student Volunteer — 33rd ACM International Conference on Multimedia (ACM Multimedia 2025)"
+      "Research Advisor - RISE-MICCAI 2027 Publication Accelerator",
+      "Mentor - Open Hackathons",
+      "Mentor - GreenMindAI Catania Hackathon 2025",
+      "Proctor - IEEEXtreme 20.0 (2026)",
+      "Proctor Ambassador - IEEEXtreme 20.0 (2026)",
+      "Student Volunteer - 33rd ACM International Conference on Multimedia (ACM Multimedia 2025)"
     ]
   },
   "recognition": [
@@ -235,7 +235,7 @@ window.PROFILE_DATA = {
     }
   ],
   "memberships": [
-    "CVPL — Associazione Italiana per la ricerca in Computer Vision, Pattern Recognition e Machine Learning (since 2019)",
+    "CVPL - Associazione Italiana per la ricerca in Computer Vision, Pattern Recognition e Machine Learning (since 2019)",
     "IEEE Engineering in Medicine and Biology Society (EMBS), since 2024",
     "IEEE Signal Processing Society (SPS), since 2025",
     "Association for Computing Machinery (ACM), since 2025",
@@ -244,17 +244,17 @@ window.PROFILE_DATA = {
     "IEEE Engineering in Medicine and Biology Society (EMBS) Technical Committee on Biomedical Imaging and Image Processing (BIIP), since 2026"
   ],
   "collaborations": [
-    "Istituto Nazionale di Geofisica e Vulcanologia (INGV) — Catania, Italy",
-    "AOU Città della Salute e della Scienza — Turin, Italy",
-    "Max Planck Institute for Intelligent Systems — Tübingen, Germany",
-    "STMicroelectronics R&D Power and Discrete — Catania, Italy",
-    "DeepSensing S.r.l. — Catania, Italy"
+    "Istituto Nazionale di Geofisica e Vulcanologia (INGV) - Catania, Italy",
+    "AOU Città della Salute e della Scienza - Turin, Italy",
+    "Max Planck Institute for Intelligent Systems - Tübingen, Germany",
+    "STMicroelectronics R&D Power and Discrete - Catania, Italy",
+    "DeepSensing S.r.l. - Catania, Italy"
   ],
   "experience": [
     {
       "period": "2024–present",
       "title": "Postdoctoral Researcher / Research Fellow",
-      "org": "University of Catania — DIEEI",
+      "org": "University of Catania - DIEEI",
       "text": "Research on AI, knowledge distillation and meta-learning for on-chip inference in the HORIZON Europe NEUROKIT2E project; broader work in medical imaging, multimodal learning and embedded AI."
     },
     {
@@ -279,7 +279,7 @@ window.PROFILE_DATA = {
   "education": [
     {
       "period": "completed 2026",
-      "degree": "National PhD in Artificial Intelligence — Health and Life Sciences",
+      "degree": "National PhD in Artificial Intelligence - Health and Life Sciences",
       "org": "University Campus Bio-Medico of Rome, with University of Catania affiliation",
       "detail": "37th cycle."
     },
@@ -303,24 +303,24 @@ window.PROFILE_DATA = {
     }
   ],
   "teaching": [
-    "Teaching Tutor — Database and Web Programming, Computer Engineering, University of Catania (multiple editions, 2022–2025)",
-    "Teaching Tutor — Fundamentals of Computer Science, Industrial Engineering, University of Catania (2022–2023)"
+    "Teaching Tutor - Database and Web Programming, Computer Engineering, University of Catania (multiple editions, 2022–2025)",
+    "Teaching Tutor - Fundamentals of Computer Science, Industrial Engineering, University of Catania (2022–2023)"
   ],
   "credentials": [
     "Italian State Examination and professional qualification as Information Engineer (2021)",
     "Mensa Italia certificate / membership credential",
     "ECDL Core AICA (2014)",
     "Cambridge English B1 Preliminary (2014); Cambridge English A2 Key (2012)",
-    "Würth Elektronik Italia — Power Expert technical training (2021)",
+    "Würth Elektronik Italia - Power Expert technical training (2021)",
     "Coursera / DeepLearning.AI: Neural Networks and Deep Learning; Improving Deep Neural Networks; Structuring Machine Learning Projects; Convolutional Neural Networks; Sequence Models; Deep Learning Specialization",
     "Coursera: AI for Medical Diagnosis; AI for Medical Prognosis; AI for Medical Treatment; AI for Medicine Specialization; Detecting COVID-19 with Chest X-Ray using PyTorch",
     "Coursera / DeepLearning.AI: Build Basic GANs; Build Better GANs; Apply GANs; Generative Adversarial Networks Specialization"
   ],
   "languages": [
-    "Italian — native",
-    "English — B1 (Cambridge certified)",
-    "French — A1",
-    "Spanish — A1"
+    "Italian - native",
+    "English - B1 (Cambridge certified)",
+    "French - A1",
+    "Spanish - A1"
   ],
   "technical": {
     "AI & data": "AI for Medicine; machine learning; deep learning; data acquisition systems; PyTorch; Keras; TensorFlow; R; SQL; MySQL; PostgreSQL.",
@@ -353,7 +353,7 @@ window.PROFILE_DATA = {
     {
       "title": "Procedimento e sistema di elaborazione di immagini angiografiche",
       "authors": "G. M. De Ferrari, F. D'Ascenzo, O. De Filippo, M. Iannaccone, M. Aldinucci, J. M. Hughes, M. Millesimo, W. Grosso Marra, G. Quadri, F. Proietto Salanitri, G. Bellitto, C. Spampinato, R. Mineo, S. Palazzo",
-      "venue": "Italian patent no. 102024000014434 — granted 20 July 2026",
+      "venue": "Italian patent no. 102024000014434 - granted 20 July 2026",
       "acronym": "UIBM",
       "type": "Patent",
       "year": 2026,
@@ -507,7 +507,7 @@ window.PROFILE_DATA = {
     {
       "title": "Angiographic image processing method and system",
       "authors": "G. M. De Ferrari, F. D'Ascenzo, O. De Filippo, M. Iannaccone, M. Aldinucci, J. M. Hughes, M. Millesimo, W. Grosso Marra, G. Quadri, F. Proietto Salanitri, G. Bellitto, C. Spampinato, R. Mineo, S. Palazzo",
-      "venue": "PCT/IB2025/056252 — WO 2025/262634 A1",
+      "venue": "PCT/IB2025/056252 - WO 2025/262634 A1",
       "acronym": "PCT",
       "type": "Patent",
       "year": 2025,
