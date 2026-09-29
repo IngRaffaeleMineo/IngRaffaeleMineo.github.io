@@ -42,5 +42,6 @@ jobs:
           git add cv/Raffaele_Mineo_Academic_CV.pdf
           if ! git diff --cached --quiet; then
             git commit -m 'Rebuild academic CV PDF'
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
