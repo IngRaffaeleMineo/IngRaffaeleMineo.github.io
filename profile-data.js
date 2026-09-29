@@ -8,21 +8,55 @@ window.PROFILE_DATA = {
   "tagline": "Multimodal AI, medical imaging, privacy-aware sensing, efficient learning and edge intelligence.",
   "researchStatement": "I develop artificial intelligence methods that connect perception with clinically and operationally meaningful information. My work spans cardiovascular imaging and virtual physiology, multimodal and radar-based sign language understanding, continual and federated learning, vision-language adaptation, and efficient AI for resource-constrained hardware.",
   "links": [
-    {"label":"Google Scholar","url":"https://scholar.google.com/citations?user=nYSplWUAAAAJ"},
-    {"label":"ORCID","url":"https://orcid.org/0000-0002-1171-5672"},
-    {"label":"Scopus","url":"https://www.scopus.com/authid/detail.uri?authorId=58251673400"},
-    {"label":"Web of Science","url":"https://www.webofscience.com/wos/author/record/JBJ-0289-2023"},
-    {"label":"Semantic Scholar","url":"https://www.semanticscholar.org/author/Raffaele-Mineo/2216463047"},
-    {"label":"DBLP","url":"https://dblp.org/pid/345/1928.html"},
-    {"label":"OpenReview","url":"https://openreview.net/profile?id=~Raffaele_Mineo1"},
-    {"label":"GitHub","url":"https://github.com/IngRaffaeleMineo"},
-    {"label":"PeRCeiVe.AI","url":"http://www.perceivelab.com/team/raffaele-mineo"},
-    {"label":"ResearchGate","url":"https://www.researchgate.net/profile/Raffaele-Mineo"},
-    {"label":"LinkedIn","url":"https://it.linkedin.com/in/raffaelemineo"},
-    {"label":"Academia.edu","url":"https://unict.academia.edu/RaffaeleMineo"}
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=nYSplWUAAAAJ"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0002-1171-5672"
+    },
+    {
+      "label": "Scopus",
+      "url": "https://www.scopus.com/authid/detail.uri?authorId=58251673400"
+    },
+    {
+      "label": "Web of Science",
+      "url": "https://www.webofscience.com/wos/author/record/JBJ-0289-2023"
+    },
+    {
+      "label": "Semantic Scholar",
+      "url": "https://www.semanticscholar.org/author/Raffaele-Mineo/2216463047"
+    },
+    {
+      "label": "DBLP",
+      "url": "https://dblp.org/pid/345/1928.html"
+    },
+    {
+      "label": "OpenReview",
+      "url": "https://openreview.net/profile?id=~Raffaele_Mineo1"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/IngRaffaeleMineo"
+    },
+    {
+      "label": "PeRCeiVe.AI",
+      "url": "http://www.perceivelab.com/team/raffaele-mineo"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Raffaele-Mineo"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://it.linkedin.com/in/raffaelemineo"
+    },
+    {
+      "label": "Academia.edu",
+      "url": "https://unict.academia.edu/RaffaeleMineo"
+    }
   ],
-
-
   "researchAreas": [
     {
       "title": "AI for cardiovascular imaging",
@@ -42,14 +76,46 @@ window.PROFILE_DATA = {
     }
   ],
   "researchTrajectory": [
-    {"period":"2026","title":"Model compression & efficient AI","text":"Knowledge distillation, post-training and mixed-precision quantization, sparsification and pruning for efficient vision models and deployment under compute constraints."},
-    {"period":"2025","title":"Prompt-based adaptation & federated/continual learning","text":"Vision-language prompt tuning, personalized continual/incremental learning and federated learning for data-efficient medical image analysis."},
-    {"period":"2024","title":"Digital cognitive assessment","text":"Computer vision for cognitive screening, including facial micro-movement analysis and eye-gaze modeling for automated neurocognitive assessment."},
-    {"period":"2023–2026","title":"Italian Sign Language (LIS) & privacy-aware multimodal sensing","text":"Multimodal LIS recognition for healthcare communication using RGB, depth, skeleton and radar sensing; MultiMedaLIS, radar-based recognition and SignEval benchmarks/challenges."},
-    {"period":"2022–2023","title":"Cardiovascular imaging & computational physiology","text":"Coronary angiography, stenosis assessment and non-invasive FFR/iFR estimation, establishing the methodological foundations of the STARFLOW research line."},
-    {"period":"2020–2021","title":"Volcanic seismology & anomaly detection","text":"Deep learning for seismic anomaly detection and volcanic-unrest analysis with INGV/EUROVOLC, including the VolUnD toolkit and machine-learning database activities."},
-    {"period":"2020","title":"Thoracic imaging & lung analysis","text":"Deep-learning and computer-vision methods for lung and thoracic imaging, extending early medical-imaging work beyond neuroimaging."},
-    {"period":"2019–2020","title":"Brain signal analysis & neuroimaging (EEG/fMRI)","text":"Early research on brain data and representation learning across EEG and fMRI, with emphasis on spatio-temporal patterns and neuroimaging analysis."}
+    {
+      "period": "2026",
+      "title": "Model compression & efficient AI",
+      "text": "Knowledge distillation, post-training and mixed-precision quantization, sparsification and pruning for efficient vision models and deployment under compute constraints."
+    },
+    {
+      "period": "2025",
+      "title": "Prompt-based adaptation & federated/continual learning",
+      "text": "Vision-language prompt tuning, personalized continual/incremental learning and federated learning for data-efficient medical image analysis."
+    },
+    {
+      "period": "2024",
+      "title": "Digital cognitive assessment",
+      "text": "Computer vision for cognitive screening, including facial micro-movement analysis and eye-gaze modeling for automated neurocognitive assessment."
+    },
+    {
+      "period": "2023–2026",
+      "title": "Italian Sign Language (LIS) & privacy-aware multimodal sensing",
+      "text": "Multimodal LIS recognition for healthcare communication using RGB, depth, skeleton and radar sensing; MultiMedaLIS, radar-based recognition and SignEval benchmarks/challenges."
+    },
+    {
+      "period": "2022–2023",
+      "title": "Cardiovascular imaging & computational physiology",
+      "text": "Coronary angiography, stenosis assessment and non-invasive FFR/iFR estimation, establishing the methodological foundations of the STARFLOW research line."
+    },
+    {
+      "period": "2020–2021",
+      "title": "Volcanic seismology & anomaly detection",
+      "text": "Deep learning for seismic anomaly detection and volcanic-unrest analysis with INGV/EUROVOLC, including the VolUnD toolkit and machine-learning database activities."
+    },
+    {
+      "period": "2020",
+      "title": "Thoracic imaging & lung analysis",
+      "text": "Deep-learning and computer-vision methods for lung and thoracic imaging, extending early medical-imaging work beyond neuroimaging."
+    },
+    {
+      "period": "2019–2020",
+      "title": "Brain signal analysis & neuroimaging (EEG/fMRI)",
+      "text": "Early research on brain data and representation learning across EEG and fMRI, with emphasis on spatio-temporal patterns and neuroimaging analysis."
+    }
   ],
   "selectedWorks": [
     {
@@ -155,8 +221,18 @@ window.PROFILE_DATA = {
     ]
   },
   "recognition": [
-    {"year":"2025","title":"ICCV 2025 Broadening Participation (BP) Support","org":"IEEE/CVF International Conference on Computer Vision (ICCV 2025)","text":"Recipient of support through the ICCV 2025 Broadening Participation program, which provides travel and/or registration support."},
-    {"year":"2025","title":"ACM Multimedia 2025 Student Travel Award","org":"33rd ACM International Conference on Multimedia (ACM Multimedia 2025)","text":"Student travel award from ACM SIGMM / the ACM Multimedia 2025 organizing committee."}
+    {
+      "year": "2025",
+      "title": "ICCV 2025 Broadening Participation (BP) Support",
+      "org": "IEEE/CVF International Conference on Computer Vision (ICCV 2025)",
+      "text": "Recipient of support through the ICCV 2025 Broadening Participation program, which provides travel and/or registration support."
+    },
+    {
+      "year": "2025",
+      "title": "ACM Multimedia 2025 Student Travel Award",
+      "org": "33rd ACM International Conference on Multimedia (ACM Multimedia 2025)",
+      "text": "Student travel award from ACM SIGMM / the ACM Multimedia 2025 organizing committee."
+    }
   ],
   "memberships": [
     "CVPL — Associazione Italiana per la ricerca in Computer Vision, Pattern Recognition e Machine Learning (since 2019)",
@@ -260,16 +336,6 @@ window.PROFILE_DATA = {
       "title": "Angiographic image processing method and system",
       "status": "Italian patent application no. 102024000014434, granted by UIBM on 20 July 2026; international PCT application PCT/IB2025/056252, published as WO 2025/262634 A1.",
       "text": "AI-based angiographic processing underpinning the STARFLOW line of research."
-    },
-    {
-      "title": "Biometric safety system and method for estimating a user hazard condition and triggering an emergency stop",
-      "status": "Italian patent application — under review.",
-      "text": "Inventors include Raffaele Mineo, Paolo Soda, Simone Palazzo and Concetto Spampinato."
-    },
-    {
-      "title": "AI Framework for Automotive Microcontrollers",
-      "status": "Patent filing / invention under development.",
-      "text": "Inventors include Francesco Rundo, Raffaele Mineo, Simone Palazzo and Concetto Spampinato."
     }
   ],
   "publications": [
@@ -580,50 +646,7 @@ window.PROFILE_DATA = {
       "link": "https://eurovolc.eu/wp-content/uploads/2021/08/D9.3.pdf",
       "abstract": "The recent success of deep learning techniques has stimulated the application of such approaches for the automatic identification of models related to volcanic phenomena. In this study, a tool was developed for anomaly detection in historical volcanic data in an unsupervised manner. The results on data from Etna and Stromboli are promising, highlighting the ability to anticipate significant anomalies with respect to volcanic events.",
       "jointFirst": false
-    },
-    {
-      "title": "Personalized Incremental Learning in Medicine: A Comprehensive Survey of Methods, Challenges, and Future Directions",
-      "authors": "-",
-      "venue": "Manuscript / scholarly output",
-      "acronym": "Manuscript",
-      "type": "Manuscript",
-      "year": null,
-      "link": "",
-      "abstract": "",
-      "jointFirst": false
-    },
-    {
-      "title": "Biometric safety system and method for estimating a user hazard condition and triggering an emergency stop",
-      "authors": "R. Mineo, P. Soda, S. Palazzo, C. Spampinato",
-      "venue": "Italian patent application — under review",
-      "acronym": "UIBM",
-      "type": "Patent",
-      "year": null,
-      "link": "",
-      "abstract": "-",
-      "jointFirst": false
-    },
-    {
-      "title": "Anomaly Detection in Volcanic Seismic Data Using Deep Learning: A Case Study on Mt. Etna",
-      "authors": "-",
-      "venue": "IEEE Access — metadata entry; status/year to update",
-      "acronym": "IEEE Access",
-      "type": "Manuscript",
-      "year": null,
-      "link": "",
-      "abstract": "The recent success of deep learning approaches in a variety of pattern recognition fields (computer vision, natural language processing, speech recognition, game playing) and the growing availability of historical data in volcanology have posed the basis for the application of such techniques to automatic identification of precursors to volcanic phenomena. This work presents an approach aimed at performing anomaly detection of volcanic historical data, treating normal activity as the main source of information for training a model able to identify deviations as anomalies, and in particular shifts from a state of rest to a state of unrest. The effectiveness of the proposed approach is validated on continuous seismic waveform data from Mt. Etna, with promising results that confirm that the proposed approach is able to identify anomalies in the seismic signals the precede paroxysmal events, often with a significant anticipation period before event occurrences.",
-      "jointFirst": false
-    },
-    {
-      "title": "AI Framework for Automotive Microcontrollers",
-      "authors": "F. Rundo, R. Mineo, S. Palazzo, C. Spampinato",
-      "venue": "Italian patent filing / invention — in development",
-      "acronym": "UIBM",
-      "type": "Patent",
-      "year": null,
-      "link": "",
-      "abstract": "-",
-      "jointFirst": false
     }
-  ]
+  ],
+  "motto": "My Life is The Research, and I am truly lucky to be able to live it to the fullest 🙃"
 };
