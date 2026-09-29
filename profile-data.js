@@ -150,7 +150,7 @@ window.PROFILE_DATA = {
       "Research Advisor — RISE-MICCAI Publication Accelerator (2027)",
       "Mentor — Open Hackathons",
       "Mentor — GreenMindAI Catania Hackathon 2025",
-      "Proctor & Ambassador — IEEEXtreme 20.0 (2026)",
+      "Proctor & Proctor Ambassador — IEEEXtreme 20.0 (2026)",
       "Student Volunteer — ACM Multimedia 2025"
     ]
   },
