@@ -159,11 +159,11 @@ window.PROFILE_DATA = {
     {"year":"2025","title":"ACM Multimedia 2025 Student Travel Award","org":"33rd ACM International Conference on Multimedia (ACM Multimedia 2025)","text":"Student travel award from ACM SIGMM / the ACM Multimedia 2025 organizing committee."}
   ],
   "memberships": [
-    "CVPL / PeRCeiVe research community (since 2019)",
+    "CVPL — Associazione Italiana per la ricerca in Computer Vision, Pattern Recognition e Machine Learning (since 2019)",
     "IEEE Engineering in Medicine and Biology Society (EMBS), since 2024",
     "IEEE Signal Processing Society (SPS), since 2025",
     "Association for Computing Machinery (ACM), since 2025",
-    "ACM SIGMM, since 2025",
+    "ACM Special Interest Group on Multimedia (SIGMM), since 2025",
     "IEEE Computer Society Technical Community on Pattern Analysis and Machine Intelligence (TCPAMI), since 2026",
     "IEEE Engineering in Medicine and Biology Society (EMBS) Technical Committee on Biomedical Imaging and Image Processing (BIIP), since 2026"
   ],
