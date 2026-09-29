@@ -108,9 +108,9 @@ window.PROFILE_DATA = {
     ],
     "Workshops, challenges & special sessions": [
       "Organizer — IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”",
-      "Organizer — ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025)",
+      "Organizer — ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025), featuring the SignEval 2025 Challenge",
       "Organizer — ACM Multimedia 2025: (PILM ’25) International Workshop on Personalized Incremental Learning in Medicine",
-      "Workshop Chair — CVPR 2026: 2nd Multimodal Sign Language Recognition Workshop (MSLR 2026)"
+      "Workshop Chair — CVPR 2026: 2nd Multimodal Sign Language Recognition Workshop (MSLR 2026), featuring SignEval 2026: The Second Multimodal Sign Language Recognition Challenge"
     ],
     "Journal reviewing": [
       "IEEE Transactions on Medical Imaging (TMI), since 2025",
