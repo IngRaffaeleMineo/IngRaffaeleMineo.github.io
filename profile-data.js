@@ -42,14 +42,14 @@ window.PROFILE_DATA = {
     }
   ],
   "researchTrajectory": [
-    {"period":"2026","title":"Efficient deep models","text":"Knowledge distillation, post-training and mixed-precision quantization, sparsification and pruning for efficient vision models and deployment under compute constraints."},
-    {"period":"2025","title":"Adaptive medical AI","text":"Vision-language prompt tuning, personalized continual/incremental learning and federated learning for data-efficient medical image analysis."},
+    {"period":"2026","title":"Model compression & efficient AI","text":"Knowledge distillation, post-training and mixed-precision quantization, sparsification and pruning for efficient vision models and deployment under compute constraints."},
+    {"period":"2025","title":"Prompt-based adaptation & federated/continual learning","text":"Vision-language prompt tuning, personalized continual/incremental learning and federated learning for data-efficient medical image analysis."},
     {"period":"2024","title":"Digital cognitive assessment","text":"Computer vision for cognitive screening, including facial micro-movement analysis and eye-gaze modeling for automated neurocognitive assessment."},
-    {"period":"2023–2026","title":"Italian Sign Language, multimodal communication & privacy-aware sensing","text":"Multimodal LIS recognition for healthcare communication using RGB, depth, skeleton and radar sensing; MultiMedaLIS, radar-based recognition and SignEval benchmarks/challenges."},
+    {"period":"2023–2026","title":"Italian Sign Language (LIS) & privacy-aware multimodal sensing","text":"Multimodal LIS recognition for healthcare communication using RGB, depth, skeleton and radar sensing; MultiMedaLIS, radar-based recognition and SignEval benchmarks/challenges."},
     {"period":"2022–2023","title":"Cardiovascular imaging & computational physiology","text":"Coronary angiography, stenosis assessment and non-invasive FFR/iFR estimation, establishing the methodological foundations of the STARFLOW research line."},
     {"period":"2020–2021","title":"Volcanic seismology & anomaly detection","text":"Deep learning for seismic anomaly detection and volcanic-unrest analysis with INGV/EUROVOLC, including the VolUnD toolkit and machine-learning database activities."},
     {"period":"2020","title":"Thoracic imaging & lung analysis","text":"Deep-learning and computer-vision methods for lung and thoracic imaging, extending early medical-imaging work beyond neuroimaging."},
-    {"period":"2019–2020","title":"Neuroimaging & brain dynamics","text":"Early research on brain data and representation learning across EEG and fMRI, with emphasis on spatio-temporal patterns and neuroimaging analysis."}
+    {"period":"2019–2020","title":"Brain signal analysis & neuroimaging (EEG/fMRI)","text":"Early research on brain data and representation learning across EEG and fMRI, with emphasis on spatio-temporal patterns and neuroimaging analysis."}
   ],
   "selectedWorks": [
     {
