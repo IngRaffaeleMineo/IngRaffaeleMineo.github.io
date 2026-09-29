@@ -41,6 +41,16 @@ window.PROFILE_DATA = {
       "text": "Industrial inspection, predictive reliability, cognitive assessment, anomaly detection and multidisciplinary AI systems."
     }
   ],
+  "researchTrajectory": [
+    {"period":"2026","title":"Efficient deep models","text":"Knowledge distillation, post-training and mixed-precision quantization, sparsification and pruning for efficient vision models and deployment under compute constraints."},
+    {"period":"2025","title":"Adaptive medical AI","text":"Vision-language prompt tuning, personalized continual/incremental learning and federated learning for data-efficient medical image analysis."},
+    {"period":"2024","title":"Digital cognitive assessment","text":"Computer vision for cognitive screening, including facial micro-movement analysis and eye-gaze modeling for automated neurocognitive assessment."},
+    {"period":"2023–2026","title":"Italian Sign Language, multimodal communication & privacy-aware sensing","text":"Multimodal LIS recognition for healthcare communication using RGB, depth, skeleton and radar sensing; MultiMedaLIS, radar-based recognition and SignEval benchmarks/challenges."},
+    {"period":"2022–2023","title":"Cardiovascular imaging & computational physiology","text":"Coronary angiography, stenosis assessment and non-invasive FFR/iFR estimation, establishing the methodological foundations of the STARFLOW research line."},
+    {"period":"2020–2021","title":"Volcanic seismology & anomaly detection","text":"Deep learning for seismic anomaly detection and volcanic-unrest analysis with INGV/EUROVOLC, including the VolUnD toolkit and machine-learning database activities."},
+    {"period":"2020","title":"Thoracic imaging & lung analysis","text":"Deep-learning and computer-vision methods for lung and thoracic imaging, extending early medical-imaging work beyond neuroimaging."},
+    {"period":"2019–2020","title":"Neuroimaging & brain dynamics","text":"Early research on brain data and representation learning across EEG and fMRI, with emphasis on spatio-temporal patterns and neuroimaging analysis."}
+  ],
   "selectedWorks": [
     {
       "title": "A Convolutional-Transformer Model for FFR and iFR Assessment From Coronary Angiography",
@@ -105,11 +115,12 @@ window.PROFILE_DATA = {
     ],
     "Journal reviewing": [
       "IEEE Transactions on Medical Imaging (TMI), since 2025",
+      "Pattern Recognition (Elsevier)",
+      "Nature Communications, since 2025",
       "IEEE Open Journal of the Computer Society (OJCS), since 2025",
       "Computer Vision and Image Understanding (CVIU), since 2023",
       "Machine Vision and Applications (MVAP), since 2023",
       "ACM Transactions on Intelligent Systems and Technology (TIST), since 2024",
-      "Nature Communications, since 2025",
       "BioData Mining, since 2026",
       "Disability and Rehabilitation: Assistive Technology, since 2026",
       "Frontiers in Digital Health, since 2026",
@@ -136,12 +147,17 @@ window.PROFILE_DATA = {
       "MICCAI AFRICAI 2026"
     ],
     "Volunteering & mentoring": [
+      "Research Advisor — RISE-MICCAI Publication Accelerator (2027)",
+      "Mentor — Open Hackathons",
       "Mentor — GreenMindAI Catania Hackathon 2025",
-      "Student Volunteer — ACM Multimedia 2025",
-      "Proctor — IEEEXtreme 20.0 (2026)",
-      "Research Advisor — RISE-MICCAI 2027 Publication Accelerator"
+      "Proctor Ambassador — IEEEXtreme 20.0 (2026)",
+      "Student Volunteer — ACM Multimedia 2025"
     ]
   },
+  "recognition": [
+    {"year":"2025","title":"ICCV Broadening Participation Grant","org":"IEEE/CVF International Conference on Computer Vision (ICCV 2025)","text":"Broadening-participation support associated with ICCV 2025."},
+    {"year":"2025","title":"ACM Multimedia Student Travel Grant","org":"ACM Multimedia 2025","text":"Student travel support associated with ACM Multimedia 2025."}
+  ],
   "memberships": [
     "CVPL / PeRCeiVe research community (since 2019)",
     "IEEE Engineering in Medicine and Biology Society (EMBS), since 2024",
