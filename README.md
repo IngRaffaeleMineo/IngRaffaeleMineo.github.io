@@ -65,7 +65,7 @@ The workflow:
 
 `profile_private/Mineo_Raffaele_ProfileSync.md` defines the synchronization policy for profile data.
 
-Changes to publications, roles, affiliations, awards, reviewer activity, research topics or other profile information should be propagated to all affected artifacts. Official names of journals, conferences, workshops, grants, committees and formal roles should be verified against primary or institutional sources before publication.
+Changes to publications, roles, affiliations, awards, reviewer activity, research topics or other profile information should be propagated to all affected artifacts. New publications must be independently verified against primary bibliographic sources before they are added. User-supplied citations are treated as leads rather than as the source of truth; the maintained record should use the publisher, proceedings, DOI/Crossref or institutional source for the exact title, author order, year, venue, pages or article number and publication status. When an event year differs from the final publication year, both should be preserved explicitly. Official names of journals, conferences, workshops, grants, committees and formal roles should also be verified against primary or institutional sources before publication.
 
 ## Deployment
 
