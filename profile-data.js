@@ -1,7 +1,7 @@
 window.PROFILE_DATA = {
   "name": "Dr. Eng. Raffaele Mineo",
   "role": "Postdoctoral Researcher in Artificial Intelligence",
-  "affiliation": "Department of Electrical, Electronic and Computer Engineering (DIEEI), University of Catania",
+  "affiliation": "Department of Industrial, Electrical, Electronic and Computer Engineering (DIEEI), University of Catania",
   "location": "Catania, Italy",
   "email": "raffaele.mineo[at]phd.unict.it",
   "emailHref": "raffaele.mineo@phd.unict.it",
@@ -180,7 +180,8 @@ window.PROFILE_DATA = {
     ],
     "Journal reviewing": [
       "IEEE Transactions on Medical Imaging (TMI), since 2025",
-      "Pattern Recognition (Elsevier)",
+      "Pattern Recognition, since 2026",
+      "IET Cyber-Systems and Robotics, since 2026",
       "Nature Communications, since 2025",
       "IEEE Open Journal of the Computer Society (OJCS), since 2025",
       "Computer Vision and Image Understanding (CVIU), since 2023",
