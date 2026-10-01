@@ -14,8 +14,8 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/ProfiliRicercatore.txt`
 - `main:profile_private/BioBreve.txt`
 - `main:profile_private/BioLunga.txt`
-- `main:profile_private/publications/Mineo_R_publicationsList.docx`
-- `main:profile_private/publications/Mineo_R_publicationsMetadata.xlsx`
+- `main:profile_private/Mineo_R_publicationsList.docx`
+- `main:profile_private/Mineo_R_publicationsMetadata.xlsx`
 - `main:profile_private/photos/FotoTessera2024_colorato_HQ.webp`
 - `main:profile_private/photos/FotoTessera2024_neutro_HQ.jpg`
 
@@ -45,8 +45,8 @@ Whenever a publication or scholarly output is added, corrected or removed:
 1. Verify the official title, author order, venue, year, DOI/URL and publication status against the publisher, proceedings, DOI record or another primary source.
 2. Update `main:profile-data.js` and assign exactly one research-topic key from the public publication taxonomy.
 3. Update `main:profile_private/cv/Raffaele_Mineo_Academic_CV.tex`; the PDF is then rebuilt by GitHub Actions.
-4. Update `main:profile_private/publications/Mineo_R_publicationsList.docx`.
-5. Update `main:profile_private/publications/Mineo_R_publicationsMetadata.xlsx`.
+4. Update `main:profile_private/Mineo_R_publicationsList.docx`.
+5. Update `main:profile_private/Mineo_R_publicationsMetadata.xlsx`.
 6. Keep joint-first authorship and other authorship notes consistent across every representation.
 7. Update BioBreve/BioLunga only when the new output materially changes the research profile or selected achievements.
 8. Do not expose drafts, pending manuscripts or speculative future outputs unless explicitly requested.
@@ -72,6 +72,6 @@ The DOCX and XLSX are persistent publication masters and must never be treated a
 - Keep the website image optimized for fast loading without visible softness at the displayed size.
 - Keep the CV image at print-suitable resolution for the header photograph.
 
-## Branch visibility
+## Repository layout
 
-All maintained profile material lives on the single `main` branch. Public website files stay at the repository root, while editable/source materials live under `profile_private/`. This directory is organizational only, not a privacy boundary: the repository is public, so do not store passwords, private identifiers or secrets here.
+All maintained profile material lives on the single `main` branch. Public website files stay at the repository root, while editable/source materials live under `profile_private/`. This directory is organizational only, not a privacy boundaryy: the repository is public, so do not store passwords, private identifiers or secrets here.
