@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'profile_private/cv/Raffaele_Mineo_Academic_CV.tex'
-      -       - 'profile_private/photos/FotoTessera2024_neutro_HQ.jpg'
+      - 'profile_private/photos/FotoTessera2024_neutro_HQ.jpg'
       - '.github/workflows/build-assets.yml'
   workflow_dispatch:
 
