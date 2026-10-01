@@ -49,3 +49,13 @@ a{color:inherit}img{max-width:100%;display:block}.container{width:min(var(--max)
 .hero-motto{margin:20px 0 0;max-width:760px;color:#E9C895;font-family:Georgia,"Times New Roman",serif;font-size:16px;font-style:italic;line-height:1.55}
 
 .motto-emoji{font-style:normal;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;display:inline-block}
+
+.pub-list{border-top:0}
+.pub-topic{margin-top:34px}
+.pub-topic:first-child{margin-top:0}
+.pub-topic-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;padding:0 0 14px;border-bottom:2px solid var(--navy)}
+.pub-topic-head h3{margin:0;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:24px;font-weight:600}
+.pub-topic-head p{margin:6px 0 0;color:var(--muted);font-size:14px;max-width:760px}
+.pub-topic-head span{color:var(--gold);font-weight:850;font-size:13px;padding-top:5px}
+.pub-topic .pub:last-child{border-bottom:1px solid var(--line)}
+@media (max-width:760px){.pub-topic-head{display:block}.pub-topic-head span{display:inline-block;margin-top:8px}}
