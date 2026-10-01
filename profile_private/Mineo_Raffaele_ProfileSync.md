@@ -21,22 +21,24 @@ Whenever a professional or scientific profile item changes, review and update al
 
 ## Verification rules
 
-1. Verify the official wording of journals, conferences, workshops, committees, grants, awards, volunteering programs and formal roles using primary or institutional sources before publishing a change.
-2. Do not turn an informal description into an official title without verification.
-3. Remove failed, withdrawn, obsolete or explicitly excluded activities from all public profile surfaces.
-4. Keep publication titles exactly aligned with the publisher/proceedings record whenever possible.
-5. Keep the CV "Last updated" date current after substantive changes.
-6. For every new, corrected or removed publication, update the website publication data, the CV publication section, the publication DOCX and XLSX, and any affected bios in the same synchronization pass.
-7. Treat `Mineo_Raffaele_PublicationsMetadata.xlsx` and `Mineo_Raffaele_PublicationsList.docx` as the canonical publication support files in `profile_private`.
-8. Every publication must have exactly one primary research topic, using the stable taxonomy below:
+1. Independently verify every new or corrected publication before adding it. User-provided citation text, links or metadata are leads, not the bibliographic source of truth. Check the official publisher, proceedings, DOI/Crossref, conference or institutional record for the exact title, full author order, publication year, venue or book/proceedings title, pages or article number, DOI/ISBN when available, output type and publication status.
+2. When an event year differs from the final publication year, preserve both explicitly rather than conflating them. The bibliographic year must follow the final published record.
+3. Verify the official wording of journals, conferences, workshops, committees, grants, awards, volunteering programs and formal roles using primary or institutional sources before publishing a change.
+4. Do not turn an informal description into an official title without verification.
+5. Remove failed, withdrawn, obsolete or explicitly excluded activities from all public profile surfaces.
+6. Keep publication titles exactly aligned with the publisher/proceedings record whenever possible.
+7. Keep the CV "Last updated" date current after substantive changes.
+8. For every new, corrected or removed publication, update the website publication data, the CV publication section, the publication DOCX and XLSX, and any affected bios in the same synchronization pass.
+9. Treat `Mineo_Raffaele_PublicationsMetadata.xlsx` and `Mineo_Raffaele_PublicationsList.docx` as the canonical publication support files in `profile_private`.
+10. Every publication must have exactly one primary research topic, using the stable taxonomy below:
    - Cardiovascular AI and Computational Physiology
    - Multimodal Sensing and Inclusive Healthcare
    - Neurocognitive and Brain Signal AI
    - Adaptive, Efficient and Edge AI
    - Scientific and Industrial Intelligent Systems
    - Research Synthesis and Scholarly Outputs
-9. When a new publication is added, assign it to an existing topic only if the scientific fit is clear. If none of the existing topics is appropriate, ask Raffaele before creating a new research topic. Never create or use a generic "Other" or "Miscellaneous" topic without explicit approval.
-10. Keep the same topic assignment synchronized across `main:profile-data.js`, the CV publication section, `Mineo_Raffaele_PublicationsMetadata.xlsx` and `Mineo_Raffaele_PublicationsList.docx`.
+11. When a new publication is added, assign it to an existing topic only if the scientific fit is clear. If none of the existing topics is appropriate, ask Raffaele before creating a new research topic. Never create or use a generic "Other" or "Miscellaneous" topic without explicit approval.
+12. Keep the same topic assignment synchronized across `main:profile-data.js`, the CV publication section, `Mineo_Raffaele_PublicationsMetadata.xlsx` and `Mineo_Raffaele_PublicationsList.docx`.
 
 ## Publication synchronization workflow
 
@@ -74,4 +76,4 @@ The DOCX and XLSX are persistent publication masters and must never be treated a
 
 ## Repository layout
 
-All maintained profile material lives on the single `main` branch. Public website files stay at the repository root, while editable/source materials live under `profile_private/`. This directory is organizational only, not a privacy boundaryy: the repository is public, so do not store passwords, private identifiers or secrets here.
+All maintained profile material lives on the single `main` branch. Public website files stay at the repository root, while editable/source materials live under `profile_private/`. This directory is organizational only, not a privacy boundary: the repository is public, so do not store passwords, private identifiers or secrets here.
