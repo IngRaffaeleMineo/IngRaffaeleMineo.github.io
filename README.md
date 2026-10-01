@@ -17,13 +17,13 @@ The repository uses a single working branch: `main`.
 ### Internal/profile source material
 Editable profile sources and supporting records are kept in `profile_private/`, using the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_CV.tex`
-- `Mineo_Raffaele_FotoColorata.webp`
-- `Mineo_Raffaele_FotoNeutra.jpg`
-- `Mineo_Raffaele_RaccoltaAttivita.txt`
-- `Mineo_Raffaele_FirmaEmail.txt`
-- `Mineo_Raffaele_ProfiliRicercatore.txt`
-- `Mineo_Raffaele_BioBreve.txt`
-- `Mineo_Raffaele_BioLunga.txt`
+- `Mineo_Raffaele_ColorPhoto.webp`
+- `Mineo_Raffaele_NeutralPhoto.jpg`
+- `Mineo_Raffaele_AcademicActivities.txt`
+- `Mineo_Raffaele_EmailSignature.txt`
+- `Mineo_Raffaele_ResearcherProfiles.txt`
+- `Mineo_Raffaele_ShortBio.txt`
+- `Mineo_Raffaele_LongBio.txt`
 - `Mineo_Raffaele_PublicationsList.docx`
 - `Mineo_Raffaele_PublicationsMetadata.xlsx`
 - `Mineo_Raffaele_ProfileSync.md`

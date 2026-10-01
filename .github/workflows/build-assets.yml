@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - 'profile_private/Mineo_Raffaele_CV.tex'
-      - 'profile_private/Mineo_Raffaele_FotoNeutra.jpg'
+      - 'profile_private/Mineo_Raffaele_NeutralPhoto.jpg'
       - '.github/workflows/build-assets.yml'
   workflow_dispatch:
 

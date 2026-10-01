@@ -9,15 +9,15 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile-data.js`
 - `main:profile_private/Mineo_Raffaele_CV.tex`
 - `main:Mineo_Raffaele_CV.pdf` through the GitHub Actions build
-- `main:profile_private/Mineo_Raffaele_RaccoltaAttivita.txt`
-- `main:profile_private/Mineo_Raffaele_FirmaEmail.txt`
-- `main:profile_private/Mineo_Raffaele_ProfiliRicercatore.txt`
-- `main:profile_private/Mineo_Raffaele_BioBreve.txt`
-- `main:profile_private/Mineo_Raffaele_BioLunga.txt`
+- `main:profile_private/Mineo_Raffaele_AcademicActivities.txt`
+- `main:profile_private/Mineo_Raffaele_EmailSignature.txt`
+- `main:profile_private/Mineo_Raffaele_ResearcherProfiles.txt`
+- `main:profile_private/Mineo_Raffaele_ShortBio.txt`
+- `main:profile_private/Mineo_Raffaele_LongBio.txt`
 - `main:profile_private/Mineo_Raffaele_PublicationsList.docx`
 - `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`
-- `main:profile_private/Mineo_Raffaele_FotoColorata.webp`
-- `main:profile_private/Mineo_Raffaele_FotoNeutra.jpg`
+- `main:profile_private/Mineo_Raffaele_ColorPhoto.webp`
+- `main:profile_private/Mineo_Raffaele_NeutralPhoto.jpg`
 
 ## Verification rules
 
@@ -48,7 +48,7 @@ Whenever a publication or scholarly output is added, corrected or removed:
 4. Update `main:profile_private/Mineo_Raffaele_PublicationsList.docx`.
 5. Update `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`.
 6. Keep joint-first authorship and other authorship notes consistent across every representation.
-7. Update BioBreve/BioLunga only when the new output materially changes the research profile or selected achievements.
+7. Update ShortBio/LongBio only when the new output materially changes the research profile or selected achievements.
 8. Do not expose drafts, pending manuscripts or speculative future outputs unless explicitly requested.
 
 The DOCX and XLSX are persistent publication masters and must never be treated as disposable uploads.
