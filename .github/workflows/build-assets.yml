@@ -4,9 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'cv/Raffaele_Mineo_Academic_CV.tex'
-      - 'assets/raffaele-mineo.webp'
-      - 'cv/raffaele-mineo-cv.jpg'
+      - 'profile_private/cv/Raffaele_Mineo_Academic_CV.tex'
+      -       - 'profile_private/photos/FotoTessera2024_neutro_HQ.jpg'
       - '.github/workflows/build-assets.yml'
   workflow_dispatch:
 
@@ -33,10 +32,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cd cv
+          cd profile_private/cv
           xelatex -interaction=nonstopmode -halt-on-error Raffaele_Mineo_Academic_CV.tex
           xelatex -interaction=nonstopmode -halt-on-error Raffaele_Mineo_Academic_CV.tex
-          rm -f *.aux *.log *.out
+          cp Raffaele_Mineo_Academic_CV.pdf ../../cv/Raffaele_Mineo_Academic_CV.pdf
+          rm -f *.aux *.log *.out *.pdf
 
       - name: Commit generated PDF
         shell: bash
