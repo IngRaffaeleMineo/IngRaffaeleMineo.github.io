@@ -362,7 +362,7 @@ window.PROFILE_DATA = {
       "link": "",
       "abstract": "Basato su paper \"Coronary Artery Stenosis Assessment in X-Ray Angiography Through Spatio-Temporal Attention for Non-Invasive FFR and iFR Estimation\" e \"A Convolutional-Transformer Model for FFR and iFR Assessment From Coronary Angiography\".",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "cardiovascular"
     },
     {
       "title": "Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication",
@@ -446,7 +446,7 @@ window.PROFILE_DATA = {
       "link": "https://dl.acm.org/doi/pdf/10.1145/3746259",
       "abstract": "-",
       "jointFirst": false,
-      "topic": "efficient"
+      "topic": "synthesis"
     },
     {
       "title": "PCB-SAID: A Low-Cost Camera-Based Dataset for Few-Shot SMD Assembly Inspection",
@@ -518,7 +518,7 @@ window.PROFILE_DATA = {
       "link": "https://ieeexplore.ieee.org/abstract/document/11058900/",
       "abstract": "Cognitive impairment is a growing public health concern, with early detection playing a crucial role in improving patient outcomes. The Montreal Cognitive Assessment (MoCA) is widely used for screening mild cognitive impairment (MCI) and early-stage dementia. However, traditional MoCA assessments require manual scoring by trained professionals, making the process labor-intensive, time-consuming, and susceptible to human error. To overcome these limitations, we propose an automated pipeline for MoCA score estimation using eye-gaze data and Vision Transformers (ViTs). Our approach leverages gaze-tracking technology to capture spatial and temporal eyemovement patterns during structured cognitive tasks, identifying subtle cognitive impairments that may otherwise go unnoticed. The raw gaze data is preprocessed and mapped onto taskrelevant image regions, where a pretrained ViT extracts highdimensional feature representations. To address inconsistencies in gaze sampling and improve temporal modeling, we introduce a time-aware positional embedding mechanism that enhances the model's ability to infer cognitive performance. These extracted features are then processed by a transformer-based classification model to predict MoCA scores with high accuracy. We validate our approach using a dataset collected from seven cognitive gaming sessions, demonstrating its effectiveness in automated cognitive assessment. The experimental results indicate that our method provides a reliable and efficient alternative to traditional MoCA evaluations, reducing dependency on human intervention while maintaining diagnostic accuracy.",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "neurocognitive"
     },
     {
       "title": "Angiographic image processing method and system",
@@ -530,7 +530,7 @@ window.PROFILE_DATA = {
       "link": "https://patentscope.wipo.int/",
       "abstract": "Estensione europea di Metodo di diagnosi/prognosi real-time mediante AI in ambito cardiologico brevettato in italia",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "cardiovascular"
     },
     {
       "title": "Sign Language Recognition for Patient-Doctor Communication: A Multimedia/Multimodal Dataset",
@@ -550,11 +550,11 @@ window.PROFILE_DATA = {
       "venue": "European Heart Journal-Quality of Care and Clinical Outcomes",
       "acronym": "EHJQ-QCCO",
       "type": "Journal",
-      "year": 2024,
+      "year": 2025,
       "link": "https://academic.oup.com/ehjqcco/article/11/3/343/7816026",
       "abstract": "Despite evidence supporting use of fractional flow reserve (FFR) and instantaneous waves-free ratio (iFR) to improve outcome of patients undergoing coronary angiography (CA) and percutaneous coronary intervention, such techniques are still underused in clinical practice due to economic and logistic issues. We aimed to develop an artificial intelligence (AI)-based application to compute FFR and iFR from plain CA. Consecutive patients performing FFR or iFR or both were enrolled. A specific multi-task deep network exploiting 2 projections of the coronary of interest from standard CA was appraised. Accuracy of prediction of FFR/iFR of the AI model was the primary endpoint, along with sensitivity and specificity. Prediction was tested both for continuous values and for dichotomous classification (positive/negative) for FFR or iFR. Subgroup analyses were performed for FFR and iFR. A total of 389 patients from 5 centers were enrolled. Mean age was 67.9 ± 9.6 and 39.2% of patients were admitted for acute coronary syndrome. Overall, the accuracy was 87.3% (81.2–93.4%), with a sensitivity of 82.4% (71.9–96.4%) and a specificity of 92.2% (90.4–93.9%). For FFR, accuracy was 84.8% (77.8–91.8%), with a sensitivity of 81.9% (69.4–94.4%) and a specificity of 87.7% (85.5–89.9%), while for iFR accuracy was 90.2% (86.0–94.6%), with a sensitivity of 87.2% (76.6–97.8%) and a specificity of 93.2% (91.7–94.7%, all confidence intervals 95%). The presented machine-learning based tool showed high accuracy in prediction of wire-based FFR and iFR.",
       "jointFirst": true,
-      "topic": "medical"
+      "topic": "cardiovascular"
     },
     {
       "title": "Multisource Approaches to Italian Sign Language (LIS) Recognition: Insights from the MultiMedaLIS Dataset",
@@ -578,7 +578,7 @@ window.PROFILE_DATA = {
       "link": "https://ieeexplore.ieee.org/abstract/document/10782235",
       "abstract": "Objective cognitive assessment is critical for the early detection and management of cognitive decline. The Mini-Mental State Examination (MMSE) is a widely used tool for this purpose, but it requires face-to-face interaction and manual scoring by clinicians. Recent advances in computer vision and deep learning offer the potential to automate and enhance the accuracy of such assessments. This study presents a novel deep learning model that integrates multimodal data captured during cognitive testing sessions on a tablet. By focusing on facial movements, which are captured and magnified through a pre-processing pipeline, the model classifies inputs into categories corresponding to MMSE scores. Our results show a significant correlation between facial movements and MMSE, suggesting the feasibility of using automated video analysis as a reliable proxy for cognitive assessment.",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "neurocognitive"
     },
     {
       "title": "Coronary Artery Stenosis Assessment in X-Ray Angiography Through Spatio-Temporal Attention for Non-Invasive FFR and iFR Estimation",
@@ -590,7 +590,7 @@ window.PROFILE_DATA = {
       "link": "https://www.scitepress.org/PublishedPapers/2024/124492/",
       "abstract": "Determining the degree of stenosis in coronary arteries through X-ray angiography imaging is a multifaceted task, given their appearance variability, the overlapping of vessels, and their small size. Traditional automated approaches utilize 2D deep models processing multiple angiography views as well as key frames. In this research, we propose a new deep learning model to non-invasively evaluate the fractional flow reserve (FFR) and instantaneous wave-free ratio (iFR) of moderate coronary stenosis from angiographic videos to better analyze spatial and temporal correlation without manual preprocessing. Our strategy harnesses 3D Convolutional Neural Networks (CNNs) to learn local spatio-temporal features and integrates self-attention layers to understand broad correlations within the feature set. At training time, both FFR and iFR values are employed for supervision, with missing targets suitably handled through multi-branch outputs. The resulting model can be employed to predict the presence of a clinically-significant coronary artery stenosis and to directly determine the FFR and iFR values. We also include an explainability strategy to show which parts of a video the model focuses on in the assessment of FFR and iFR values. Our proposed model demonstrates superior results than competitors on a dataset of 778 angiography exams from 389 patients. Importantly, our model doesn’t require key frames, thus reducing the efforts required by clinicians.",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "cardiovascular"
     },
     {
       "title": "A Convolutional-Transformer Model for FFR and iFR Assessment From Coronary Angiography",
@@ -602,7 +602,7 @@ window.PROFILE_DATA = {
       "link": "https://ieeexplore.ieee.org/abstract/document/10582501/",
       "abstract": "The quantification of stenosis severity from X-ray catheter angiography is a challenging task. Indeed, this requires to fully understand the lesion’s geometry by analyzing dynamics of the contrast material, only relying on visual observation by clinicians. To support decision making for cardiac intervention, we propose a hybrid CNN-Transformer model for the assessment of angiography-based non-invasive fractional flow-reserve (FFR) and instantaneous wave-free ratio (iFR) of intermediate coronary stenosis. Our approach predicts whether a coronary artery stenosis is hemodynamically significant and provides direct FFR and iFR estimates. This is achieved through a combination of regression and classification branches that forces the model to focus on the cut-off region of FFR (around 0.8 FFR value), which is highly critical for decision-making. We also propose a spatio-temporal factorization mechanisms that redesigns the transformer’s self-attention mechanism to capture both local spatial and temporal interactions between vessel geometry, blood flow dynamics, and lesion morphology. The proposed method achieves state-of-the-art performance on a dataset of 778 exams from 389 patients. Unlike existing methods, our approach employs a single angiography view and does not require knowledge of the key frame; supervision at training time is provided by a classification loss (based on a threshold of the FFR/iFR values) and a regression loss for direct estimation. Finally, the analysis of model interpretability and calibration shows that, in spite of the complexity of angiographic imaging data, our method can robustly identify the location of the stenosis and correlate prediction uncertainty to the provided output scores.",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "cardiovascular"
     },
     {
       "title": "FeDETR: A Federated Approach for Stenosis Detection in Coronary Angiography",
@@ -614,7 +614,7 @@ window.PROFILE_DATA = {
       "link": "https://link.springer.com/chapter/10.1007/978-3-031-51026-7_17",
       "abstract": "Assessing the severity of stenoses in coronary angiography is critical to the patient’s health, as coronary stenosis is an underlying factor in heart failure. Current practice for grading coronary lesions, i.e. fractional flow reserve (FFR) or instantaneous wave-free ratio (iFR), suffers from several drawbacks, including time, cost and invasiveness, alongside potential interobserver variability. In this context, some deep learning methods have emerged to assist cardiologists in automating the estimation of FFR/iFR values. Despite the effectiveness of these methods, their reliance on large datasets is challenging due to the distributed nature of sensitive medical data. Federated learning addresses this challenge by aggregating knowledge from multiple nodes to improve model generalization, while preserving data privacy. We propose the first federated detection transformer approach, FeDETR, to assess stenosis severity in angiography videos based on FFR/iFR values estimation. In our approach, each node trains a detection transformer (DETR) on its local dataset, with the central server federating the backbone part of the network. The proposed method is trained and evaluated on a dataset collected from five hospitals, consisting of 1001 angiographic examinations, and its performance is compared with state-of-the-art federated learning methods.",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "cardiovascular"
     },
     {
       "title": "Ensemble and personalized transformer models for subject identification and relapse detection in e-prevention challenge",
@@ -626,7 +626,7 @@ window.PROFILE_DATA = {
       "link": "https://ieeexplore.ieee.org/abstract/document/10095438",
       "abstract": "In this short paper, we present the devised solutions for the subject identification and relapse detection tasks, which are part of the e-Prevention Challenge hosted at the ICASSP 2023 conference [1] [2] [3]. We specifically design an ensemble scheme of six models - five transformer-based ones and a CNN model - for the identification of subjects from wearable devices, while a personalized - one for each subject - scheme is used for relapse detection in psychotic disorder. Our final submitted solutions yield top performance on both tracks of the challenge: we ranked 2nd on the subject identification task (with an accuracy of 93.85%) and 1st on the relapse detection task (with a ROC-AUC and PR-AUC of about 0.65). Code and details are available at https://github.com/perceivelab/e-prevention-icassp-2023.",
       "jointFirst": false,
-      "topic": "medical"
+      "topic": "neurocognitive"
     },
     {
       "title": "Dynamic Graph Attention: Unraveling Spatio-Temporal Synchrony in EEG Data",
@@ -638,7 +638,7 @@ window.PROFILE_DATA = {
       "link": "https://ieeexplore.ieee.org/abstract/document/10385384",
       "abstract": "In this paper, we propose a deep model based on graph convolutional networks for emotion recognition using EEG data. The model encodes spatial and temporal features of EEG channels and learns relationships between nodes through a self-attention mechanism, capturing spatio-temporal synchrony in brain regions. Experimental results show that our model outperforms existing approaches, with the attention mechanism contributing significantly to classification accuracy. In particular, the attention scores provide insights into how EEG channels influence each other at different times, revealing spatio-temporal patterns of brain connectivity related to emotions.",
       "jointFirst": false,
-      "topic": "scientific"
+      "topic": "neurocognitive"
     },
     {
       "title": "BioTrak: A Blockchain-based Platform for Food Chain Logistics Traceability",
@@ -680,29 +680,34 @@ window.PROFILE_DATA = {
   "motto": "My Life is The Research, and I am truly lucky to be able to live it to the fullest 🙃",
   "publicationTopics": [
     {
-      "key": "synthesis",
-      "title": "Research synthesis",
-      "text": "Doctoral synthesis connecting cardiovascular diagnosis, cognitive monitoring and inclusive medical communication."
-    },
-    {
-      "key": "medical",
-      "title": "Medical AI and computational physiology",
-      "text": "Coronary physiology, stenosis assessment, cognitive evaluation and biomedical prediction."
+      "key": "cardiovascular",
+      "title": "Cardiovascular AI and Computational Physiology",
+      "text": "Coronary angiography, stenosis assessment and image-to-physiology modeling, including non-invasive FFR/iFR estimation and the STARFLOW line."
     },
     {
       "key": "multimodal",
-      "title": "Multimodal sensing and inclusive communication",
-      "text": "Italian Sign Language recognition, radar imaging, multimodal datasets and benchmarks for accessible and privacy-aware communication."
+      "title": "Multimodal Sensing and Inclusive Healthcare",
+      "text": "Italian Sign Language recognition, radar and multimodal sensing, privacy-aware perception, datasets and benchmarks for accessible healthcare communication."
+    },
+    {
+      "key": "neurocognitive",
+      "title": "Neurocognitive and Brain Signal AI",
+      "text": "EEG, digital biomarkers, facial micro-movements, eye-gaze analysis and automated cognitive assessment."
     },
     {
       "key": "efficient",
-      "title": "Adaptive, efficient and deployable AI",
-      "text": "Prompt learning, continual learning, quantization and edge deployment under data or compute constraints."
+      "title": "Adaptive, Efficient and Edge AI",
+      "text": "Prompt-based adaptation, continual learning, model quantization and deployment-oriented learning for resource-constrained systems."
     },
     {
       "key": "scientific",
-      "title": "Scientific and industrial sensing",
-      "text": "EEG, volcanic unrest, industrial inspection and data systems for complex scientific and engineering signals."
+      "title": "Scientific and Industrial Intelligent Systems",
+      "text": "Intelligent systems for volcanology, industrial inspection, predictive reliability and traceability."
+    },
+    {
+      "key": "synthesis",
+      "title": "Research Synthesis and Scholarly Outputs",
+      "text": "Cross-domain synthesis of the research programme and scholarly outputs that connect or support multiple research lines."
     }
   ]
 };
