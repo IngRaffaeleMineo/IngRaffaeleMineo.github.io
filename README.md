@@ -8,7 +8,8 @@ Personal academic website for Dr. Eng. Raffaele Mineo.
 - `index.html` - page structure
 - `styles.css` - styles
 - `script.js` - rendering and publication filters
-- `assets/raffaele-mineo.jpg` - profile photograph
+- `assets/raffaele-mineo.webp` - website profile photograph
+- `cv/raffaele-mineo-cv.jpg` - CV profile photograph
 - `cv/Raffaele_Mineo_Academic_CV.tex` - LaTeX CV source
 - `cv/Raffaele_Mineo_Academic_CV.pdf` - compiled CV
 
