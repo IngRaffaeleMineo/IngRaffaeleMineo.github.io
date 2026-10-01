@@ -675,6 +675,18 @@ window.PROFILE_DATA = {
       "abstract": "The recent success of deep learning techniques has stimulated the application of such approaches for the automatic identification of models related to volcanic phenomena. In this study, a tool was developed for anomaly detection in historical volcanic data in an unsupervised manner. The results on data from Etna and Stromboli are promising, highlighting the ability to anticipate significant anomalies with respect to volcanic events.",
       "jointFirst": false,
       "topic": "scientific"
+    },
+    {
+      "title": "When a model is not Enough: A Complementary AI Pipeline for Ultra-Safe PCBA Defect Detection",
+      "authors": "Alberto Faro, Francesco Cancelliere, Robin Faro, Raffaele Mineo",
+      "venue": "The Autonomous Edge - Intelligence Embedded in Industrial Applications",
+      "acronym": "EEAI 2025",
+      "type": "Book Chapter",
+      "year": 2026,
+      "link": "https://www.riverpublishers.com/research_details.php?book_id=1549",
+      "abstract": "A multi-stage automated optical inspection pipeline for safety-critical PCBA defect detection. The approach combines a transformer optimized for high recall with specialized autoencoders that reduce false positives and residual false negatives, targeting fewer than 10 false negatives per million inspected units under a high-confidence reliability requirement. The work originates from EEAI 2025 and was published as Chapter 8 of the 2026 River Publishers volume.",
+      "jointFirst": false,
+      "topic": "scientific"
     }
   ],
   "motto": "My Life is The Research, and I am truly lucky to be able to live it to the fullest 🙃",
