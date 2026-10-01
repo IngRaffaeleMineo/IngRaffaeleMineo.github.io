@@ -1,33 +1,76 @@
-# Raffaele Mineo academic website
+# Raffaele Mineo Academic Website
 
-Personal academic website for Dr. Eng. Raffaele Mineo.
+Source repository for the academic website of Dr. Eng. Raffaele Mineo, published with GitHub Pages.
 
-## Repository layout
+## Architecture
 
-The repository uses a single working branch: `main`.
+The website is a static site served directly from the `main` branch. No application framework or JavaScript build pipeline is required.
 
-### Website-facing files
-- `index.html` - page structure
-- `profile-data.js` - website content
-- `styles.css` - styles
-- `script.js` - rendering and publication filters
-- `assets/raffaele-mineo.webp` - website portrait
-- `Mineo_Raffaele_CV.pdf` - public CV linked from the website
+The main website content is stored in structured form in `profile-data.js` and rendered by `script.js`. Page structure and styling are defined in `index.html` and `styles.css`.
 
-### Internal/profile source material
-Editable profile sources and supporting records are kept in `profile_private/`, using the common `Mineo_Raffaele_` prefix:
-- `Mineo_Raffaele_CV.tex`
-- `Mineo_Raffaele_ColorPhoto.webp`
-- `Mineo_Raffaele_NeutralPhoto.jpg`
-- `Mineo_Raffaele_AcademicActivities.txt`
-- `Mineo_Raffaele_EmailSignature.txt`
-- `Mineo_Raffaele_ResearcherProfiles.txt`
-- `Mineo_Raffaele_ShortBio.txt`
-- `Mineo_Raffaele_LongBio.txt`
-- `Mineo_Raffaele_PublicationsList.docx`
-- `Mineo_Raffaele_PublicationsMetadata.xlsx`
-- `Mineo_Raffaele_ProfileSync.md`
+## Repository structure
 
-The CV PDF is rebuilt automatically from `profile_private/Mineo_Raffaele_CV.tex` and written to `Mineo_Raffaele_CV.pdf`.
+### Public website files
 
-`profile_private/` is an organizational boundary only. The repository is public, so it must not contain secrets or genuinely private credentials.
+- `index.html` - page structure and metadata
+- `profile-data.js` - structured academic profile, research topics, publications, service, memberships and collaborations
+- `script.js` - client-side rendering, filtering and interface behavior
+- `styles.css` - responsive visual styling
+- `favicon.svg` - site favicon
+- `assets/raffaele-mineo.webp` - portrait used on the website
+- `Mineo_Raffaele_CV.pdf` - public academic CV linked from the website
+
+### Profile source material
+
+Supporting source files are stored under `profile_private/`. The directory name separates editable source material from website-facing files; it is not an access-control boundary because the repository is public.
+
+Files use the common `Mineo_Raffaele_` prefix:
+
+- `Mineo_Raffaele_CV.tex` - LaTeX source of the academic CV
+- `Mineo_Raffaele_ColorPhoto.webp` - color portrait master
+- `Mineo_Raffaele_NeutralPhoto.jpg` - neutral portrait used by the CV
+- `Mineo_Raffaele_AcademicActivities.txt` - academic service, reviewing, mentoring, awards and activities
+- `Mineo_Raffaele_EmailSignature.txt` - maintained academic email signature
+- `Mineo_Raffaele_ResearcherProfiles.txt` - researcher identifiers and profile links
+- `Mineo_Raffaele_ShortBio.txt` - short biography in Italian and English
+- `Mineo_Raffaele_LongBio.txt` - extended biography in Italian and English
+- `Mineo_Raffaele_PublicationsList.docx` - maintained publication list
+- `Mineo_Raffaele_PublicationsMetadata.xlsx` - publication metadata and research-topic taxonomy
+- `Mineo_Raffaele_ProfileSync.md` - synchronization rules for all profile artifacts
+
+## Publication organization
+
+Publications are grouped by primary research topic rather than shown only as a chronological list. The current taxonomy is maintained consistently across the website, CV, DOCX publication list and XLSX metadata file.
+
+New publications should be assigned to an existing topic only when the scientific fit is clear. If no current topic is appropriate, the taxonomy should be extended explicitly rather than using a generic miscellaneous category.
+
+## CV build
+
+The academic CV is generated automatically by GitHub Actions.
+
+The workflow is triggered when one of the following changes:
+
+- `profile_private/Mineo_Raffaele_CV.tex`
+- `profile_private/Mineo_Raffaele_NeutralPhoto.jpg`
+- the CV workflow itself
+
+The workflow:
+
+1. installs XeLaTeX and the required TeX packages;
+2. compiles `Mineo_Raffaele_CV.tex` twice;
+3. writes the generated PDF to `Mineo_Raffaele_CV.pdf` in the repository root;
+4. commits the regenerated PDF when its contents change.
+
+## Profile synchronization
+
+`profile_private/Mineo_Raffaele_ProfileSync.md` defines the synchronization policy for profile data.
+
+Changes to publications, roles, affiliations, awards, reviewer activity, research topics or other profile information should be propagated to all affected artifacts. Official names of journals, conferences, workshops, grants, committees and formal roles should be verified against primary or institutional sources before publication.
+
+## Deployment
+
+GitHub Pages publishes the static website from the `main` branch. Changes to website files are therefore deployed without a separate application build step.
+
+## Repository visibility
+
+This repository is public. Files under `profile_private/` are separated for organization and maintenance only and must not contain passwords, credentials, private identifiers or other confidential information.
