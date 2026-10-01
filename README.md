@@ -12,21 +12,22 @@ The repository uses a single working branch: `main`.
 - `styles.css` - styles
 - `script.js` - rendering and publication filters
 - `assets/raffaele-mineo.webp` - website portrait
-- `cv/Raffaele_Mineo_Academic_CV.pdf` - public CV linked from the website
+- `Mineo_Raffaele_CV.pdf` - public CV linked from the website
 
 ### Internal/profile source material
-All editable profile sources and supporting records are kept under `profile_private/`:
-- `profile_private/cv/Raffaele_Mineo_Academic_CV.tex` - LaTeX CV source
-- `profile_private/photos/` - profile-photo masters
-- `profile_private/RaccoltaAttivita.txt`
-- `profile_private/FirmaEmail.txt`
-- `profile_private/ProfiliRicercatore.txt`
-- `profile_private/BioBreve.txt`
-- `profile_private/BioLunga.txt`
-- `profile_private/Mineo_R_publicationsList.docx`
-- `profile_private/Mineo_R_publicationsMetadata.xlsx`
-- `profile_private/PROFILE_SYNC.md` - synchronization rules
+Editable profile sources and supporting records are kept in `profile_private/`, using the common `Mineo_Raffaele_` prefix:
+- `Mineo_Raffaele_CV.tex`
+- `Mineo_Raffaele_FotoColorata.webp`
+- `Mineo_Raffaele_FotoNeutra.jpg`
+- `Mineo_Raffaele_RaccoltaAttivita.txt`
+- `Mineo_Raffaele_FirmaEmail.txt`
+- `Mineo_Raffaele_ProfiliRicercatore.txt`
+- `Mineo_Raffaele_BioBreve.txt`
+- `Mineo_Raffaele_BioLunga.txt`
+- `Mineo_Raffaele_PublicationsList.docx`
+- `Mineo_Raffaele_PublicationsMetadata.xlsx`
+- `Mineo_Raffaele_ProfileSync.md`
 
-The CV PDF is rebuilt automatically from the LaTeX source and written to `cv/Raffaele_Mineo_Academic_CV.pdf`.
+The CV PDF is rebuilt automatically from `profile_private/Mineo_Raffaele_CV.tex` and written to `Mineo_Raffaele_CV.pdf`.
 
 `profile_private/` is an organizational boundary only. The repository is public, so it must not contain secrets or genuinely private credentials.

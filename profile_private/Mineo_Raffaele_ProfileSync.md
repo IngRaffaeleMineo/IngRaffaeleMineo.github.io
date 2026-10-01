@@ -7,17 +7,17 @@ This directory stores working profile material and source files separately from 
 Whenever a professional or scientific profile item changes, review and update all relevant files:
 
 - `main:profile-data.js`
-- `main:profile_private/cv/Raffaele_Mineo_Academic_CV.tex`
-- `main:cv/Raffaele_Mineo_Academic_CV.pdf` through the GitHub Actions build
-- `main:profile_private/RaccoltaAttivita.txt`
-- `main:profile_private/FirmaEmail.txt`
-- `main:profile_private/ProfiliRicercatore.txt`
-- `main:profile_private/BioBreve.txt`
-- `main:profile_private/BioLunga.txt`
-- `main:profile_private/Mineo_R_publicationsList.docx`
-- `main:profile_private/Mineo_R_publicationsMetadata.xlsx`
-- `main:profile_private/photos/FotoTessera2024_colorato_HQ.webp`
-- `main:profile_private/photos/FotoTessera2024_neutro_HQ.jpg`
+- `main:profile_private/Mineo_Raffaele_CV.tex`
+- `main:Mineo_Raffaele_CV.pdf` through the GitHub Actions build
+- `main:profile_private/Mineo_Raffaele_RaccoltaAttivita.txt`
+- `main:profile_private/Mineo_Raffaele_FirmaEmail.txt`
+- `main:profile_private/Mineo_Raffaele_ProfiliRicercatore.txt`
+- `main:profile_private/Mineo_Raffaele_BioBreve.txt`
+- `main:profile_private/Mineo_Raffaele_BioLunga.txt`
+- `main:profile_private/Mineo_Raffaele_PublicationsList.docx`
+- `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`
+- `main:profile_private/Mineo_Raffaele_FotoColorata.webp`
+- `main:profile_private/Mineo_Raffaele_FotoNeutra.jpg`
 
 ## Verification rules
 
@@ -27,7 +27,7 @@ Whenever a professional or scientific profile item changes, review and update al
 4. Keep publication titles exactly aligned with the publisher/proceedings record whenever possible.
 5. Keep the CV "Last updated" date current after substantive changes.
 6. For every new, corrected or removed publication, update the website publication data, the CV publication section, the publication DOCX and XLSX, and any affected bios in the same synchronization pass.
-7. Treat `Mineo_R_publicationsMetadata.xlsx` and `Mineo_R_publicationsList.docx` as the canonical publication support files in `profile_private`.
+7. Treat `Mineo_Raffaele_PublicationsMetadata.xlsx` and `Mineo_Raffaele_PublicationsList.docx` as the canonical publication support files in `profile_private`.
 8. Every publication must have exactly one primary research topic, using the stable taxonomy below:
    - Cardiovascular AI and Computational Physiology
    - Multimodal Sensing and Inclusive Healthcare
@@ -36,7 +36,7 @@ Whenever a professional or scientific profile item changes, review and update al
    - Scientific and Industrial Intelligent Systems
    - Research Synthesis and Scholarly Outputs
 9. When a new publication is added, assign it to an existing topic only if the scientific fit is clear. If none of the existing topics is appropriate, ask Raffaele before creating a new research topic. Never create or use a generic "Other" or "Miscellaneous" topic without explicit approval.
-10. Keep the same topic assignment synchronized across `main:profile-data.js`, the CV publication section, `Mineo_R_publicationsMetadata.xlsx` and `Mineo_R_publicationsList.docx`.
+10. Keep the same topic assignment synchronized across `main:profile-data.js`, the CV publication section, `Mineo_Raffaele_PublicationsMetadata.xlsx` and `Mineo_Raffaele_PublicationsList.docx`.
 
 ## Publication synchronization workflow
 
@@ -44,9 +44,9 @@ Whenever a publication or scholarly output is added, corrected or removed:
 
 1. Verify the official title, author order, venue, year, DOI/URL and publication status against the publisher, proceedings, DOI record or another primary source.
 2. Update `main:profile-data.js` and assign exactly one research-topic key from the public publication taxonomy.
-3. Update `main:profile_private/cv/Raffaele_Mineo_Academic_CV.tex`; the PDF is then rebuilt by GitHub Actions.
-4. Update `main:profile_private/Mineo_R_publicationsList.docx`.
-5. Update `main:profile_private/Mineo_R_publicationsMetadata.xlsx`.
+3. Update `main:profile_private/Mineo_Raffaele_CV.tex`; the PDF is then rebuilt by GitHub Actions.
+4. Update `main:profile_private/Mineo_Raffaele_PublicationsList.docx`.
+5. Update `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`.
 6. Keep joint-first authorship and other authorship notes consistent across every representation.
 7. Update BioBreve/BioLunga only when the new output materially changes the research profile or selected achievements.
 8. Do not expose drafts, pending manuscripts or speculative future outputs unless explicitly requested.

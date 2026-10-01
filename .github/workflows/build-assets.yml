@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - 'profile_private/cv/Raffaele_Mineo_Academic_CV.tex'
-      - 'profile_private/photos/FotoTessera2024_neutro_HQ.jpg'
+      - 'profile_private/Mineo_Raffaele_CV.tex'
+      - 'profile_private/Mineo_Raffaele_FotoNeutra.jpg'
       - '.github/workflows/build-assets.yml'
   workflow_dispatch:
 
@@ -32,10 +32,10 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cd profile_private/cv
-          xelatex -interaction=nonstopmode -halt-on-error Raffaele_Mineo_Academic_CV.tex
-          xelatex -interaction=nonstopmode -halt-on-error Raffaele_Mineo_Academic_CV.tex
-          cp Raffaele_Mineo_Academic_CV.pdf ../../cv/Raffaele_Mineo_Academic_CV.pdf
+          cd profile_private
+          xelatex -interaction=nonstopmode -halt-on-error Mineo_Raffaele_CV.tex
+          xelatex -interaction=nonstopmode -halt-on-error Mineo_Raffaele_CV.tex
+          cp Mineo_Raffaele_CV.pdf ../Mineo_Raffaele_CV.pdf
           rm -f *.aux *.log *.out *.pdf
 
       - name: Commit generated PDF
@@ -44,7 +44,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add cv/Raffaele_Mineo_Academic_CV.pdf
+          git add Mineo_Raffaele_CV.pdf
           if ! git diff --cached --quiet; then
             git commit -m 'Rebuild academic CV PDF'
             git pull --rebase origin main
