@@ -49,6 +49,7 @@ Whenever a publication or scholarly output is added, corrected or removed:
 3. Update `main:profile_private/Mineo_Raffaele_CV.tex`; the PDF is then rebuilt by GitHub Actions.
 4. Update `main:profile_private/Mineo_Raffaele_PublicationsList.docx`.
 5. Update `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`.
+   Preserve the existing publication-metadata worksheet styling: data rows use a fixed 15 pt height and alternating green row fills, continuing the established parity pattern. New publication rows must match the surrounding font, alignment, wrapping and table formatting; never allow a newly appended row to auto-expand because of long BibTeX or abstract content.
 6. Keep joint-first authorship and other authorship notes consistent across every representation.
 7. Update ShortBio/LongBio only when the new output materially changes the research profile or selected achievements.
 8. Do not expose drafts, pending manuscripts or speculative future outputs unless explicitly requested.
