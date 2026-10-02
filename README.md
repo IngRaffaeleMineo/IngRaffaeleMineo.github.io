@@ -30,7 +30,7 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_ColorPhoto.webp` - color portrait master
 - `Mineo_Raffaele_NeutralPhoto.jpg` - neutral portrait used by the CV
 - `Mineo_Raffaele_AcademicActivities.txt` - academic service, reviewing, mentoring, awards and activities
-- `Mineo_Raffaele_EmailSignature.txt` - maintained academic email signature
+- `Mineo_Raffaele_EmailSignature.docx` - formatted academic email signature
 - `Mineo_Raffaele_ResearcherProfiles.txt` - researcher identifiers and profile links
 - `Mineo_Raffaele_ShortBio.txt` - short biography in Italian and English
 - `Mineo_Raffaele_LongBio.txt` - extended biography in Italian and English
