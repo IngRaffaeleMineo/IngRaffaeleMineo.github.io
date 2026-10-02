@@ -1,0 +1,45 @@
+name: Reconstruct publication archive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.tmp_publication_upload/**'
+      - '.github/workflows/reconstruct-publications.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  reconstruct:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Reconstruct publication files
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p profile_private/publications
+          for dir in .tmp_publication_upload/*.pdf; do
+            [ -d "$dir" ] || continue
+            target="profile_private/publications/$(basename "$dir")"
+            cat "$dir"/chunk_*.txt | base64 --decode > "$target"
+          done
+          sha256sum -c .tmp_publication_upload/SHA256SUMS
+
+      - name: Commit archive and remove transfer files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .tmp_publication_upload
+          rm -f .github/workflows/reconstruct-publications.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- profile_private/publications .tmp_publication_upload .github/workflows/reconstruct-publications.yml
+          if ! git diff --cached --quiet; then
+            git commit -m 'Complete publication file archive'
+            git push
+          fi

@@ -18,6 +18,7 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`
 - `main:profile_private/Mineo_Raffaele_ColorPhoto.webp`
 - `main:profile_private/Mineo_Raffaele_NeutralPhoto.jpg`
+- `main:profile_private/publications/` - PDF/ZIP publication archive
 
 ## Verification rules
 
@@ -50,9 +51,10 @@ Whenever a publication or scholarly output is added, corrected or removed:
 4. Update `main:profile_private/Mineo_Raffaele_PublicationsList.docx`.
 5. Update `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`.
    Preserve the existing publication-metadata worksheet styling: data rows use a fixed 15 pt height and alternating green row fills, continuing the established parity pattern. New publication rows must match the surrounding font, alignment, wrapping and table formatting; never allow a newly appended row to auto-expand because of long BibTeX or abstract content.
-6. Keep joint-first authorship and other authorship notes consistent across every representation.
-7. Update ShortBio/LongBio only when the new output materially changes the research profile or selected achievements.
-8. Do not expose drafts, pending manuscripts or speculative future outputs unless explicitly requested.
+6. Reconcile `main:profile_private/publications/` against the canonical publication masters. Add the verified PDF when available, or ZIP for VolUnD; if an artifact cannot be legally or reliably obtained, flag it explicitly rather than silently omitting it.
+7. Keep joint-first authorship and other authorship notes consistent across every representation.
+8. Update ShortBio/LongBio only when the new output materially changes the research profile or selected achievements.
+9. Do not expose drafts, pending manuscripts or speculative future outputs unless explicitly requested.
 
 The DOCX and XLSX are persistent publication masters and must never be treated as disposable uploads.
 
@@ -109,3 +111,4 @@ All maintained profile material lives on the single `main` branch. Public websit
 - The date prefix describes the archived document/file chronology when that is materially different from the final bibliographic year; bibliographic metadata in the website, CV, DOCX and XLSX must still follow the verified final publication record.
 - When a publication is added, removed or corrected, review the corresponding PDF/ZIP archive entry in the same synchronization pass.
 - The archive is repository support material and is not linked from the public website unless explicitly requested.
+- The publication archive must be checked against the canonical publication masters after every add/remove operation; a publication deleted from the canonical record (for example a non-existent entry) must also be removed from archive expectations.

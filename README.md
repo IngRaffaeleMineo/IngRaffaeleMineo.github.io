@@ -38,6 +38,7 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_PublicationsList.docx` - maintained publication list
 - `Mineo_Raffaele_PublicationsMetadata.xlsx` - publication metadata and research-topic taxonomy
 - `Mineo_Raffaele_ProfileSync.md` - synchronization rules for all profile artifacts
+- `publications/` - archival PDF/ZIP copies of the canonical publications and related outputs
 
 ## Publication organization
 
@@ -81,4 +82,4 @@ This repository is public. Files under `profile_private/` are separated for orga
 
 Archival copies of publications are stored in `profile_private/publications/`. Papers, book chapters, proceedings, patents and project reports are retained as PDF files when available; the VolUnD software release is retained as a ZIP archive.
 
-Archive file names use a chronological prefix in the form `YYYY_` or `YYYY-MM_`, followed by a concise venue/publication identifier and title. These files support profile maintenance and are not linked from the public website.
+Archive file names use a chronological prefix in the form `YYYY_` or `YYYY-MM_`, followed by a concise venue/publication identifier and title. The publication archive is reconciled against the canonical publication metadata so that missing artifacts are detected explicitly. These files support profile maintenance and are not linked from the public website.
