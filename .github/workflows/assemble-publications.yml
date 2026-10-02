@@ -1,0 +1,59 @@
+name: Assemble staged publication artifacts
+
+on:
+  push:
+    branches: [pub-upload-stage]
+    paths:
+      - '.tmp_pub_upload/READY'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staged branch
+        uses: actions/checkout@v4
+
+      - name: Reassemble and verify publication artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import base64
+          import hashlib
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path('.tmp_pub_upload/manifest.json').read_text())
+          for item in manifest:
+              staging = Path(item['staging'])
+              parts = sorted(staging.glob('part*.b64'))
+              if not parts:
+                  raise RuntimeError(f"No parts found for {item['target']}")
+              encoded = ''.join(p.read_text() for p in parts)
+              raw = base64.b64decode(encoded)
+              if len(raw) != item['size']:
+                  raise RuntimeError(f"Size mismatch for {item['target']}: {len(raw)} != {item['size']}")
+              digest = hashlib.sha256(raw).hexdigest()
+              if digest != item['sha256']:
+                  raise RuntimeError(f"SHA256 mismatch for {item['target']}")
+              target = Path(item['target'])
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(raw)
+          PY
+
+      - name: Commit assembled artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .tmp_pub_upload
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profile_private/publications
+          git add -A .tmp_pub_upload
+          if ! git diff --cached --quiet; then
+            git commit -m 'Assemble large publication archive files'
+            git push
+          fi
