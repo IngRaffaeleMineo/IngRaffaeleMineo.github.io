@@ -38,6 +38,7 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_PublicationsList.docx` - maintained publication list
 - `Mineo_Raffaele_PublicationsMetadata.xlsx` - publication metadata and research-topic taxonomy
 - `Mineo_Raffaele_ProfileSync.md` - synchronization rules for all profile artifacts
+- `publications/` - archived publication/output PDFs and the VolUnD ZIP, named as `YYYY_Name` or `YYYY-MM_Name`
 - `publications/` - archival PDF/ZIP copies of the canonical publications and related outputs
 
 ## Publication organization
