@@ -86,5 +86,5 @@ All maintained profile material lives on the single `main` branch. Public websit
 - Review the signature whenever there is a potentially important change to current affiliation, academic title, editorial leadership, area-chair roles, website/contact information, or another role that may materially improve the signature.
 - Email signature changes require explicit confirmation from Raffaele before modifying the DOCX, even when the underlying profile information has already been verified and synchronized elsewhere.
 - Minor reviewer assignments, one-off volunteering activities, individual publications, and similar additions should not be inserted into the email signature unless explicitly requested.
-- Preserve the signature opening exactly as: one blank line, a line containing exactly three ASCII hyphens (`---`), then one blank line. Do not replace the three hyphens with a graphical rule or paragraph border.
+- Email signature separator: use one paragraph containing exactly three ASCII hyphens (`---`), with 6 pt paragraph spacing before and 6 pt after. Use paragraph spacing rather than blank paragraphs, and keep it as text rather than a graphical rule or border.
 - Preserve the remaining formatting, line structure, hyperlink, motto italics, and upright emoji.
