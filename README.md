@@ -75,3 +75,10 @@ GitHub Pages publishes the static website from the `main` branch. Changes to web
 ## Repository visibility
 
 This repository is public. Files under `profile_private/` are separated for organization and maintenance only and must not contain passwords, credentials, private identifiers or other confidential information.
+
+
+### Publication file archive
+
+Archival copies of publications are stored in `profile_private/publications/`. Papers, book chapters, proceedings, patents and project reports are retained as PDF files when available; the VolUnD software release is retained as a ZIP archive.
+
+Archive file names use a chronological prefix in the form `YYYY_` or `YYYY-MM_`, followed by a concise venue/publication identifier and title. These files support profile maintenance and are not linked from the public website.
