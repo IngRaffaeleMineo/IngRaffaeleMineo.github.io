@@ -112,3 +112,14 @@ All maintained profile material lives on the single `main` branch. Public websit
 - When a publication is added, removed or corrected, review the corresponding PDF/ZIP archive entry in the same synchronization pass.
 - The archive is repository support material and is not linked from the public website unless explicitly requested.
 - The publication archive must be checked against the canonical publication masters after every add/remove operation; a publication deleted from the canonical record (for example a non-existent entry) must also be removed from archive expectations.
+
+
+## Publication source files
+
+- Store the available publication/output source files under `profile_private/publications/`.
+- Use the filename pattern `YYYY_Name.ext` or `YYYY-MM_Name.ext`; use zero-padded months.
+- Keep filenames ASCII-safe: use ordinary hyphens instead of typographic hyphens and avoid encoded Unicode markers in filenames.
+- Store publications as PDF whenever a PDF is available. Keep VolUnD as a ZIP archive.
+- Patent/source-output files supplied together with the publication archive may be stored in the same directory, but they remain typed as patents/technical outputs in the metadata rather than publications.
+- Whenever a publication is added, corrected or removed, review the publication-files directory in the same synchronization pass. Remove files for records explicitly removed from the profile and add the corresponding file when available.
+- The publication-files directory, website record, CV, DOCX list and XLSX metadata must refer to the same canonical set. Do not invent a publication merely because a similarly named file exists.
