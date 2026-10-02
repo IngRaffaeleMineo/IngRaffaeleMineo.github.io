@@ -31,6 +31,7 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_NeutralPhoto.jpg` - neutral portrait used by the CV
 - `Mineo_Raffaele_AcademicActivities.txt` - academic service, reviewing, mentoring, awards and activities
 - `Mineo_Raffaele_EmailSignature.docx` - formatted academic email signature
+- `Mineo_Raffaele_EmailSignatureGenerator.py` - generator for the email-signature DOCX
 - `Mineo_Raffaele_ResearcherProfiles.txt` - researcher identifiers and profile links
 - `Mineo_Raffaele_ShortBio.txt` - short biography in Italian and English
 - `Mineo_Raffaele_LongBio.txt` - extended biography in Italian and English
@@ -44,9 +45,9 @@ Publications are grouped by primary research topic rather than shown only as a c
 
 New publications should be assigned to an existing topic only when the scientific fit is clear. If no current topic is appropriate, the taxonomy should be extended explicitly rather than using a generic miscellaneous category.
 
-## CV build
+## Generated profile artifacts
 
-The academic CV is generated automatically by GitHub Actions.
+The academic CV and formatted email signature are generated automatically by GitHub Actions.
 
 The workflow is triggered when one of the following changes:
 
