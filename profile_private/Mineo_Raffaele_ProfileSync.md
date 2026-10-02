@@ -89,3 +89,23 @@ All maintained profile material lives on the single `main` branch. Public websit
 - Minor reviewer assignments, one-off volunteering activities, individual publications, and similar additions should not be inserted into the email signature unless explicitly requested.
 - Email signature separator: use one paragraph containing exactly three ASCII hyphens (`---`), with 6 pt paragraph spacing before and 6 pt after. Use paragraph spacing rather than blank paragraphs, and keep it as text rather than a graphical rule or border.
 - Preserve the remaining formatting, line structure, hyperlink, motto italics, and upright emoji.
+
+
+## Publication metadata spreadsheet formatting
+
+- `Mineo_Raffaele_PublicationsMetadata.xlsx` must keep its publication records inside the structured Excel Table named `Tabella1`.
+- `Tabella1` must cover all eleven publication columns from A through K, including `Research Topic` and `Topic Key`, and must expand when a new publication is added.
+- Preserve the existing Excel table style `TableStyleMedium14` with banded rows enabled. Do not simulate the alternating colors by manually coloring isolated rows.
+- Keep publication data rows at a fixed height of 15 points, with wrapping and column widths consistent with the existing table.
+- A new publication must be appended as a row of `Tabella1`, never written immediately below or outside the structured table.
+- After every XLSX edit, visually verify the header and at least the surrounding rows of any inserted record to confirm row height and banded-row alternation.
+
+
+## Publication file archive
+
+- Archival copies of publication files are stored under `profile_private/publications/`.
+- Use PDF for papers, chapters, proceedings, patents and reports when a PDF copy is available. Keep VolUnD as a ZIP archive.
+- File names must begin with `YYYY_` or `YYYY-MM_`, followed by a concise publication/venue identifier and title, using underscores instead of spaces where practical.
+- The date prefix describes the archived document/file chronology when that is materially different from the final bibliographic year; bibliographic metadata in the website, CV, DOCX and XLSX must still follow the verified final publication record.
+- When a publication is added, removed or corrected, review the corresponding PDF/ZIP archive entry in the same synchronization pass.
+- The archive is repository support material and is not linked from the public website unless explicitly requested.
