@@ -10,7 +10,7 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/Mineo_Raffaele_CV.tex`
 - `main:Mineo_Raffaele_CV.pdf` through the GitHub Actions build
 - `main:profile_private/Mineo_Raffaele_AcademicActivities.txt`
-- `main:profile_private/Mineo_Raffaele_EmailSignature.txt`
+- `main:profile_private/Mineo_Raffaele_EmailSignature.docx`
 - `main:profile_private/Mineo_Raffaele_ResearcherProfiles.txt`
 - `main:profile_private/Mineo_Raffaele_ShortBio.txt`
 - `main:profile_private/Mineo_Raffaele_LongBio.txt`
@@ -62,7 +62,7 @@ The DOCX and XLSX are persistent publication masters and must never be treated a
 - Do not use the centered-dot separator.
 - Use normal hyphens or ordinary punctuation where a separator is needed.
 - Use "Dr. Eng. Raffaele Mineo" in personal presentation contexts, but use "Raffaele Mineo" in publication author lists and bibliographic records.
-- Keep all expandable website information panels open by default.
+- Do not use collapsible, accordion, modal, or otherwise hidden containers for profile content. All substantive website content must be visible on page load.
 - Keep the motto as: "My Life is The Research, and I am truly lucky to be able to live it to the fullest" 🙃
 - The motto text may be italic, but the emoji must remain upright.
 - Display the public email as raffaele.mineo[at]phd.unict.it while keeping the real mailto address.
@@ -77,3 +77,12 @@ The DOCX and XLSX are persistent publication masters and must never be treated a
 ## Repository layout
 
 All maintained profile material lives on the single `main` branch. Public website files stay at the repository root, while editable/source materials live under `profile_private/`. This directory is organizational only, not a privacy boundary: the repository is public, so do not store passwords, private identifiers or secrets here.
+
+
+## Email signature maintenance
+
+- `Mineo_Raffaele_EmailSignature.docx` is the canonical formatted email signature.
+- Review the signature whenever there is a potentially important change to current affiliation, academic title, editorial leadership, area-chair roles, website/contact information, or another role that may materially improve the signature.
+- Email signature changes require explicit confirmation from Raffaele before modifying the DOCX, even when the underlying profile information has already been verified and synchronized elsewhere.
+- Minor reviewer assignments, one-off volunteering activities, individual publications, and similar additions should not be inserted into the email signature unless explicitly requested.
+- Preserve the signature's blank first line, horizontal separator, formatting, line structure, hyperlink, motto italics, and upright emoji.
