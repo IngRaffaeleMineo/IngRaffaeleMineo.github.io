@@ -18,14 +18,9 @@ normal.font.size = Pt(10.5)
 normal.paragraph_format.space_after = Pt(0)
 normal.paragraph_format.line_spacing = 1.0
 
-def blank_line():
+def add_line(parts=None, before=0, after=0):
     p = doc.add_paragraph()
-    p.paragraph_format.space_after = Pt(0)
-    p.add_run("")
-    return p
-
-def add_line(parts=None, after=0):
-    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(before)
     p.paragraph_format.space_after = Pt(after)
     p.paragraph_format.line_spacing = 1.0
     if parts:
@@ -37,13 +32,9 @@ def add_line(parts=None, after=0):
             r.font.size = Pt(10.5)
     return p
 
-# Exact opening format:
-# blank line
-# ---
-# blank line
-blank_line()
-add_line([("---", False, False)])
-blank_line()
+# Exact opening format: one paragraph containing only "---",
+# with Word paragraph spacing before and after, and no blank paragraphs.
+add_line([("---", False, False)], before=6, after=6)
 
 add_line([("Dr. ", False, False), ("Raffaele Mineo", True, False), (", Eng. Ph.D.", False, False)])
 add_line([("Member", False, True), (", IEEE", False, False)])
