@@ -461,18 +461,6 @@ window.PROFILE_DATA = {
       "topic": "scientific"
     },
     {
-      "title": "Memory‑Augmented Prompt Tuning for Self‑Supervised Continual Learning in Medical Imaging",
-      "authors": "-",
-      "venue": "International Workshop on Personalized Incremental Learning in Medicine (PILM)",
-      "acronym": "PILM",
-      "type": "Workshop",
-      "year": 2025,
-      "link": "",
-      "abstract": "",
-      "jointFirst": false,
-      "topic": "efficient"
-    },
-    {
       "title": "Learning Joint Text and Visual Tokens in CLIP for Medical Image Analysis",
       "authors": "Raffaele Mineo, Giovanni Bellitto, Federica Proietto Salanitri, Rutger Hendrix, Concetto Spampinato, Simone Palazzo",
       "venue": "Proceedings of the 2nd International Workshop on Multimedia Computing for Health and Medicine",
@@ -683,8 +671,8 @@ window.PROFILE_DATA = {
       "acronym": "EEAI 2025",
       "type": "Book Chapter",
       "year": 2026,
-      "link": "https://www.riverpublishers.com/research_details.php?book_id=1549",
-      "abstract": "A multi-stage automated optical inspection pipeline for safety-critical PCBA defect detection. The approach combines a transformer optimized for high recall with specialized autoencoders that reduce false positives and residual false negatives, targeting fewer than 10 false negatives per million inspected units under a high-confidence reliability requirement. The work originates from EEAI 2025 and was published as Chapter 8 of the 2026 River Publishers volume.",
+      "link": "https://doi.org/10.1201/9788743815273-8",
+      "abstract": "A multi-stage automated optical inspection pipeline for safety-critical PCBA defect detection. The chapter originates from EEAI 2025 and appears as Chapter 8, pp. 129-149, in the 2026 River Publishers volume The Autonomous Edge - Intelligence Embedded in Industrial Applications.",
       "jointFirst": false,
       "topic": "scientific"
     }
