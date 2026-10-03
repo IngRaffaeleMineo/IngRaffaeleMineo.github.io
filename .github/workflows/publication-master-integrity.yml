@@ -1,0 +1,44 @@
+name: Validate publication masters
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx'
+      - 'profile_private/Mineo_Raffaele_PublicationsList.docx'
+      - 'profile_private/Mineo_Raffaele_PublicationsIntegrity.py'
+      - '.github/workflows/publication-master-integrity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install document dependencies
+        run: pip install openpyxl python-docx
+
+      - name: Enforce publication master invariants
+        run: python profile_private/Mineo_Raffaele_PublicationsIntegrity.py
+
+      - name: Commit normalized masters if needed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx profile_private/Mineo_Raffaele_PublicationsList.docx
+          if ! git diff --cached --quiet; then
+            git commit -m 'Normalize publication masters'
+            git push
+          fi
