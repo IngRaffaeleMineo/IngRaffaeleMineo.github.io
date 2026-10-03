@@ -2,6 +2,17 @@
 
 This directory stores working profile material and source files separately from the website-facing files.
 
+## Mandatory bootstrap for a new chat or agent
+
+Before modifying this repository, treat the repository itself as the persistent source of context. Do not rely on memory from a previous conversation.
+
+1. Work only on the `main` branch.
+2. Read `AGENTS.md`, `README.md` and this file before making changes.
+3. Inspect the current versions of `profile-data.js`, `Mineo_Raffaele_CV.tex`, `Mineo_Raffaele_PublicationsMetadata.xlsx`, `Mineo_Raffaele_PublicationsList.docx`, and the relevant support files before editing them.
+4. Never assume a title, role, publication, award, venue name, date or status from a user message is already in its official form; verify it as specified below.
+5. Preserve all synchronization, naming, visual-style and confirmation rules documented here.
+6. If repository state and a user instruction conflict, the newest explicit user instruction wins; then update this file when the instruction establishes a durable rule.
+
 ## Files that must stay synchronized
 
 Whenever a professional or scientific profile item changes, review and update all relevant files:
@@ -19,6 +30,7 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/Mineo_Raffaele_ColorPhoto.webp`
 - `main:profile_private/Mineo_Raffaele_NeutralPhoto.jpg`
 - `main:profile_private/publications/` - PDF/ZIP publication archive
+- `main:profile_private/Mineo_Raffaele_PublicationFiles.md` - canonical publication-to-file manifest
 
 ## Verification rules
 
@@ -51,7 +63,11 @@ Whenever a publication or scholarly output is added, corrected or removed:
 4. Update `main:profile_private/Mineo_Raffaele_PublicationsList.docx`.
 5. Update `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`.
    Preserve the existing publication-metadata worksheet styling: data rows use a fixed 15 pt height and alternating green row fills, continuing the established parity pattern. New publication rows must match the surrounding font, alignment, wrapping and table formatting; never allow a newly appended row to auto-expand because of long BibTeX or abstract content.
-6. Reconcile `main:profile_private/publications/` against the canonical publication masters. Add the verified PDF when available, or ZIP for VolUnD; if an artifact cannot be legally or reliably obtained, flag it explicitly rather than silently omitting it.
+6. Reconcile `main:profile_private/publications/` against the canonical publication masters and `Mineo_Raffaele_PublicationFiles.md`.
+   - When the user asks to add a publication and does not provide the full-text file, proactively look for a legitimate downloadable copy from the publisher, official proceedings, an institutional/author repository, Zenodo or another reliable public source.
+   - Store the verified PDF in the archive; use ZIP for VolUnD.
+   - If no legitimate/reliable downloadable copy can be found, tell Raffaele explicitly which file is missing and ask him to provide it. Never silently omit the artifact and never use dubious download sources.
+   - If the user supplies the file, prefer that supplied copy after confirming it corresponds to the verified publication record.
 7. Keep joint-first authorship and other authorship notes consistent across every representation.
 8. Update ShortBio/LongBio only when the new output materially changes the research profile or selected achievements.
 9. Do not expose drafts, pending manuscripts or speculative future outputs unless explicitly requested.
@@ -123,3 +139,27 @@ All maintained profile material lives on the single `main` branch. Public websit
 - Patent/source-output files supplied together with the publication archive may be stored in the same directory, but they remain typed as patents/technical outputs in the metadata rather than publications.
 - Whenever a publication is added, corrected or removed, review the publication-files directory in the same synchronization pass. Remove files for records explicitly removed from the profile and add the corresponding file when available.
 - The publication-files directory, website record, CV, DOCX list and XLSX metadata must refer to the same canonical set. Do not invent a publication merely because a similarly named file exists.
+
+
+## Explicit exclusions and corrections
+
+- Do not add or restore a publication titled "Memory-Augmented Prompt Tuning for Self-Supervised Continual Learning in Medical Imaging" or an output referred to as "MAPT". Raffaele explicitly confirmed that this publication does not exist.
+- An excluded or non-existent record must be absent from the website, CV, DOCX publication list, XLSX metadata, publication-file manifest and PDF/ZIP archive expectations.
+
+
+## Repository self-sufficiency
+
+The repository must contain enough instructions and maintained source material for a new ChatGPT conversation or another agent to continue profile maintenance without access to earlier chats.
+
+- `AGENTS.md` is the entry-point instruction file.
+- This file is the detailed operational specification.
+- `README.md` explains repository architecture for human readers.
+- `profile-data.js` is the public website data source.
+- `Mineo_Raffaele_PublicationsMetadata.xlsx` and `Mineo_Raffaele_PublicationsList.docx` are the persistent publication masters.
+- `Mineo_Raffaele_PublicationFiles.md` maps every canonical output to its archived PDF/ZIP.
+- Durable user preferences or workflow rules must be written here when introduced, rather than being left only in chat history.
+
+
+## Publication archive naming invariant
+
+The preferred archive filename pattern is `YYYY_Venue_Short_Title.ext` or `YYYY-MM_Venue_Short_Title.ext` when the month is known and useful. Use zero-padded months and ASCII-safe ordinary hyphens. The filename date may reflect the event/document chronology used by the supplied archive even when the verified final bibliographic year differs; the bibliographic year in the maintained metadata must remain the verified publication year.
