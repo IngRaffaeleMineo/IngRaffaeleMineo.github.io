@@ -23,6 +23,7 @@ The detailed rules in `profile_private/Mineo_Raffaele_ProfileSync.md` are mandat
 - Do not create a new research topic unless no existing topic fits; ask Raffaele before adding one.
 - Never restore MAPT / "Memory-Augmented Prompt Tuning for Self-Supervised Continual Learning in Medical Imaging"; the user confirmed it does not exist.
 - Publication artifacts belong in `profile_private/publications/` and are tracked by `profile_private/Mineo_Raffaele_PublicationFiles.md`.
+- `profile_private/Mineo_Raffaele_PublicationsIntegrity.py` and the `Validate publication masters` GitHub Action enforce the publication-master invariants; do not bypass them.
 - All substantive website content must be visible on page load; do not introduce collapsible profile sections.
 - Avoid template-like/LLM-like copy and the centered-dot separator.
 - Email-signature changes require explicit user confirmation before editing the signature DOCX.
