@@ -40,6 +40,7 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_ProfileSync.md` - synchronization rules for all profile artifacts
 - `publications/` - archival PDF/ZIP copies of canonical publications and related outputs
 - `Mineo_Raffaele_PublicationFiles.md` - mapping between canonical records and archived publication files
+- `Mineo_Raffaele_PublicationsIntegrity.py` - consistency checks for publication masters, spreadsheet table styling, manifest and archived artifacts
 
 ## Agent/bootstrap instructions
 
