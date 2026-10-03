@@ -38,8 +38,12 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_PublicationsList.docx` - maintained publication list
 - `Mineo_Raffaele_PublicationsMetadata.xlsx` - publication metadata and research-topic taxonomy
 - `Mineo_Raffaele_ProfileSync.md` - synchronization rules for all profile artifacts
-- `publications/` - archived publication/output PDFs and the VolUnD ZIP, named as `YYYY_Name` or `YYYY-MM_Name`
-- `publications/` - archival PDF/ZIP copies of the canonical publications and related outputs
+- `publications/` - archival PDF/ZIP copies of canonical publications and related outputs
+- `Mineo_Raffaele_PublicationFiles.md` - mapping between canonical records and archived publication files
+
+## Agent/bootstrap instructions
+
+`AGENTS.md` is the entry point for automated maintenance. It requires agents to read `profile_private/Mineo_Raffaele_ProfileSync.md` before editing and makes the repository self-contained for new conversations or maintenance sessions.
 
 ## Publication organization
 
@@ -83,4 +87,4 @@ This repository is public. Files under `profile_private/` are separated for orga
 
 Archival copies of publications are stored in `profile_private/publications/`. Papers, book chapters, proceedings, patents and project reports are retained as PDF files when available; the VolUnD software release is retained as a ZIP archive.
 
-Archive file names use a chronological prefix in the form `YYYY_` or `YYYY-MM_`, followed by a concise venue/publication identifier and title. The publication archive is reconciled against the canonical publication metadata so that missing artifacts are detected explicitly. These files support profile maintenance and are not linked from the public website.
+Archive file names use a chronological prefix in the form `YYYY_` or `YYYY-MM_`, followed by a concise venue/publication identifier and title. `profile_private/Mineo_Raffaele_PublicationFiles.md` provides the one-to-one manifest. When a new publication is added without an uploaded full-text file, the maintenance workflow requires locating a legitimate publisher/proceedings/repository copy; if none is available, the missing file is explicitly requested from the author. These files support profile maintenance and are not linked from the public website.
