@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page not found - Raffaele Mineo</title>
+  <meta name="robots" content="noindex,follow">
+  <meta name="theme-color" content="#0B1F33">
+  <script>
+    (() => {
+      const routes = {"/about":"about","/research":"research","/selected-work":"selected","/patents":"patents","/publications":"publications","/service":"service","/recognition":"recognition","/experience":"experience","/education":"education","/network":"network","/background":"extended","/contact":"contact"};
+      const path = decodeURIComponent(window.location.pathname || '/').replace(/\/+$/, '') || '/';
+      const section = routes[path.toLowerCase()];
+      if (section) window.location.replace('/#' + section);
+    })();
+  </script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main id="main" class="section">
+    <div class="container">
+      <div class="section-kicker">404</div>
+      <h1>Page not found</h1>
+      <p>The requested page does not exist. The academic profile, publications and contact information are available on the homepage.</p>
+      <p><a class="btn btn-primary" href="/">Return to Raffaele Mineo's academic website</a></p>
+    </div>
+  </main>
+</body>
+</html>

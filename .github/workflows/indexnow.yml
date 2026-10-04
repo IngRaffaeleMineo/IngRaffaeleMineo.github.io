@@ -1,0 +1,33 @@
+name: Notify search engines via IndexNow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+      - 'profile-data.js'
+      - 'Mineo_Raffaele_CV.pdf'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'assets/**'
+      - '7e4f6c2a9d1b48e3a5c0f7b6d2e8194a.txt'
+      - '.github/workflows/indexnow.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Submit canonical URLs to IndexNow
+        env:
+          INDEXNOW_KEY: 7e4f6c2a9d1b48e3a5c0f7b6d2e8194a
+          SITE_HOST: ingraffaelemineo.github.io
+        run: |
+          curl --fail-with-body --silent --show-error \
+            -H 'Content-Type: application/json; charset=utf-8' \
+            -d '{"host":"'"$SITE_HOST"'","key":"'"$INDEXNOW_KEY"'","keyLocation":"https://'"$SITE_HOST"'/'"$INDEXNOW_KEY"'.txt","urlList":["https://'"$SITE_HOST"'/","https://'"$SITE_HOST"'/Mineo_Raffaele_CV.pdf"]}' \
+            https://api.indexnow.org/indexnow
