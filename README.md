@@ -37,6 +37,7 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_ResearcherProfiles.txt` - researcher identifiers and profile links
 - `Mineo_Raffaele_ShortBio.txt` - short biography in Italian and English
 - `Mineo_Raffaele_LongBio.txt` - extended biography in Italian and English
+- `Mineo_Raffaele_CompleteBio.txt` - exhaustive bilingual biographical profile plus canonical full lists of roles, outputs, service, reviewing, teaching, memberships, skills and researcher profiles
 - `Mineo_Raffaele_PublicationsList.docx` - maintained publication list
 - `Mineo_Raffaele_PublicationsMetadata.xlsx` - publication metadata and research-topic taxonomy
 - `Mineo_Raffaele_ProfileSync.md` - synchronization rules for all profile artifacts

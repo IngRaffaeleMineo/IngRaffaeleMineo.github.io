@@ -25,12 +25,17 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/Mineo_Raffaele_ResearcherProfiles.txt`
 - `main:profile_private/Mineo_Raffaele_ShortBio.txt`
 - `main:profile_private/Mineo_Raffaele_LongBio.txt`
+- `main:profile_private/Mineo_Raffaele_CompleteBio.txt`
 - `main:profile_private/Mineo_Raffaele_PublicationsList.docx`
 - `main:profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx`
 - `main:profile_private/Mineo_Raffaele_ColorPhoto.webp`
 - `main:profile_private/Mineo_Raffaele_NeutralPhoto.jpg`
 - `main:profile_private/publications/` - PDF/ZIP publication archive
 - `main:profile_private/Mineo_Raffaele_PublicationFiles.md` - canonical publication-to-file manifest
+
+## Complete Bio maintenance
+
+- `Mineo_Raffaele_CompleteBio.txt` is the exhaustive maintained biographical profile. Unlike ShortBio and LongBio, it must be reviewed and updated whenever any current role, education item, research line, collaboration, patent, publication/output, academic-service role, reviewing venue, award, teaching role, membership, qualification, language, technical competency or researcher-profile link changes. It must preserve the complete current lists rather than selectively summarizing them.
 
 ## Verification rules
 
