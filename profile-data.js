@@ -190,6 +190,7 @@ window.PROFILE_DATA = {
       "BioData Mining, since 2026",
       "Disability and Rehabilitation: Assistive Technology, since 2026",
       "Frontiers in Digital Health, since 2026",
+      "Frontiers in Medicine, since 2026",
       "International Journal of Cognitive Computing in Engineering (IJCCE), since 2026",
       "Journal of Imaging Informatics in Medicine (JIIM), since 2026",
       "IEEE Transactions on Biomedical Engineering (TBME), since 2026"

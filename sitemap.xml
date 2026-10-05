@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ingraffaelemineo.github.io/</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
     <image:image>
       <image:loc>https://ingraffaelemineo.github.io/assets/raffaele-mineo.webp</image:loc>
       <image:title>Portrait of Raffaele Mineo</image:title>
@@ -11,6 +11,6 @@
   </url>
   <url>
     <loc>https://ingraffaelemineo.github.io/Mineo_Raffaele_CV.pdf</loc>
-    <lastmod>2026-10-04</lastmod>
+    <lastmod>2026-10-05</lastmod>
   </url>
 </urlset>
