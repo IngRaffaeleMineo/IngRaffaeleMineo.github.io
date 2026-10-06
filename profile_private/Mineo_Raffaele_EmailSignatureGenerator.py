@@ -37,7 +37,7 @@ def add_line(parts=None, before=0, after=0):
 add_line([("---", False, False)], before=6, after=6)
 
 add_line([("Dr. ", False, False), ("Raffaele Mineo", True, False), (", Eng.", False, False)])
-add_line([("Italian National PhD in Artificial Intelligence - Health and Life Sciences", False, true)])
+add_line([("Italian National PhD in Artificial Intelligence - Health and Life Sciences", False, True)])
 add_line([("Member", False, True), (", IEEE", False, False)])
 add_line([("Research Fellow", False, True), (", ", False, False), ("PeRCeiVe.Ai Lab", True, False)])
 add_line([("Department of Industrial, Electrical, Electronic and Computer Engineering (DIEEI)", False, False)])
