@@ -15,7 +15,7 @@ const pubList=document.getElementById('pubList'),pubSearch=document.getElementBy
 const PUB_BATCH=2;
 const pubVisibleByTopic=Object.create(null);
 function authorMarkup(s){return esc(s).replace(/Raffaele Mineo|R\. Mineo/g,'<strong>Raffaele Mineo</strong>')}
-function publicationMarkup(p,hidden=false){return `<article class="pub"${hidden?' hidden':''}><div class="pub-year">${p.year||'-'}</div><div><div class="pub-title">${esc(p.title)}${p.jointFirst?'<span class="pub-badge">joint first author</span>':''}</div><div class="pub-authors">${authorMarkup(p.authors||'')}</div><div class="pub-meta">${esc(p.acronym||p.venue)}${p.acronym&&p.venue&&p.acronym!==p.venue?' - '+esc(p.venue):''} - ${esc(p.type)}</div></div>${p.link?`<a class="pub-link" href="${esc(p.link)}" target="_blank" rel="noopener external">Open</a>`:''}</article>`}
+function publicationMarkup(p,hidden=false){return `<article class="pub${hidden?' pub-progressive-hidden':''}"><div class="pub-year">${p.year||'-'}</div><div><div class="pub-title">${esc(p.title)}${p.jointFirst?'<span class="pub-badge">joint first author</span>':''}</div><div class="pub-authors">${authorMarkup(p.authors||'')}</div><div class="pub-meta">${esc(p.acronym||p.venue)}${p.acronym&&p.venue&&p.acronym!==p.venue?' - '+esc(p.venue):''} - ${esc(p.type)}</div></div>${p.link?`<a class="pub-link" href="${esc(p.link)}" target="_blank" rel="noopener external">Open</a>`:''}</article>`}
 function resetPublicationBatches(){Object.keys(pubVisibleByTopic).forEach(key=>delete pubVisibleByTopic[key])}
 function renderPubs({reset=false}={}){
   if(reset)resetPublicationBatches();
@@ -35,7 +35,7 @@ function renderPubs({reset=false}={}){
     pubVisibleByTopic[g.meta.key]=visible;
     const items=g.items.map((p,i)=>publicationMarkup(p,i>=visible)).join('');
     const more=visible<g.items.length?`<div class="pub-more-wrap"><button class="pub-more" type="button" data-pub-more="${esc(g.meta.key)}" aria-label="Show more publications in ${esc(g.meta.title)}">Show more</button></div>`:'';
-    return `<section class="pub-topic"><div class="pub-topic-head"><div><h3>${esc(g.meta.title)}</h3><p>${esc(g.meta.text)}</p></div><span>${g.items.length}</span></div>${items}${more}</section>`
+    return `<section class="pub-topic"><div class="pub-topic-head"><div><h3>${esc(g.meta.title)}</h3><p>${esc(g.meta.text)}</p></div></div>${items}${more}</section>`
   }).join('')
 }
 function initPubFilters(){

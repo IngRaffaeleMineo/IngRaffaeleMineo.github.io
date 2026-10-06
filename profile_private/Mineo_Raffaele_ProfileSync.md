@@ -182,7 +182,7 @@ The preferred archive filename pattern is `YYYY_Venue_Short_Title.ext` or `YYYY-
 
 - Keep the Publications section as the final substantive section of the main page, immediately before the footer/contact area, so shorter profile sections are encountered first during ordinary scrolling.
 - In the top navigation, keep Publications as the final substantive section link immediately before Contact.
-- Group publications by the established research-topic taxonomy. In the interactive browser view, show at most 2 publications per visible topic initially. Each topic with additional matching publications must show a button whose visible label is exactly `Show more`; each click reveals 2 additional publications for that topic until all matching publications are visible, at which point the button disappears.
+- Group publications by the established research-topic taxonomy. Do not show a numeric publication-count badge in each topic header. In the interactive browser view, show at most 2 publications per visible topic initially. Hide later items with the explicit `.pub-progressive-hidden` class (`display:none!important`) rather than relying on the native `hidden` attribute. Each topic with additional matching publications must show a button whose visible label is exactly `Show more`; each click reveals 2 additional publications for that topic until all matching publications are visible, at which point the button disappears.
 - Changing any publication search or filter resets each visible topic to its first 2 matching publications.
 - Preserve the complete static publication markup in `index.html` for crawlability and no-JavaScript access even though the enhanced browser interface progressively reveals the list.
 
