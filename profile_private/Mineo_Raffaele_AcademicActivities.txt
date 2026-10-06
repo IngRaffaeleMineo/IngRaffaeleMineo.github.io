@@ -12,6 +12,7 @@ Organizing Committee / Program Roles:
 - Information Processing in Medical Imaging (IPMI) 2027 - Paper Selection Committee
 - Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2026 - Area Chair
 - International Joint Conference on Neural Networks (IJCNN) 2027 - Area Chair
+- IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2027 - Area Chair
 
 Editorial Roles:
 - Frontiers in Communication - Associate Editor (2026-present)

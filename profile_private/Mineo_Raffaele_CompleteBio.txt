@@ -1,6 +1,6 @@
 COMPLETE BIOGRAPHICAL PROFILE / PROFILO BIOGRAFICO COMPLETO
 Dr. Eng. Raffaele Mineo
-Updated / Aggiornato: 5 October 2026 / 5 ottobre 2026
+Updated / Aggiornato: 6 October 2026 / 6 ottobre 2026
 
 Purpose
 This file is the exhaustive maintained biographical profile. Unlike the ShortBio and LongBio, it is intended to retain all currently maintained professional, academic, scientific, service, reviewing, teaching, technical and scholarly-profile information present in the repository.
@@ -17,7 +17,7 @@ La sua traiettoria di ricerca parte dall'analisi di segnali cerebrali e neuroima
 
 La linea cardiovascolare ha portato alla famiglia brevettuale "Angiographic image processing method and system", comprendente il brevetto italiano n. 102024000014434, concesso da UIBM il 20 luglio 2026, e l'estensione internazionale PCT/IB2025/056252 pubblicata come WO 2025/262634 A1. La famiglia protegge l'elaborazione angiografica AI-based alla base della linea di ricerca STARFLOW.
 
-L'attività di servizio scientifico comprende il ruolo di Associate Editor di Frontiers in Communication dal 2026 e di Lead Guest Editor per Cognitive Computation nel 2026, oltre a ruoli di Area Chair, program leadership, organizzazione di workshop, challenge e special session. Ha svolto attività di reviewing per journal, conference e workshop internazionali, includendo IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering e numerose altre sedi riportate integralmente nella sezione canonica seguente.
+L'attività di servizio scientifico comprende il ruolo di Associate Editor di Frontiers in Communication dal 2026 e di Lead Guest Editor per Cognitive Computation nel 2026, oltre ai ruoli di Area Chair per MICCAI 2026, IJCNN 2027 e IEEE FG 2027, program leadership, organizzazione di workshop, challenge e special session. Ha svolto attività di reviewing per journal, conference e workshop internazionali, includendo IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering e numerose altre sedi riportate integralmente nella sezione canonica seguente.
 
 Svolge inoltre attività didattica come Teaching Tutor presso l'Università di Catania, mentoring e research advising, e partecipa a società scientifiche e technical communities IEEE, ACM e CVPL. La sua attività comprende anche collaborazioni scientifiche e industriali con INGV, AOU Città della Salute e della Scienza di Torino, Max Planck Institute for Intelligent Systems, STMicroelectronics R&D Power and Discrete e DeepSensing S.r.l.
 
@@ -35,7 +35,7 @@ His research trajectory began with brain-signal analysis and EEG/fMRI neuroimagi
 
 The cardiovascular research line led to the patent family "Angiographic image processing method and system", including Italian patent no. 102024000014434, granted by UIBM on 20 July 2026, and international PCT application PCT/IB2025/056252, published as WO 2025/262634 A1. The family protects AI-based angiographic processing underpinning the STARFLOW research line.
 
-His scientific service includes serving as Associate Editor of Frontiers in Communication since 2026 and Lead Guest Editor of Cognitive Computation in 2026, together with area-chair, program-leadership, workshop, challenge and special-session organization roles. He has reviewed for international journals, conferences and workshops, including IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering, and the full set of venues listed in the canonical profile below.
+His scientific service includes serving as Associate Editor of Frontiers in Communication since 2026 and Lead Guest Editor of Cognitive Computation in 2026, together with Area Chair roles for MICCAI 2026, IJCNN 2027 and IEEE FG 2027, program leadership, workshop, challenge and special-session organization roles. He has reviewed for international journals, conferences and workshops, including IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering, and the full set of venues listed in the canonical profile below.
 
 He also contributes to teaching as a Teaching Tutor at the University of Catania, mentoring and research advising, and participates in IEEE, ACM and CVPL scientific societies and technical communities. His collaborations include INGV, AOU Città della Salute e della Scienza in Turin, the Max Planck Institute for Intelligent Systems, STMicroelectronics R&D Power and Discrete, and DeepSensing S.r.l.
 
@@ -123,6 +123,7 @@ Editorial roles
 Area / program leadership
 - Area Chair - MICCAI 2026
 - Area Chair - IJCNN 2027
+- Area Chair - IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2027
 - Organizing Committee - IEEE ISBI 2026, Associate to Technical Program Chairs
 - Paper Selection Committee - IPMI 2027
 

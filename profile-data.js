@@ -169,6 +169,7 @@ window.PROFILE_DATA = {
     "Area / program leadership": [
       "Area Chair - MICCAI 2026",
       "Area Chair - IJCNN 2027",
+      "Area Chair - IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2027",
       "Organizing Committee - IEEE ISBI 2026, Associate to Technical Program Chairs",
       "Paper Selection Committee - IPMI 2027"
     ],
