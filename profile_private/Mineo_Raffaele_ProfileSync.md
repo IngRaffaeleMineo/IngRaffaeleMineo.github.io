@@ -116,6 +116,7 @@ All maintained profile material lives on the single `main` branch. Public websit
 - Minor reviewer assignments, one-off volunteering activities, individual publications, and similar additions should not be inserted into the email signature unless explicitly requested.
 - Email signature separator: use one paragraph containing exactly three ASCII hyphens (`---`), with 6 pt paragraph spacing before and 6 pt after. Use paragraph spacing rather than blank paragraphs, and keep it as text rather than a graphical rule or border.
 - Preserve the remaining formatting, line structure, hyperlink, motto italics, and upright emoji.
+- In the email signature, Area Chair lines must omit conference years; retain years in the website, CV, biographies and canonical academic-activity records.
 
 
 ## Publication metadata spreadsheet formatting
@@ -182,7 +183,7 @@ The preferred archive filename pattern is `YYYY_Venue_Short_Title.ext` or `YYYY-
 
 - Keep the Publications section as the final substantive section of the main page, immediately before the footer/contact area, so shorter profile sections are encountered first during ordinary scrolling.
 - In the top navigation, keep Publications as the final substantive section link immediately before Contact.
-- Group publications by the established research-topic taxonomy. Do not show a numeric publication-count badge in each topic header. In the interactive browser view, show at most 2 publications per visible topic initially. Hide later items with the explicit `.pub-progressive-hidden` class (`display:none!important`) rather than relying on the native `hidden` attribute. Each topic with additional matching publications must show a button whose visible label is exactly `Show more`; each click reveals 2 additional publications for that topic until all matching publications are visible, at which point the button disappears.
+- Group publications by the established research-topic taxonomy. Do not show either an overall publication total (for example `28 items`) or numeric publication-count badges in topic headers. In the interactive browser view, show at most 2 publications per visible topic initially. For `Research Synthesis and Scholarly Outputs`, when exactly 2 matching items exist, show only the first item initially so that a real `Show more` action reveals the second. Hide later items with the explicit `.pub-progressive-hidden` class (`display:none!important`) rather than relying on the native `hidden` attribute. Each topic with additional hidden publications must show a button whose visible label is exactly `Show more`; each click reveals up to 2 additional publications until all matching publications are visible, at which point the button disappears.
 - Changing any publication search or filter resets each visible topic to its first 2 matching publications.
 - Preserve the complete static publication markup in `index.html` for crawlability and no-JavaScript access even though the enhanced browser interface progressively reveals the list.
 

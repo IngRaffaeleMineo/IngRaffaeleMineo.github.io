@@ -25,13 +25,13 @@ function renderPubs({reset=false}={}){
     const hay=[p.title,p.authors,p.venue,p.acronym,p.type,p.year,topicMeta?.title].join(' ').toLowerCase();
     return(!q||hay.includes(q))&&(!typ||p.type===typ)&&(!yr||String(p.year||'')===yr)&&(!topic||p.topic===topic)
   });
-  document.getElementById('pubCount').textContent=`${rows.length} item${rows.length===1?'':'s'}`;
   const groups=(P.publicationTopics||[]).map(t=>({
     meta:t,
     items:rows.filter(p=>p.topic===t.key).sort((a,b)=>(b.year||0)-(a.year||0))
   })).filter(g=>g.items.length);
   pubList.innerHTML=groups.map(g=>{
-    const visible=Math.min(pubVisibleByTopic[g.meta.key]||PUB_BATCH,g.items.length);
+    const initialVisible=(g.meta.key==='synthesis'&&g.items.length===2)?1:PUB_BATCH;
+    const visible=Math.min(pubVisibleByTopic[g.meta.key]||initialVisible,g.items.length);
     pubVisibleByTopic[g.meta.key]=visible;
     const items=g.items.map((p,i)=>publicationMarkup(p,i>=visible)).join('');
     const more=visible<g.items.length?`<div class="pub-more-wrap"><button class="pub-more" type="button" data-pub-more="${esc(g.meta.key)}" aria-label="Show more publications in ${esc(g.meta.title)}">Show more</button></div>`:'';
@@ -51,7 +51,9 @@ function initPubFilters(){
     const button=event.target.closest('[data-pub-more]');
     if(!button)return;
     const key=button.dataset.pubMore;
-    pubVisibleByTopic[key]=(pubVisibleByTopic[key]||PUB_BATCH)+PUB_BATCH;
+    const groupCount=P.publications.filter(p=>p.topic===key).length;
+    const initial=(key==='synthesis'&&groupCount===2)?1:PUB_BATCH;
+    pubVisibleByTopic[key]=(pubVisibleByTopic[key]||initial)+PUB_BATCH;
     renderPubs()
   })
 }

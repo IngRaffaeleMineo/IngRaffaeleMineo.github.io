@@ -46,7 +46,7 @@ add_line([("Associate Editor", True, False), (", ", False, False), ("Frontiers i
 add_line([("Lead Guest Editor", True, False), (", ", False, False), ("Springer Cognitive Computation", False, True)])
 add_line([("Area Chair", True, False), (", ", False, False), ("Medical Image Computing and Computer-Assisted Intervention (MICCAI)", False, True)])
 add_line([("Area Chair", True, False), (", ", False, False), ("International Joint Conference on Neural Networks (IJCNN)", False, True)])
-add_line([("Area Chair", True, False), (", ", False, False), ("IEEE International Conference on Automatic Face and Gesture Recognition (FG 2027)", False, True)], after=6)
+add_line([("Area Chair", True, False), (", ", False, False), ("IEEE International Conference on Automatic Face and Gesture Recognition (FG)", False, True)], after=6)
 
 add_line([("Polo Tecnologico, Via Santa Sofia 102, 95123 Catania, Italy", False, False)])
 
