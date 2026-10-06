@@ -103,6 +103,10 @@ The DOCX and XLSX are persistent publication masters and must never be treated a
 All maintained profile material lives on the single `main` branch. Public website files stay at the repository root, while editable/source materials live under `profile_private/`. This directory is organizational only, not a privacy boundary: the repository is public, so do not store passwords, private identifiers or secrets here.
 
 
+## Generated artifact workflow ownership
+
+- Keep generated-artifact workflows separated by ownership: `.github/workflows/build-assets.yml` builds and commits only `Mineo_Raffaele_CV.pdf`, while `.github/workflows/build-email-signature.yml` builds and commits only `profile_private/Mineo_Raffaele_EmailSignature.docx`. Do not have both workflows write the same binary artifact, to avoid rebase conflicts.
+
 ## Email signature maintenance
 
 - `Mineo_Raffaele_EmailSignature.docx` is the canonical formatted email signature.
