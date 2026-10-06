@@ -12,8 +12,13 @@ function renderChips(id,items){document.getElementById(id).innerHTML=items.map(x
 function renderPatents(){document.getElementById('patentGrid').innerHTML=P.patentHighlights.map(x=>`<article class="patent-card"><h3>${esc(x.title)}</h3><div class="status">${esc(x.status)}</div><p>${esc(x.text)}</p></article>`).join('')}
 function renderRecognition(){document.getElementById('recognitionGrid').innerHTML=P.recognition.map(x=>`<article class="recognition-card"><div class="recognition-year">${esc(x.year)}</div><h3>${esc(x.title)}</h3><h4>${esc(x.org)}</h4><p>${esc(x.text)}</p></article>`).join('')}
 const pubList=document.getElementById('pubList'),pubSearch=document.getElementById('pubSearch'),pubTopic=document.getElementById('pubTopic'),pubType=document.getElementById('pubType'),pubYear=document.getElementById('pubYear');
+const PUB_BATCH=2;
+const pubVisibleByTopic=Object.create(null);
 function authorMarkup(s){return esc(s).replace(/Raffaele Mineo|R\. Mineo/g,'<strong>Raffaele Mineo</strong>')}
-function renderPubs(){
+function publicationMarkup(p,hidden=false){return `<article class="pub"${hidden?' hidden':''}><div class="pub-year">${p.year||'-'}</div><div><div class="pub-title">${esc(p.title)}${p.jointFirst?'<span class="pub-badge">joint first author</span>':''}</div><div class="pub-authors">${authorMarkup(p.authors||'')}</div><div class="pub-meta">${esc(p.acronym||p.venue)}${p.acronym&&p.venue&&p.acronym!==p.venue?' - '+esc(p.venue):''} - ${esc(p.type)}</div></div>${p.link?`<a class="pub-link" href="${esc(p.link)}" target="_blank" rel="noopener external">Open</a>`:''}</article>`}
+function resetPublicationBatches(){Object.keys(pubVisibleByTopic).forEach(key=>delete pubVisibleByTopic[key])}
+function renderPubs({reset=false}={}){
+  if(reset)resetPublicationBatches();
   const q=pubSearch.value.trim().toLowerCase(),typ=pubType.value,yr=pubYear.value,topic=pubTopic.value;
   const rows=P.publications.filter(p=>{
     const topicMeta=(P.publicationTopics||[]).find(t=>t.key===p.topic);
@@ -25,7 +30,13 @@ function renderPubs(){
     meta:t,
     items:rows.filter(p=>p.topic===t.key).sort((a,b)=>(b.year||0)-(a.year||0))
   })).filter(g=>g.items.length);
-  pubList.innerHTML=groups.map(g=>`<section class="pub-topic"><div class="pub-topic-head"><div><h3>${esc(g.meta.title)}</h3><p>${esc(g.meta.text)}</p></div><span>${g.items.length}</span></div>${g.items.map(p=>`<article class="pub"><div class="pub-year">${p.year||'-'}</div><div><div class="pub-title">${esc(p.title)}${p.jointFirst?'<span class="pub-badge">joint first author</span>':''}</div><div class="pub-authors">${authorMarkup(p.authors||'')}</div><div class="pub-meta">${esc(p.acronym||p.venue)}${p.acronym&&p.venue&&p.acronym!==p.venue?' - '+esc(p.venue):''} - ${esc(p.type)}</div></div>${p.link?`<a class="pub-link" href="${esc(p.link)}" target="_blank" rel="noopener external">Open</a>`:''}</article>`).join('')}</section>`).join('')
+  pubList.innerHTML=groups.map(g=>{
+    const visible=Math.min(pubVisibleByTopic[g.meta.key]||PUB_BATCH,g.items.length);
+    pubVisibleByTopic[g.meta.key]=visible;
+    const items=g.items.map((p,i)=>publicationMarkup(p,i>=visible)).join('');
+    const more=visible<g.items.length?`<div class="pub-more-wrap"><button class="pub-more" type="button" data-pub-more="${esc(g.meta.key)}" aria-label="Show more publications in ${esc(g.meta.title)}">Show more</button></div>`:'';
+    return `<section class="pub-topic"><div class="pub-topic-head"><div><h3>${esc(g.meta.title)}</h3><p>${esc(g.meta.text)}</p></div><span>${g.items.length}</span></div>${items}${more}</section>`
+  }).join('')
 }
 function initPubFilters(){
   const topics=P.publicationTopics||[];
@@ -34,8 +45,15 @@ function initPubFilters(){
   pubType.innerHTML='<option value="">All output types</option>'+types.map(x=>`<option>${esc(x)}</option>`).join('');
   const years=[...new Set(P.publications.map(p=>p.year).filter(Boolean))].sort((a,b)=>b-a);
   pubYear.innerHTML='<option value="">All years</option>'+years.map(x=>`<option>${x}</option>`).join('');
-  [pubSearch,pubTopic,pubType,pubYear].forEach(el=>el.addEventListener('input',renderPubs));
-  [pubTopic,pubType,pubYear].forEach(el=>el.addEventListener('change',renderPubs))
+  [pubSearch,pubTopic,pubType,pubYear].forEach(el=>el.addEventListener('input',()=>renderPubs({reset:true})));
+  [pubTopic,pubType,pubYear].forEach(el=>el.addEventListener('change',()=>renderPubs({reset:true})));
+  pubList.addEventListener('click',event=>{
+    const button=event.target.closest('[data-pub-more]');
+    if(!button)return;
+    const key=button.dataset.pubMore;
+    pubVisibleByTopic[key]=(pubVisibleByTopic[key]||PUB_BATCH)+PUB_BATCH;
+    renderPubs()
+  })
 }
 function renderExtended(){document.getElementById('teachingList').innerHTML=P.teaching.map(x=>`<li>${esc(x)}</li>`).join('');document.getElementById('credentialsList').innerHTML=P.credentials.map(x=>`<li>${esc(x)}</li>`).join('');document.getElementById('languagesList').innerHTML=P.languages.map(x=>`<li>${esc(x)}</li>`).join('');document.getElementById('technicalList').innerHTML=Object.entries(P.technical).map(([k,v])=>`<p><strong>${esc(k)}:</strong> ${esc(v)}</p>`).join('')}
 function boot(){
@@ -59,7 +77,7 @@ function boot(){
   renderChips('collabChips',P.collaborations);
   renderPatents();
   initPubFilters();
-  renderPubs();
+  renderPubs({reset:true});
   renderExtended();
   document.getElementById('yearNow').textContent=new Date().getFullYear();
 }

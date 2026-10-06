@@ -2,9 +2,9 @@
 'use strict';
 const SECTION_ROUTES=Object.freeze({
   '/about':'about','/research':'research','/selected-work':'selected','/patents':'patents',
-  '/publications':'publications','/service':'service','/recognition':'recognition',
-  '/experience':'experience','/education':'education','/network':'network',
-  '/background':'extended','/contact':'contact'
+  '/service':'service','/recognition':'recognition','/experience':'experience',
+  '/education':'education','/network':'network','/background':'extended',
+  '/publications':'publications','/contact':'contact'
 });
 const SECTION_PATHS=Object.freeze(Object.fromEntries(Object.entries(SECTION_ROUTES).map(([path,id])=>[id,path])));
 const ROUTE_TARGETS=Object.freeze([{path:'/',id:'top'},...Object.entries(SECTION_ROUTES).map(([path,id])=>({path,id}))]);

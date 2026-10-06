@@ -90,3 +90,9 @@ a{color:inherit}img{max-width:100%;display:block}\na:focus-visible,button:focus-
 .translate-fallback{font-size:12.5px;font-weight:650;color:var(--navy);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 9px;background:#fff}
 .translate-fallback:hover{text-decoration:underline}
 @media (max-width:760px){.translate-shell{width:100%;padding-top:4px}.translate-icon{font-size:16px}}
+
+
+.pub-more-wrap{display:flex;justify-content:center;padding:16px 0 4px}
+.pub-more{appearance:none;border:1px solid var(--line);border-radius:999px;background:var(--white);color:var(--navy);font:inherit;font-size:13px;font-weight:700;padding:8px 16px;cursor:pointer;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.pub-more:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(11,31,51,.08);border-color:rgba(11,31,51,.28)}
+.pub-more:focus-visible{outline:3px solid rgba(32,109,122,.24);outline-offset:2px}

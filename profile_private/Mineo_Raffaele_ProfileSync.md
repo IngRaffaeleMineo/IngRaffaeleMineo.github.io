@@ -86,7 +86,7 @@ The DOCX and XLSX are persistent publication masters and must never be treated a
 - Do not use the centered-dot separator.
 - Use normal hyphens or ordinary punctuation where a separator is needed.
 - Use "Dr. Eng. Raffaele Mineo" in personal presentation contexts, but use "Raffaele Mineo" in publication author lists and bibliographic records.
-- Do not use collapsible, accordion, modal, or otherwise hidden containers for profile content. All substantive website content must be visible on page load.
+- Do not use collapsible, accordion, modal, or otherwise hidden containers for profile content, except for the Publications section progressive-disclosure behavior explicitly defined below. All other substantive website content must be visible on page load.
 - Keep the motto as: "My Life is The Research, and I am truly lucky to be able to live it to the fullest" 🙃
 - The motto text may be italic, but the emoji must remain upright.
 - Display the public email as raffaele.mineo[at]phd.unict.it while keeping the real mailto address.
@@ -173,6 +173,14 @@ The preferred archive filename pattern is `YYYY_Venue_Short_Title.ext` or `YYYY-
 ## Website translation
 
 - Keep website translation optional and isolated in `translate.js`. The canonical/source language remains English; the Google Website Translator may translate the rendered page on demand, but its external availability must never be required for navigation, profile rendering, SEO metadata, or core site operation. Preserve a graceful fallback if Google's widget cannot load.
+
+## Website publication presentation
+
+- Keep the Publications section as the final substantive section of the main page, immediately before the footer/contact area, so shorter profile sections are encountered first during ordinary scrolling.
+- In the top navigation, keep Publications as the final substantive section link immediately before Contact.
+- Group publications by the established research-topic taxonomy. In the interactive browser view, show at most 2 publications per visible topic initially. Each topic with additional matching publications must show a button whose visible label is exactly `Show more`; each click reveals 2 additional publications for that topic until all matching publications are visible, at which point the button disappears.
+- Changing any publication search or filter resets each visible topic to its first 2 matching publications.
+- Preserve the complete static publication markup in `index.html` for crawlability and no-JavaScript access even though the enhanced browser interface progressively reveals the list.
 
 ## Search-engine discoverability
 
