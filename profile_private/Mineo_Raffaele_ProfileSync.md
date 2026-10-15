@@ -193,6 +193,7 @@ The preferred archive filename pattern is `YYYY_Venue_Short_Title.ext` or `YYYY-
 - Keep the public homepage directly indexable: do not add `noindex`, authentication, crawler blocks or JavaScript-only substantive profile content.
 - `index.html` must contain a static, crawlable representation of the substantive profile content already present in `profile-data.js`; JavaScript may enhance and filter that content but must not be the only way a crawler can read it.
 - Keep the canonical URL, Open Graph/Twitter metadata and Schema.org JSON-LD aligned with the current profile. The homepage is modeled as a `ProfilePage` whose `mainEntity` is Raffaele Mineo.
+- For `ProfilePage.dateModified` in the homepage JSON-LD, always use a complete ISO 8601 date-time with explicit timezone (e.g. `2026-10-06T13:16:21Z`), never a date-only `YYYY-MM-DD` value; base it on the last actual human-edited profile metadata change, not routine rebuilds or purely cosmetic deployments. After changing it, parse the JSON-LD and verify the DateTime.
 - Keep `robots.txt` permissive and point it to `sitemap.xml`.
 - Keep `sitemap.xml` limited to canonical URLs on this host and update `lastmod` after substantive website or CV changes.
 - Preserve the IndexNow key file and `.github/workflows/indexnow.yml`; the key is a public ownership-verification token, not a credential or secret.
