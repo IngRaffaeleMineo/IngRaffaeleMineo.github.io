@@ -33,6 +33,10 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/publications/` - PDF/ZIP publication archive
 - `main:profile_private/Mineo_Raffaele_PublicationFiles.md` - canonical publication-to-file manifest
 
+## Conference-service role synchronization
+
+- When new conference-service or leadership roles are added, synchronize the public `profile-data.js` service list, its static crawlable copy in `index.html`, the CV source, AcademicActivities and CompleteBio, and assess ShortBio/LongBio relevance. Keep annual editions as distinct appointments. Do not alter the email signature unless the user explicitly requests it.
+
 ## Complete Bio maintenance
 
 - `Mineo_Raffaele_CompleteBio.txt` is the exhaustive maintained biographical profile. Unlike ShortBio and LongBio, it must be reviewed and updated whenever any current role, education item, research line, collaboration, patent, publication/output, academic-service role, reviewing venue, award, teaching role, membership, qualification, language, technical competency or researcher-profile link changes. It must preserve the complete current lists rather than selectively summarizing them.
