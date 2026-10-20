@@ -121,6 +121,7 @@ All maintained profile material lives on the single `main` branch. Public websit
 - Email signature separator: use one paragraph containing exactly three ASCII hyphens (`---`), with 6 pt paragraph spacing before and 6 pt after. Use paragraph spacing rather than blank paragraphs, and keep it as text rather than a graphical rule or border.
 - Preserve the remaining formatting, line structure, hyperlink, motto italics, and upright emoji.
 - In the email signature, Area Chair lines must omit conference years; retain years in the website, CV, biographies and canonical academic-activity records.
+- Include `Associate to Technical Program Chairs, IEEE International Symposium on Biomedical Imaging (ISBI 2027)` in the email signature. Do not add EEAI 2026 Session Chair to the email signature; it remains part of the canonical website/CV academic-service record.
 - In the email signature, keep `Ph.D.` in the first name line for immediate readability, and also present the fuller qualification on its own line as `Italian National PhD in Artificial Intelligence - Health and Life Sciences`.
 - With the owner's explicit approval, the email signature also lists `Associate to Technical Program Chairs, IEEE International Symposium on Biomedical Imaging (ISBI 2027)` and `Session Chair, European Conference on EDGE AI Technologies and Applications (EEAI 2026)`. Keep the event years for these specific roles; the yearless rule above applies to Area Chair lines.
 
