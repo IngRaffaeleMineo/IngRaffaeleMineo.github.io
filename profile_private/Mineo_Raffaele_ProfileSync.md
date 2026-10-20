@@ -122,6 +122,7 @@ All maintained profile material lives on the single `main` branch. Public websit
 - Preserve the remaining formatting, line structure, hyperlink, motto italics, and upright emoji.
 - In the email signature, Area Chair lines must omit conference years; retain years in the website, CV, biographies and canonical academic-activity records.
 - In the email signature, keep `Ph.D.` in the first name line for immediate readability, and also present the fuller qualification on its own line as `Italian National PhD in Artificial Intelligence - Health and Life Sciences`.
+- With the owner's explicit approval, the email signature also lists `Associate to Technical Program Chairs, IEEE International Symposium on Biomedical Imaging (ISBI 2027)` and `Session Chair, European Conference on EDGE AI Technologies and Applications (EEAI 2026)`. Keep the event years for these specific roles; the yearless rule above applies to Area Chair lines.
 
 
 ## Publication metadata spreadsheet formatting
