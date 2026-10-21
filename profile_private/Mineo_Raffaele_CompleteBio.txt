@@ -17,7 +17,7 @@ La sua traiettoria di ricerca parte dall'analisi di segnali cerebrali e neuroima
 
 La linea cardiovascolare ha portato alla famiglia brevettuale "Angiographic image processing method and system", comprendente il brevetto italiano n. 102024000014434, concesso da UIBM il 20 luglio 2026, e l'estensione internazionale PCT/IB2025/056252 pubblicata come WO 2025/262634 A1. La famiglia protegge l'elaborazione angiografica AI-based alla base della linea di ricerca STARFLOW.
 
-L'attività di servizio scientifico comprende il ruolo di Associate Editor di Frontiers in Communication dal 2026 e di Lead Guest Editor per Cognitive Computation nel 2026, oltre ai ruoli di Area Chair per MICCAI 2026, IJCNN 2027 e IEEE FG 2027, program leadership (incluso Associate to Technical Program Chairs a IEEE ISBI 2027 e Session Chair a EEAI 2026), organizzazione di workshop, challenge e special session. Ha svolto attività di reviewing per journal, conference e workshop internazionali, includendo IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering e numerose altre sedi riportate integralmente nella sezione canonica seguente.
+L'attività di servizio scientifico comprende il ruolo di Associate Editor di Frontiers in Communication dal 2026 e di Lead Guest Editor per Cognitive Computation nel 2026, oltre a incarichi nel 2026 come Area Chair di MICCAI, Organizing Committee di IEEE ISBI (Associate to Technical Program Chairs) e Session Chair a EEAI, e nel 2027 come Area Chair di IJCNN e IEEE FG e Organizing Committee di IEEE ISBI nello stesso ruolo, nonché organizzazione di workshop, challenge e special session. Ha svolto attività di reviewing per journal, conference e workshop internazionali, includendo IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering e numerose altre sedi riportate integralmente nella sezione canonica seguente.
 
 Svolge inoltre attività didattica come Teaching Tutor presso l'Università di Catania, mentoring e research advising, e partecipa a società scientifiche e technical communities IEEE, ACM e CVPL. La sua attività comprende anche collaborazioni scientifiche e industriali con INGV, AOU Città della Salute e della Scienza di Torino, Max Planck Institute for Intelligent Systems, STMicroelectronics R&D Power and Discrete e DeepSensing S.r.l.
 
@@ -35,7 +35,7 @@ His research trajectory began with brain-signal analysis and EEG/fMRI neuroimagi
 
 The cardiovascular research line led to the patent family "Angiographic image processing method and system", including Italian patent no. 102024000014434, granted by UIBM on 20 July 2026, and international PCT application PCT/IB2025/056252, published as WO 2025/262634 A1. The family protects AI-based angiographic processing underpinning the STARFLOW research line.
 
-His scientific service includes serving as Associate Editor of Frontiers in Communication since 2026 and Lead Guest Editor of Cognitive Computation in 2026, together with Area Chair roles for MICCAI 2026, IJCNN 2027 and IEEE FG 2027, program leadership (including Associate to Technical Program Chairs at IEEE ISBI 2027 and Session Chair at EEAI 2026), workshop, challenge and special-session organization roles. He has reviewed for international journals, conferences and workshops, including IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering, and the full set of venues listed in the canonical profile below.
+His scientific service includes serving as Associate Editor of Frontiers in Communication since 2026 and Lead Guest Editor of Cognitive Computation in 2026, together with 2026 service as MICCAI Area Chair, Associate to Technical Program Chairs on the IEEE ISBI Organizing Committee and EEAI Session Chair, followed in 2027 by IJCNN and IEEE FG Area Chair roles and the same IEEE ISBI Organizing Committee appointment, as well as workshop, challenge and special-session organization roles. He has reviewed for international journals, conferences and workshops, including IEEE Transactions on Medical Imaging, Pattern Recognition, Nature Communications, Frontiers in Digital Health, Frontiers in Medicine, IEEE Transactions on Biomedical Engineering, and the full set of venues listed in the canonical profile below.
 
 He also contributes to teaching as a Teaching Tutor at the University of Catania, mentoring and research advising, and participates in IEEE, ACM and CVPL scientific societies and technical communities. His collaborations include INGV, AOU Città della Salute e della Scienza in Turin, the Max Planck Institute for Intelligent Systems, STMicroelectronics R&D Power and Discrete, and DeepSensing S.r.l.
 
@@ -68,12 +68,12 @@ EDUCATION
 PROFESSIONAL AND RESEARCH EXPERIENCE
 - 2024–present | Research Fellow | University of Catania - DIEEI
   Research on AI, knowledge distillation and meta-learning for on-chip inference in the HORIZON Europe NEUROKIT2E project; broader work in medical imaging, multimodal learning and embedded AI.
-- 2019–present | Research member / assistant | PeRCeiVe.AI Lab, University of Catania
-  Research in computer vision, pattern recognition, multimodal AI, medical imaging and applied deep learning.
 - 2023–present | AI consulting & industrial R&D collaboration | DeepSensing S.r.l.
   Deep learning for industrial inspection, edge AI, neuromorphic experimentation, predictive reliability and applied R&D.
 - from 2023 | Research collaboration | STMicroelectronics R&D Power and Discrete
   Artificial intelligence for modeling and predictive reliability in automotive and power-electronics contexts.
+- 2019–present | Research member / assistant | PeRCeiVe.AI Lab, University of Catania
+  Research in computer vision, pattern recognition, multimodal AI, medical imaging and applied deep learning.
 
 RESEARCH AREAS
 - Medical AI and computational physiology
@@ -122,28 +122,28 @@ Editorial roles
 
 Area / program leadership
 - Area Chair - MICCAI 2026
+- Organizing Committee - IEEE ISBI 2026, Associate to Technical Program Chairs
+- Session Chair - European Conference on EDGE AI Technologies and Applications (EEAI) 2026
 - Area Chair - IJCNN 2027
 - Area Chair - IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2027
-- Organizing Committee - IEEE ISBI 2026, Associate to Technical Program Chairs
-- Associate to Technical Program Chairs - IEEE ISBI 2027
-- Session Chair - European Conference on EDGE AI Technologies and Applications (EEAI) 2026
+- Organizing Committee - IEEE ISBI 2027, Associate to Technical Program Chairs
 - Paper Selection Committee - IPMI 2027
 
 Workshops, challenges & special sessions
-- Organizer - IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”
 - Organizer - ICCV 2025: 1st Workshop on Multimodal Sign Language Recognition (MSLR 2025), featuring the SignEval 2025 Challenge
 - Organizer - ACM Multimedia 2025: (PILM ’25) International Workshop on Personalized Incremental Learning in Medicine
+- Organizer - IEEE ISBI 2026 Special Session: “Privacy-Aware, Data-Efficient AI via Personalized Incremental and Federated Learning in Healthcare”
 - Workshop Chair - CVPR 2026: 2nd Workshop on Multimodal Sign Language Recognition (MSLR), featuring SignEval 2026: The Second Multimodal Sign Language Recognition Challenge
 
 Journal reviewing
-- IEEE Transactions on Medical Imaging (TMI), since 2025
-- Pattern Recognition, since 2026
-- IET Cyber-Systems and Robotics, since 2026
-- Nature Communications, since 2025
-- IEEE Open Journal of the Computer Society (OJCS), since 2025
 - Computer Vision and Image Understanding (CVIU), since 2023
 - Machine Vision and Applications (MVAP), since 2023
 - ACM Transactions on Intelligent Systems and Technology (TIST), since 2024
+- IEEE Transactions on Medical Imaging (TMI), since 2025
+- Nature Communications, since 2025
+- IEEE Open Journal of the Computer Society (OJCS), since 2025
+- Pattern Recognition, since 2026
+- IET Cyber-Systems and Robotics, since 2026
 - BioData Mining, since 2026
 - Disability and Rehabilitation: Assistive Technology, since 2026
 - Frontiers in Digital Health, since 2026
@@ -171,12 +171,12 @@ Workshop reviewing
 - MICCAI AFRICAI 2026
 
 Volunteering & mentoring
-- Research Advisor - RISE-MICCAI 2027 Publication Accelerator
-- Mentor - Open Hackathons
 - Mentor - GreenMindAI Catania Hackathon 2025
+- Student Volunteer - 33rd ACM International Conference on Multimedia (ACM Multimedia 2025)
 - Proctor - IEEEXtreme 20.0 (2026)
 - Proctor Ambassador - IEEEXtreme 20.0 (2026)
-- Student Volunteer - 33rd ACM International Conference on Multimedia (ACM Multimedia 2025)
+- Research Advisor - RISE-MICCAI 2027 Publication Accelerator
+- Mentor - Open Hackathons
 
 AWARDS, GRANTS AND RECOGNITION
 - 2025 | ICCV 2025 Broadening Participation (BP) Support | IEEE/CVF International Conference on Computer Vision (ICCV 2025)
@@ -198,11 +198,11 @@ PROFESSIONAL MEMBERSHIPS AND TECHNICAL COMMUNITIES
 - IEEE Engineering in Medicine and Biology Society (EMBS) Technical Committee on Biomedical Imaging and Image Processing (BIIP), since 2026
 
 PROFESSIONAL QUALIFICATIONS, CERTIFICATIONS AND TRAINING
-- Italian State Examination and professional qualification as Information Engineer (2021)
-- Mensa Italia certificate / membership credential
+- Cambridge English A2 Key (2012); Cambridge English B1 Preliminary (2014)
 - ECDL Core AICA (2014)
-- Cambridge English B1 Preliminary (2014); Cambridge English A2 Key (2012)
+- Italian State Examination and professional qualification as Information Engineer (2021)
 - Würth Elektronik Italia - Power Expert technical training (2021)
+- Mensa Italia certificate / membership credential
 - Coursera / DeepLearning.AI: Neural Networks and Deep Learning; Improving Deep Neural Networks; Structuring Machine Learning Projects; Convolutional Neural Networks; Sequence Models; Deep Learning Specialization
 - Coursera: AI for Medical Diagnosis; AI for Medical Prognosis; AI for Medical Treatment; AI for Medicine Specialization; Detecting COVID-19 with Chest X-Ray using PyTorch
 - Coursera / DeepLearning.AI: Build Basic GANs; Build Better GANs; Apply GANs; Generative Adversarial Networks Specialization
@@ -242,125 +242,125 @@ Current maintained records: 28
    Authors: Raffaele Mineo, Amelia Sorrenti, Gaia Caligiore, Federica Proietto Salanitri, Giovanni Bellitto, Senya Polikovsky, Sabina Fontana, Egidio Ragonese, Concetto Spampinato, Simone Palazzo
    Venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
 
-5. 2025 | Conference | Timely Predicting Power Mosfet Failure in EV: AI Based Metodology and Deployment at the Edge
+5. 2026 | Book Chapter | When a model is not Enough: A Complementary AI Pipeline for Ultra-Safe PCBA Defect Detection
+   Authors: Alberto Faro, Francesco Cancelliere, Robin Faro, Raffaele Mineo
+   Venue: The Autonomous Edge - Intelligence Embedded in Industrial Applications (EEAI 2025)
+  Link: https://doi.org/10.1201/9788743815273-8
+
+6. 2025 | Conference | Timely Predicting Power Mosfet Failure in EV: AI Based Metodology and Deployment at the Edge
    Authors: Robin Faro, Francesco Cancelliere, Alesssandro Strano, Raffaele Mineo
    Venue: 2025 IEEE Symposia on Computational Intelligence for Energy, Transport and Environmental Sustainability (CIETES Companion) (CIETES Companion)
   Link: https://ieeexplore.ieee.org/abstract/document/11003330/
 
-6. 2025 | Conference | The SignEval 2025 Challenge at the ICCV Multimodal Sign Language Recognition Workshop: Results and Discussion [joint first author]
+7. 2025 | Conference | The SignEval 2025 Challenge at the ICCV Multimodal Sign Language Recognition Workshop: Results and Discussion [joint first author]
    Authors: Hamzah Luqman*, Raffaele Mineo*, Murtadha Aljubran, Ahmed Abul Hasanaath, Amelia Sorrenti, Sarah Alyami, Sadam Al-Azani, Maad Alowaifeer, JiHwan Moon, Vaclav Javorek, Tomas Zelezny, Marek Hruz, Gaia Caligiore, Silvio Giancola, Senya Polikovsky, Motaz Alfarraj, Sabina Fontana, Mufti Mahmud, Muhammad Haris Khan, Kamrul Islam, Sevgi Gurbuz, Egidio Ragonese, Giovanni Bellitto, Federica Proietto Salanitri, Concetto Spampinato, Simone Palazzo
    Venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
   Link: https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Luqman_The_SignEval_2025_Challenge_at_the_ICCV_Multimodal_Sign_Language_ICCVW_2025_paper.html
 
-7. 2025 | Conference | Text-Aligned Radar-Based Sign Language Recognition for Healthcare Communication
+8. 2025 | Conference | Text-Aligned Radar-Based Sign Language Recognition for Healthcare Communication
    Authors: Raffaele Mineo, Amelia Sorrenti, Gaia Caligiore, Federica Proietto Salanitri, Giovanni Bellitto, Senya Polikovsky, Sabina Fontana, Egidio Ragonese, Concetto Spampinato, Simone Palazzo
    Venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
   Link: https://openaccess.thecvf.com/content/ICCV2025W/MSLR/html/Mineo_Text-Aligned_Radar-Based_Sign_Language_Recognition_for_Healthcare_Communication_ICCVW_2025_paper.html
 
-8. 2025 | Conference | Radar-Based Imaging for Sign Language Recognition in Medical Communication
+9. 2025 | Conference | Radar-Based Imaging for Sign Language Recognition in Medical Communication
    Authors: Raffaele Mineo, Gaia Caligiore, Federica Proietto Salanitri, Isaak Kavasidis, Senya Polikovsky, Sabina Fontana, Egidio Ragonese, Concetto Spampinato, Simone Palazzo
    Venue: International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)
   Link: https://link.springer.com/chapter/10.1007/978-3-032-04978-0_51
 
-9. 2025 | Edited Proceedings | Proceedings of the International Workshop on Personalized Incremental Learning in Medicine (PILM ’25)
+10. 2025 | Edited Proceedings | Proceedings of the International Workshop on Personalized Incremental Learning in Medicine (PILM ’25)
    Authors: Simone Palazzo, Giovanni Bellitto, Raffaele Mineo, Amelia Sorrenti, Camila Gonzalez, Angelo Porrello, Lorenzo Bonicelli
    Venue: ACM Multimedia 2025 (ACM MM)
   Link: https://dl.acm.org/doi/pdf/10.1145/3746259
 
-10. 2025 | Conference | PCB-SAID: A Low-Cost Camera-Based Dataset for Few-Shot SMD Assembly Inspection
+11. 2025 | Conference | PCB-SAID: A Low-Cost Camera-Based Dataset for Few-Shot SMD Assembly Inspection
    Authors: Raffaele Mineo, Amelia Sorrenti, Robin Faro, Gabriele Mineo, Francesco Cancelliere, Alberto Faro
    Venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
   Link: https://openaccess.thecvf.com/content/ICCV2025W/VISION%2725/html/Mineo_PCB-SAID_A_Low-Cost_Camera-Based_Dataset_for_Few-Shot_SMD_Assembly_Inspection_ICCVW_2025_paper.html
 
-11. 2025 | Conference | Learning Joint Text and Visual Tokens in CLIP for Medical Image Analysis
+12. 2025 | Conference | Learning Joint Text and Visual Tokens in CLIP for Medical Image Analysis
    Authors: Raffaele Mineo, Giovanni Bellitto, Federica Proietto Salanitri, Rutger Hendrix, Concetto Spampinato, Simone Palazzo
    Venue: Proceedings of the 2nd International Workshop on Multimedia Computing for Health and Medicine (MCHM)
   Link: https://dl.acm.org/doi/abs/10.1145/3728424.3760770
 
-12. 2025 | Conference | HC‑PTQ: Poincaré‑Based Hyperbolic Clustering for Data‑Free Quantization of Vision Transformers
+13. 2025 | Conference | HC‑PTQ: Poincaré‑Based Hyperbolic Clustering for Data‑Free Quantization of Vision Transformers
    Authors: Raffaele Mineo, Simone Palazzo, Concetto Spampinato, Francesco Rundo
    Venue: Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)
   Link: https://openaccess.thecvf.com/content/ICCV2025W/BiVision/html/Mineo_HC-PTQ_Poincare-Based_Hyperbolic_Clustering_for_Data-Free_Quantization_of_Vision_Transformers_ICCVW_2025_paper.html
 
-13. 2025 | Conference | Conditional Visuo-Textual Prompt Learning for Medical Image Analysis
+14. 2025 | Conference | Conditional Visuo-Textual Prompt Learning for Medical Image Analysis
    Authors: Raffaele Mineo, Giovanni Bellitto, Federica Proietto Salanitri, Rutger Hendrix, Ulas Bagci, Daniela Giordano, Concetto Spampinato, Simone Palazzo
    Venue: 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) (ISBI)
   Link: https://ieeexplore.ieee.org/abstract/document/10980870/
 
-14. 2025 | Conference | Automated MoCA Score Estimation Using Eye-Gaze Data and Vision Transformers
+15. 2025 | Conference | Automated MoCA Score Estimation Using Eye-Gaze Data and Vision Transformers
    Authors: Raffaele Mineo, Isaak Kavasidis, Federica Proietto Salanitri, Lisa Passarello, Giovanni Piccininno, Vincenzo Masciale, Alessandro Anselmo, Cristiano Convertino, Domenico Rotondi, Nicola Laurieri, Simone Palazzo, Concetto Spampinato, Manuela Pennisi, Daniela Giordano
    Venue: 2025 IEEE 38th International Symposium on Computer-Based Medical Systems (CBMS) (CBMS)
   Link: https://ieeexplore.ieee.org/abstract/document/11058900/
 
-15. 2025 | Patent | Angiographic image processing method and system
+16. 2025 | Patent | Angiographic image processing method and system
    Authors: G. M. De Ferrari, F. D'Ascenzo, O. De Filippo, M. Iannaccone, M. Aldinucci, J. M. Hughes, M. Millesimo, W. Grosso Marra, G. Quadri, F. Proietto Salanitri, G. Bellitto, C. Spampinato, R. Mineo, S. Palazzo
    Venue: PCT/IB2025/056252 - WO 2025/262634 A1 (PCT)
   Link: https://patentscope.wipo.int/
-
-16. 2024 | Conference | Sign Language Recognition for Patient-Doctor Communication: A Multimedia/Multimodal Dataset
-   Authors: Raffaele Mineo, Gaia Caligiore, Concetto Spampinato, Sabina Fontana, Simone Palazzo, Egidio Ragonese
-   Venue: 2024 IEEE 8th Forum on Research and Technologies for Society and Industry Innovation (RTSI) (RTSI)
-  Link: https://ieeexplore.ieee.org/abstract/document/10761720/
 
 17. 2025 | Journal | Non-invasive physiological assessment of intermediate coronary stenoses from plain angiography through artificial intelligence: the STARFLOW system [joint first author]
    Authors: Ovidio De Filippo*, Raffaele Mineo*, Michele Millesimo, Wojciech Wańha, Federica Proietto Salanitri, Antonio Greco, Antonio Maria Leone, Luca Franchin, Simone Palazzo, Giorgio Quadri, Domenico Tuttolomondo, Enrico Fabris, Gianluca Campo, Alessandra Truffa Giachet, Francesco Bruno, Mario Iannaccone, Giacomo Boccuzzi, Nicola Gaibazzi, Ferdinando Varbella, Wojciech Wojakowski, Michele Maremmani, Guglielmo Gallone, Gianfranco Sinagra, Davide Capodanno, Giuseppe Musumeci, Paolo Boretto, Pawel Pawlus, Andrea Saglietto, Francesco Burzotta, Marco Aldinucci, Daniela Giordano, Gaetano Maria De Ferrari, Concetto Spampinato, Fabrizio D'Ascenzo
    Venue: European Heart Journal-Quality of Care and Clinical Outcomes (EHJQ-QCCO)
   Link: https://academic.oup.com/ehjqcco/article/11/3/343/7816026
 
-18. 2024 | Conference | Multisource Approaches to Italian Sign Language (LIS) Recognition: Insights from the MultiMedaLIS Dataset [joint first author]
+18. 2024 | Conference | Sign Language Recognition for Patient-Doctor Communication: A Multimedia/Multimodal Dataset
+   Authors: Raffaele Mineo, Gaia Caligiore, Concetto Spampinato, Sabina Fontana, Simone Palazzo, Egidio Ragonese
+   Venue: 2024 IEEE 8th Forum on Research and Technologies for Society and Industry Innovation (RTSI) (RTSI)
+  Link: https://ieeexplore.ieee.org/abstract/document/10761720/
+
+19. 2024 | Conference | Multisource Approaches to Italian Sign Language (LIS) Recognition: Insights from the MultiMedaLIS Dataset [joint first author]
    Authors: Gaia Caligiore*, Raffaele Mineo*, Concetto Spampinato, Egidio Ragonese, Simone Palazzo, Sabina Fontana
    Venue: 2024 10th Italian Conference on Computational Linguistics (CLiC-it) (CLiC-it)
   Link: https://aclanthology.org/2024.clicit-1.17/
 
-19. 2024 | Conference | Magnifying facial micro-movements for cognitive evaluation
+20. 2024 | Conference | Magnifying facial micro-movements for cognitive evaluation
    Authors: Raffaele Mineo, Federica Proietto Salanitri, Lisa Passarello, Alberto Sardella, Laura Messina, Manuela Pennisi, Daniela Giordano, Simone Palazzo, Concetto Spampinato
    Venue: 2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) (EMBC)
   Link: https://ieeexplore.ieee.org/abstract/document/10782235
 
-20. 2024 | Conference | Coronary Artery Stenosis Assessment in X-Ray Angiography Through Spatio-Temporal Attention for Non-Invasive FFR and iFR Estimation
+21. 2024 | Conference | Coronary Artery Stenosis Assessment in X-Ray Angiography Through Spatio-Temporal Attention for Non-Invasive FFR and iFR Estimation
    Authors: Raffaele Mineo, Federica Proietto Salanitri, Giovanni Bellitto, Ovidio De Filippo, Fabrizio D'Ascenzo, Simone Palazzo, Concetto Spampinato
    Venue: Proceedings of the 17th International Joint Conference on Biomedical Engineering Systems and Technologies - Volume 1: BIOIMAGING (BIOSTEC)
   Link: https://www.scitepress.org/PublishedPapers/2024/124492/
 
-21. 2024 | Journal | A Convolutional-Transformer Model for FFR and iFR Assessment From Coronary Angiography
+22. 2024 | Journal | A Convolutional-Transformer Model for FFR and iFR Assessment From Coronary Angiography
    Authors: Raffaele Mineo, F Proietto Salanitri, G Bellitto, I Kavasidis, O De Filippo, M Millesimo, GM De Ferrari, M Aldinucci, D Giordano, S Palazzo, F D’Ascenzo, C Spampinato
    Venue: IEEE Transactions on Medical Imaging (TMI)
   Link: https://ieeexplore.ieee.org/abstract/document/10582501/
 
-22. 2023 | Conference | FeDETR: A Federated Approach for Stenosis Detection in Coronary Angiography
+23. 2023 | Conference | FeDETR: A Federated Approach for Stenosis Detection in Coronary Angiography
    Authors: Raffaele Mineo, Amelia Sorrenti, Federica Proietto Salanitri
    Venue: International Conference on Image Analysis and Processing (ICIAP)
   Link: https://link.springer.com/chapter/10.1007/978-3-031-51026-7_17
 
-23. 2023 | Conference | Ensemble and personalized transformer models for subject identification and relapse detection in e-prevention challenge
+24. 2023 | Conference | Ensemble and personalized transformer models for subject identification and relapse detection in e-prevention challenge
    Authors: Salvatore Calcagno, Raffaele Mineo, Daniela Giordano, Concetto Spampinato
    Venue: ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (ICASSP)
   Link: https://ieeexplore.ieee.org/abstract/document/10095438
 
-24. 2023 | Conference | Dynamic Graph Attention: Unraveling Spatio-Temporal Synchrony in EEG Data
+25. 2023 | Conference | Dynamic Graph Attention: Unraveling Spatio-Temporal Synchrony in EEG Data
    Authors: Federica Proietto Salanitri, Giovanni Bellitto, Raffaele Mineo, Matteo Pennisi, Amelia Sorrenti, Salvatore Calcagno, Daniela Giordano, Simone Palazzo, Concetto Spampinato
    Venue: 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) (BIBM)
   Link: https://ieeexplore.ieee.org/abstract/document/10385384
 
-25. 2023 | Conference | BioTrak: A Blockchain-based Platform for Food Chain Logistics Traceability
+26. 2023 | Conference | BioTrak: A Blockchain-based Platform for Food Chain Logistics Traceability
    Authors: Alessia Spitalleri, Isaak Kavasidis, Vincenzo Cartelli, Raffaele Mineo, Francesco Rundo, Simone Palazzo, Concetto Spampinato, Daniela Giordano
    Venue: 2023 International Conference on Intelligent Computing, Communication, Networking and Services (ICCNS) (ICCNS)
   Link: https://ieeexplore.ieee.org/abstract/document/10193341
 
-26. 2021 | Software | VOLcano UNrest Detection (VolUnD) Toolkit
+27. 2021 | Software | VOLcano UNrest Detection (VolUnD) Toolkit
    Authors: R. Mineo, P. Spadaro, F. Cannavò, S. Palazzo, A. Cannata, C. Spampinato
    Venue: Zenodo
   Link: https://zenodo.org/records/5541125
 
-27. 2021 | Project | EUROVOLC - Deliverable Report - D9.3 Machine learning tool kit and database
+28. 2021 | Project | EUROVOLC - Deliverable Report - D9.3 Machine learning tool kit and database
    Authors: S. Palazzo, R. Mineo, C. Spampinato, F. Cannavò, A. Cannata, C. Montagna, J. M. Saurel, O. Geber, A. Lemarchand
    Venue: HORIZON 2020 EUROVOLC Project (EUROVOLC)
   Link: https://eurovolc.eu/wp-content/uploads/2021/08/D9.3.pdf
-
-28. 2026 | Book Chapter | When a model is not Enough: A Complementary AI Pipeline for Ultra-Safe PCBA Defect Detection
-   Authors: Alberto Faro, Francesco Cancelliere, Robin Faro, Raffaele Mineo
-   Venue: The Autonomous Edge - Intelligence Embedded in Industrial Applications (EEAI 2025)
-  Link: https://doi.org/10.1201/9788743815273-8
 
 RESEARCHER AND PROFESSIONAL PROFILES
 - Google Scholar: https://scholar.google.com/citations?user=nYSplWUAAAAJ

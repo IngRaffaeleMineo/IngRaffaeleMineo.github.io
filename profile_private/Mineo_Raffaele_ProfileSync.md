@@ -33,6 +33,16 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/publications/` - PDF/ZIP publication archive
 - `main:profile_private/Mineo_Raffaele_PublicationFiles.md` - canonical publication-to-file manifest
 
+## Chronological ordering and role naming
+
+- Every year-bearing list must use a declared, consistent chronology rather than adding new items at arbitrary positions.
+- Academic service (Area / program leadership; editorial; workshops, challenges and special sessions; journal/conference/workshop reviewing; volunteering and mentoring) and memberships/certifications: chronological ascending by start year, with stable order for equal years and undated entries last.
+- Professional experience, education, research trajectory and the publications within each research topic: reverse chronological (newest start or publication year first). Keep the complete biographical publication inventory reverse chronological and renumber sequentially.
+- Narrative research history can remain chronological from earliest to latest. Selection lists and unordered technical-skills categories do not require artificial year sorting.
+- For the same role across different conference editions, preserve exactly the same role wording. Both IEEE ISBI 2026 and IEEE ISBI 2027 must be written `Organizing Committee - IEEE ISBI YYYY, Associate to Technical Program Chairs` in website data, static HTML, CV and CompleteBio. In AcademicActivities use `IEEE International Symposium on Biomedical Imaging (ISBI) YYYY - Organizing Committee, Associate to Technical Program Chairs`.
+- Preserve the signature's formatted `Organizing Committee - IEEE International Symposium on Biomedical Imaging (ISBI 2027), Associate to Technical Program Chairs` line. Do not add EEAI Session Chair to the signature.
+- Any relevant addition must be inserted in chronological position and checked across `profile-data.js`, `index.html`, CV, academic-activities register, CompleteBio, and other affected files; do not simply append it at the end.
+
 ## Conference-service role synchronization
 
 - When new conference-service or leadership roles are added, synchronize the public `profile-data.js` service list, its static crawlable copy in `index.html`, the CV source, AcademicActivities and CompleteBio, and assess ShortBio/LongBio relevance. Keep annual editions as distinct appointments. Do not alter the email signature unless the user explicitly requests it.
@@ -121,7 +131,7 @@ All maintained profile material lives on the single `main` branch. Public websit
 - Email signature separator: use one paragraph containing exactly three ASCII hyphens (`---`), with 6 pt paragraph spacing before and 6 pt after. Use paragraph spacing rather than blank paragraphs, and keep it as text rather than a graphical rule or border.
 - Preserve the remaining formatting, line structure, hyperlink, motto italics, and upright emoji.
 - In the email signature, Area Chair lines must omit conference years; retain years in the website, CV, biographies and canonical academic-activity records.
-- Include `Associate to Technical Program Chairs, IEEE International Symposium on Biomedical Imaging (ISBI 2027)` in the email signature. Do not add EEAI 2026 Session Chair to the email signature; it remains part of the canonical website/CV academic-service record.
+- Include `Organizing Committee - IEEE International Symposium on Biomedical Imaging (ISBI 2027), Associate to Technical Program Chairs` in the email signature. Do not add EEAI 2026 Session Chair to the email signature; it remains part of the canonical website/CV academic-service record.
 - In the email signature, keep `Ph.D.` in the first name line for immediate readability, and also present the fuller qualification on its own line as `Italian National PhD in Artificial Intelligence - Health and Life Sciences`.
 - With the owner's explicit approval, the email signature also lists `Associate to Technical Program Chairs, IEEE International Symposium on Biomedical Imaging (ISBI 2027)` and `Session Chair, European Conference on EDGE AI Technologies and Applications (EEAI 2026)`. Keep the event years for these specific roles; the yearless rule above applies to Area Chair lines.
 
