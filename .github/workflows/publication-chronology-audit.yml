@@ -1,0 +1,22 @@
+name: Audit publication master chronology
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'profile_private/Mineo_Raffaele_PublicationsChronologyAudit.py'
+      - 'profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx'
+      - 'profile_private/Mineo_Raffaele_PublicationsList.docx'
+      - '.github/workflows/publication-chronology-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect DOCX and XLSX chronology without rewriting masters
+        run: python3 profile_private/Mineo_Raffaele_PublicationsChronologyAudit.py
