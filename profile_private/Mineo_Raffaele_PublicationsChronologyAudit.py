@@ -84,7 +84,7 @@ def inspect_docx():
     raw = (ROOT.parent / "profile-data.js").read_text(encoding="utf-8")
     prefix = "window.PROFILE_DATA = "
     assert raw.startswith(prefix), "Unexpected profile-data.js format"
-    profile = json.loads(raw[len(prefix):].rstrip(";\\n "))
+    profile = json.loads(raw[len(prefix):].strip().removesuffix(";"))
     topic_titles = {t["title"]: t["key"] for t in profile["publicationTopics"]}
     grouped = {}
     current_key = None
@@ -92,7 +92,7 @@ def inspect_docx():
         if line in topic_titles:
             current_key = topic_titles[line]
             grouped.setdefault(current_key, [])
-        match = re.match(r"^((?:19|20)\\d{2})(?:/\\d{1,2})? - ", line)
+        match = re.match(r"^((?:19|20)[0-9]{2})(?:/[0-9]{1,2})? - ", line)
         if match:
             assert current_key is not None, f"DOCX item outside research group: {line[:80]}"
             grouped[current_key].append(int(match.group(1)))
