@@ -122,6 +122,27 @@ All maintained profile material lives on the single `main` branch. Public websit
 
 - Keep generated-artifact workflows separated by ownership: `.github/workflows/build-assets.yml` builds and commits only `Mineo_Raffaele_CV.pdf`, while `.github/workflows/build-email-signature.yml` builds and commits only `profile_private/Mineo_Raffaele_EmailSignature.docx`. Do not have both workflows write the same binary artifact, to avoid rebase conflicts.
 
+## Scientific standing for signature and profile ordering (mandatory)
+
+- **Source hierarchy for conferences:** prefer the latest official `GII-GRIN-SCIE (GGS)` ranking or its successor `ICORE` (joint CORE/GII/GRIN/SCIE) using the edition most recently published. As of October 2026 this is ICORE 2026 (https://portal.core.edu.au/conf-ranks/), while standalone GGS editions include 2021, 2018, 2017 and 2015 (https://scie.lcc.uma.es/). Check exact venue names and acronyms; do not silently mix up ICASSP, FG, ISBI, IJCNN and MICCAI.
+- **Historical fallback:** if the latest edition has no comparable letter rating (including statuses such as `Multiconference`), inspect the previous official edition, then earlier editions, newest first, and record the edition **and** source alongside the retained rating. An older rating is not a current rating. If no ranked result is found in any supported edition, classify that conference as `unranked/unknown` and give it lowest conference-rating priority; do **not** infer a rank from name recognition or other statistics.
+- **Score ordering for conferences:** for ICORE use `A* > A > B > C > unranked`. Historical GGS uses `A++ > A+ > A > A- > B > B- > unranked`. Rankings from different schemes/years are **not** automatically interchangeable: preserve their exact native grade and source/year, explicitly note differences in provenance, and use the venue-specific verified history and owner's tie-break preferences when needed.
+- **Journal editorial roles:** take quartiles from the latest complete SCImago/SJR edition (https://www.scimagojr.com/), falling back to previous years only when the journal has no current values. Use `Q1 > Q2 > Q3 > Q4 > unranked`. If quartiles tie, compare the SJR for the same edition, then journal placement in an appropriate category. Never confuse `Cognitive Computation` with `Cognitive Computation and Systems`, nor Frontiers in Communication with Frontiers in Medicine. Associate Editor and Guest Editor must be ordered according to the **journal's** rating, not automatically by editorial title.
+- **Across conference and journal roles:** these are different classification systems with no official equivalence; apply a **transparent presentation heuristic** rather than claiming they are numerically comparable. For this profile use `A* conference > A conference > Q1 journal > B conference > Q2 journal > C conference > Q3 journal > Q4 journal > unranked` as the provisional display ordering, with the owner's expressly chosen tie-breaks. Record and flag old-only conference rankings such as ISBI/ERA2010; do not pass them off as new ICORE ranks. Revisit cross-system placement when updating the ranking snapshot.
+- **No arbitrary ordering:** within the same rating use verified source year/quality evidence and the owner's documented preference. If still tied, preserve the previous order and mark that the distinction is not ranking-derived. Do not reorder for visual adjacency of IEEE acronyms or by date of appointment.
+- Website, CV, AcademicActivities, and CompleteBio **remain chronologically sorted** within their service sections per the chronology rules above; the email signature alone is sorted by the prestige rubric above. Preserve exact role titles in every representation.
+
+**Rank snapshot checked 26 October 2026** (for email-signature ordering):
+- MICCAI: `A` in ICORE 2026; https://portal.core.edu.au/conf-ranks/1607/
+- IEEE ISBI: `A` only in historical `ERA2010` entry; **not a modern ICORE A**. https://portal.core.edu.au/conf-ranks/694/. Treat as legacy fallback with much lower evidential confidence; recheck GGS history when accessible.
+- Springer *Cognitive Computation*: SCImago 2025 `Q1`, SJR `1.197`; https://www.scimagojr.com/ and https://researchcloud.net/journal/1866-9964
+- IEEE ICASSP: `Multiconference` in ICORE 2026 (**not** A/B); last graded `B` in CORE 2023; https://portal.core.edu.au/conf-ranks/2042/
+- IJCNN: `B` in ICORE 2026; https://portal.core.edu.au/conf-ranks/685/
+- IEEE FG: `B` in ICORE 2026; https://portal.core.edu.au/conf-ranks/629/
+- *Frontiers in Communication*: SCImago 2025 `Q2`, SJR `0.466`; https://www.scimagojr.com/ and https://www.iit.comillas.edu/publicacion/info_revista/en/1016/Frontiers_in_Communication
+- The ICASSP / IJCNN / FG `B` tie is **not resolved by the ranking**: retain the owner's most recent explicit preference `ICASSP > IJCNN > FG` only as a tie-break, until the user changes it.
+- Canonical current signature order: `MICCAI > ISBI Organizing Committee > Cognitive Computation Lead Guest Editor > ICASSP > IJCNN > FG > Frontiers in Communication Associate Editor`. Keep all 4 Area Chair descriptions **without event years**; ISBI retains 2027, EEAI remains excluded. The final service line carries 6 pt spacing before the address.
+
 ## Email signature maintenance
 
 - `Mineo_Raffaele_EmailSignature.docx` is the canonical formatted email signature.
@@ -134,7 +155,7 @@ All maintained profile material lives on the single `main` branch. Public websit
 - In the email signature, Area Chair lines must omit conference years; retain years in the website, CV, biographies and canonical academic-activity records.
 - Include `Organizing Committee - IEEE International Symposium on Biomedical Imaging (ISBI 2027), Associate to Technical Program Chairs` in the email signature. Do not add EEAI 2026 Session Chair to the email signature; it remains part of the canonical website/CV academic-service record.
 - In the email signature, keep `Ph.D.` in the first name line for immediate readability, and also present the fuller qualification on its own line as `Italian National PhD in Artificial Intelligence - Health and Life Sciences`.
-- Signature roles follow the owner's chosen decreasing priority, across role types and within Area Chairs: Area Chair MICCAI; Area Chair IEEE ICASSP; Area Chair IJCNN; Area Chair IEEE FG; Organizing Committee IEEE ISBI 2027 (Associate to Technical Program Chairs); Associate Editor Frontiers in Communication; Lead Guest Editor Springer Cognitive Computation. IJCNN must precede FG, and ICASSP must precede both. Priority takes precedence over grouping IEEE venues together. Organizing Committee remains above Associate Editor. The final service entry (Lead Guest Editor) carries 6 pt bottom spacing before the address. Area Chair lines omit all conference years, and EEAI remains excluded.
+- Follow the **Scientific standing for signature and profile ordering** section above. Do not use intuition, job-title groupings or IEEE-acronym adjacency to override the documented ranking evidence. Do not add EEAI to the signature; Area Chair lines omit conference years, and the final service line carries 6 pt spacing before the address.
 
 
 ## Publication metadata spreadsheet formatting
