@@ -46,7 +46,7 @@ FULL_ROLES = [
 FULL_CONTACT = [
     [("text", "Polo Tecnologico, Via Santa Sofia 102, 95123 Catania, Italy")],
     [("text", "Email: "), ("link", EMAIL, f"mailto:{EMAIL}"),
-     ("text", " | Web: "), ("link", "ingraffaelemineo.github.io", WEBSITE)],
+     ("text", " | Web: "), ("link", WEBSITE, WEBSITE)],
     [("motto", MOTTO), ("emoji", " 🙃")],
 ]
 
@@ -55,7 +55,7 @@ SHORT_LINES = [
     FULL_IDENTITY[1],
     [("text", "Research Fellow | PeRCeiVe.AI Lab | University of Catania")],
     [("link", EMAIL, f"mailto:{EMAIL}"),
-     ("text", " | "), ("link", "ingraffaelemineo.github.io", WEBSITE)],
+     ("text", " | "), ("link", WEBSITE, WEBSITE)],
     [("motto", MOTTO), ("emoji", " 🙃")],
 ]
 

@@ -52,6 +52,9 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
     relations = {rel.target_ref for rel in doc.part.rels.values() if rel.reltype.endswith("/hyperlink")}
     assert "mailto:raffaele.mineo@phd.unict.it" in relations
     assert "https://ingraffaelemineo.github.io/" in relations
+    displayed_links = ["".join(t.text or "" for t in node.iter(qn("w:t"))) for node in link_nodes]
+    assert "https://ingraffaelemineo.github.io/" in displayed_links, "Display the full HTTPS URL with trailing slash"
+    assert "ingraffaelemineo.github.io" not in displayed_links, "Bare domain should not appear in signature hyperlinks"
 
     seen_name = False
     for p in doc.paragraphs:
