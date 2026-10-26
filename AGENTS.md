@@ -28,6 +28,7 @@ The detailed rules in `profile_private/Mineo_Raffaele_ProfileSync.md` are mandat
 - Avoid template-like/LLM-like copy and the centered-dot separator.
 - Email-signature changes require explicit user confirmation before editing the signature DOCX.
 - Maintain **two** Outlook-compatible email signature DOCX artifacts (full for new messages; short for replies/forwards) from the same generator. They use Segoe UI; only the 10 pt name is bold, remaining text 9 pt regular, and links are #365F7D without underline. Preserve direct copy/paste behavior using simple Word soft line breaks, no graphics/decorative separators, and validate both. Full signature role order is fixed by category: `Organizing Committee` > `Associate Editor` > `Guest Editor` (Lead ahead of regular) > `Area Chair`; sort by descending ranking only *within* each category. See `profile_private/Mineo_Raffaele_ProfileSync.md` for full formatting, omission, and conference GII-GRIN-SCIE/ICORE and journal SCImago rules.
+- The exact personal motto `"My Life is The Research, and I am truly lucky to be able to live it to the fullest" 🙃` must appear in **both** the full and short email signatures, after contacts. Keep the motto in discreet 9 pt italic Segoe UI with an upright emoji. This is a specific, owner-confirmed exception to otherwise regular signature text; do not remove it under general minimalism/compactness rules.
 - `profile_private/` is organizational, not private; never put secrets in this public repository.
 
 ## Completion checks

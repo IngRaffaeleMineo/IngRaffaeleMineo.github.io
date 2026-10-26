@@ -23,7 +23,11 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
     assert "Raffaele Mineo" in text and "Eng. Ph.D." in text
     assert "Italian National PhD in Artificial Intelligence - Health and Life Sciences" in text
     assert "Research Fellow" in text and "University of Catania" in text
-    assert "---" not in text and "My Life is The Research" not in text and "🙃" not in text
+    assert "---" not in text  # No decorative separator.
+    motto = "My Life is The Research, and I am truly lucky to be able to live it to the fullest"
+    assert text.count(motto) == 1 and text.count("🙃") == 1
+    assert text.index(motto) > text.index("ingraffaelemineo.github.io")
+    assert text.index("🙃") > text.index(motto)
     assert "EEAI" not in text
     if full:
         for phrase in ("Member, IEEE", "Organizing Committee", "Associate Editor", "Lead Guest Editor", "Area Chair", "MICCAI", "ICASSP", "IJCNN", "FG", "ISBI 2027", "DIEEI", "Polo Tecnologico"):
@@ -57,6 +61,14 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
             assert is_bold == (part_text == "Raffaele Mineo"), f"Unexpected bold: {part_text}"
             if is_bold:
                 seen_name = True
+            italic = rPr.find(qn("w:i"))
+            is_italic = italic is not None and italic.get(qn("w:val")) != "0"
+            if part_text == motto:
+                assert is_italic, "Motto must preserve its understated italic treatment"
+            elif "🙃" in part_text:
+                assert not is_italic, "Emoji must remain upright"
+            else:
+                assert not is_italic, f"Only motto may be italic: {part_text}"
             size = rPr.find(qn("w:sz"))
             assert size is not None and int(size.get(qn("w:val"))) == (20 if is_bold else 18)
             color = rPr.find(qn("w:color"))
@@ -71,5 +83,5 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
 
 
 if __name__ == "__main__":
-    check(FULL, 3, 7, 2, full=True)
-    check(SHORT, 1, 3, 2, full=False)
+    check(FULL, 3, 8, 2, full=True)
+    check(SHORT, 1, 4, 2, full=False)

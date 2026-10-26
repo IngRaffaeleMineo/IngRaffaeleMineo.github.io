@@ -1,7 +1,7 @@
 """Generate Outlook-friendly full and short academic email signatures.
 
 Keep academic role facts synchronized with the canonical public profile.
-The signatures intentionally omit the former decorative separator, motto and emoji.
+The signatures retain the exact personal motto and upright emoji, without reintroducing decorative separators.
 """
 from pathlib import Path
 
@@ -21,6 +21,7 @@ TEXT_COLOR = "606060"
 LINK_COLOR = "365F7D"
 EMAIL = "raffaele.mineo@phd.unict.it"
 WEBSITE = "https://ingraffaelemineo.github.io/"
+MOTTO = "My Life is The Research, and I am truly lucky to be able to live it to the fullest"
 
 # Conference shorthand keeps the signature compact; complete role names remain
 # recorded on the website, in the academic CV, and in AcademicActivities.
@@ -45,6 +46,7 @@ FULL_CONTACT = [
     [("text", "Polo Tecnologico, Via Santa Sofia 102, 95123 Catania, Italy")],
     [("text", "Email: "), ("link", EMAIL, f"mailto:{EMAIL}"),
      ("text", " | Web: "), ("link", "ingraffaelemineo.github.io", WEBSITE)],
+    [("motto", MOTTO), ("emoji", " 🙃")],
 ]
 
 SHORT_LINES = [
@@ -53,6 +55,7 @@ SHORT_LINES = [
     [("text", "Research Fellow | PeRCeiVe.AI Lab | University of Catania")],
     [("link", EMAIL, f"mailto:{EMAIL}"),
      ("text", " | "), ("link", "ingraffaelemineo.github.io", WEBSITE)],
+    [("motto", MOTTO), ("emoji", " 🙃")],
 ]
 
 
@@ -140,6 +143,11 @@ def add_soft_lines(paragraph, lines):
                 add_text(paragraph, part[1], is_name=True)
             elif kind == "link":
                 add_hyperlink(paragraph, part[1], part[2])
+            elif kind == "motto":
+                add_text(paragraph, part[1]).font.italic = True
+            elif kind == "emoji":
+                # Upright smile, with ordinary text styling and no emphasis.
+                add_text(paragraph, part[1]).font.italic = False
             else:
                 raise ValueError(f"Unknown signature fragment: {kind}")
 
