@@ -32,8 +32,10 @@ Files use the common `Mineo_Raffaele_` prefix:
 - `Mineo_Raffaele_ColorPhoto.webp` - color portrait master
 - `Mineo_Raffaele_NeutralPhoto.jpg` - neutral portrait used by the CV
 - `Mineo_Raffaele_AcademicActivities.txt` - academic service, reviewing, mentoring, awards and activities
-- `Mineo_Raffaele_EmailSignature.docx` - formatted academic email signature
-- `Mineo_Raffaele_EmailSignatureGenerator.py` - generator for the email-signature DOCX
+- `Mineo_Raffaele_EmailSignature.docx` - full Outlook-compatible signature for new messages
+- `Mineo_Raffaele_EmailSignature_Short.docx` - four-line signature for replies and forwards
+- `Mineo_Raffaele_EmailSignatureGenerator.py` - shared generator for both signatures
+- `Mineo_Raffaele_EmailSignatureValidator.py` - automated typography, hyperlink, content and grouping checks
 - `Mineo_Raffaele_ResearcherProfiles.txt` - researcher identifiers and profile links
 - `Mineo_Raffaele_ShortBio.txt` - short biography in Italian and English
 - `Mineo_Raffaele_LongBio.txt` - extended biography in Italian and English
@@ -71,6 +73,12 @@ The workflow:
 2. compiles `Mineo_Raffaele_CV.tex` twice;
 3. writes the generated PDF to `Mineo_Raffaele_CV.pdf` in the repository root;
 4. commits the regenerated PDF when its contents change.
+
+### Email signatures: new messages and replies
+
+The GitHub Action `.github/workflows/build-email-signature.yml` regenerates **both** Word files whenever the generator or validator is updated, verifies typography and hyperlink integrity, and commits both results. Open the full DOCX in Word, copy the signature into Outlook for *new messages*, and copy the short DOCX for *replies/forwards*. Use the original Word formatting when pasting.
+
+Both use Segoe UI, 10 pt bold name / 9 pt regular other text, institutional greys (`#404040`, `#606060`) and unsunderlined `#365F7D` links. The full signature groups committee/editorial/Area Chair roles and keeps complete profile details; the short signature has four lines without administrative appointments. No icons, decorative separators or motto appear in email signatures. The full rules and preserved/omitted legacy material are documented in `profile_private/Mineo_Raffaele_ProfileSync.md`.
 
 ## Profile synchronization
 

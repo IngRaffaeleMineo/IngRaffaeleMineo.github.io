@@ -21,7 +21,8 @@ Whenever a professional or scientific profile item changes, review and update al
 - `main:profile_private/Mineo_Raffaele_CV.tex`
 - `main:Mineo_Raffaele_CV.pdf` through the GitHub Actions build
 - `main:profile_private/Mineo_Raffaele_AcademicActivities.txt`
-- `main:profile_private/Mineo_Raffaele_EmailSignature.docx`
+- `main:profile_private/Mineo_Raffaele_EmailSignature.docx` — full signature for new email messages
+- `main:profile_private/Mineo_Raffaele_EmailSignature_Short.docx` — short signature for replies/forwards
 - `main:profile_private/Mineo_Raffaele_ResearcherProfiles.txt`
 - `main:profile_private/Mineo_Raffaele_ShortBio.txt`
 - `main:profile_private/Mineo_Raffaele_LongBio.txt`
@@ -40,7 +41,7 @@ Whenever a professional or scientific profile item changes, review and update al
 - Professional experience, education, research trajectory and the publications within each research topic: reverse chronological (newest start or publication year first). Keep the complete biographical publication inventory reverse chronological and renumber sequentially.
 - Narrative research history can remain chronological from earliest to latest. Selection lists and unordered technical-skills categories do not require artificial year sorting.
 - For the same role across different conference editions, preserve exactly the same role wording. Both IEEE ISBI 2026 and IEEE ISBI 2027 must be written `Organizing Committee - IEEE ISBI YYYY, Associate to Technical Program Chairs` in website data, static HTML, CV and CompleteBio. In AcademicActivities use `IEEE International Symposium on Biomedical Imaging (ISBI) YYYY - Organizing Committee, Associate to Technical Program Chairs`.
-- Preserve the signature's formatted `Organizing Committee - IEEE International Symposium on Biomedical Imaging (ISBI 2027), Associate to Technical Program Chairs` line. Do not add EEAI Session Chair to the signature.
+- Preserve the ISBI 2027 Organizing Committee appointment (Associate to Technical Program Chairs) in the full email signature. The compact display uses `Organizing Committee - IEEE ISBI 2027, Associate to Technical Program Chairs`; the full official name stays in the website/CV/AcademicActivities. Do not add EEAI Session Chair to either signature.
 - Any relevant addition must be inserted in chronological position and checked across `profile-data.js`, `index.html`, CV, academic-activities register, CompleteBio, and other affected files; do not simply append it at the end.
 - When several roles share a year, keep their relative order consistent between website profile data, the static HTML service section, CV, canonical CompleteBio and AcademicActivities; do not independently reorder equal-year roles in different files.
 
@@ -103,6 +104,7 @@ The DOCX and XLSX are persistent publication masters and must never be treated a
 - Use "Dr. Eng. Raffaele Mineo" in personal presentation contexts, but use "Raffaele Mineo" in publication author lists and bibliographic records.
 - Do not use collapsible, accordion, modal, or otherwise hidden containers for profile content, except for the Publications section progressive-disclosure behavior explicitly defined below. All other substantive website content must be visible on page load.
 - Keep the motto as: "My Life is The Research, and I am truly lucky to be able to live it to the fullest" 🙃
+- This motto is **not used in either email signature** under the current institutional design; this rule applies only to any other profile materials where the motto is intentionally displayed.
 - The motto text may be italic, but the emoji must remain upright.
 - Display the public email as raffaele.mineo[at]phd.unict.it while keeping the real mailto address.
 
@@ -120,7 +122,7 @@ All maintained profile material lives on the single `main` branch. Public websit
 
 ## Generated artifact workflow ownership
 
-- Keep generated-artifact workflows separated by ownership: `.github/workflows/build-assets.yml` builds and commits only `Mineo_Raffaele_CV.pdf`, while `.github/workflows/build-email-signature.yml` builds and commits only `profile_private/Mineo_Raffaele_EmailSignature.docx`. Do not have both workflows write the same binary artifact, to avoid rebase conflicts.
+- Keep generated-artifact workflows separated by ownership: `.github/workflows/build-assets.yml` builds and commits only `Mineo_Raffaele_CV.pdf`, while `.github/workflows/build-email-signature.yml` builds and commits **both** `profile_private/Mineo_Raffaele_EmailSignature.docx` and `profile_private/Mineo_Raffaele_EmailSignature_Short.docx`. Do not have multiple workflows writing the same binary artifact, to avoid rebase conflicts.
 
 ## Scientific standing for signature and profile ordering (mandatory)
 
@@ -141,23 +143,25 @@ All maintained profile material lives on the single `main` branch. Public websit
 - IEEE FG: `B` in ICORE 2026; https://portal.core.edu.au/conf-ranks/629/
 - *Frontiers in Communication*: SCImago 2025 `Q2`, SJR `0.466`; https://www.scimagojr.com/ and https://www.iit.comillas.edu/publicacion/info_revista/en/1016/Frontiers_in_Communication
 - The ICASSP / IJCNN / FG `B` tie is **not resolved by the ranking**: retain the owner's most recent explicit preference `ICASSP > IJCNN > FG` only as a tie-break, until the user changes it.
-- Canonical current signature order **by contiguous groups**: `Organizing Committee: ISBI 2027` → `Associate Editor: Frontiers in Communication` → `Guest Editor: Lead Guest Editor, Cognitive Computation` → `Area Chair: MICCAI > ICASSP > IJCNN > FG`. Each group is sorted internally by descending standing; these groups must never be interleaved. Keep all 4 Area Chair descriptions **without event years**; ISBI retains 2027; EEAI remains excluded. The final service line (Area Chair FG) carries 6 pt spacing before the address.
+- Canonical full-signature role order **by contiguous groups**: `Organizing Committee: ISBI 2027` → `Associate Editor: Frontiers in Communication` → `Guest Editor: Lead Guest Editor, Cognitive Computation` → `Area Chair: MICCAI > ICASSP > IJCNN > FG`. These role titles may be condensed to unambiguous conference acronyms, with all four Area Chairs on one line. Keep the Area Chairs without event years and exclude EEAI. Paragraph spacing follows the new full/short typography rules below, not the superseded 6 pt convention.
 
 - **Grouping and ranking are different axes:** fixed group sequence always wins; descending prestige only breaks ties/reorders entries *within* a group. Adding a new role must first assign it to the correct group; update and validate the generator order and its DOCX artifact. There is no global ranking that allows an Area Chair to jump above an Associate Editor in the email signature.
 
-## Email signature maintenance
+## Email signature maintenance: full and short DOCX (mandatory)
 
-- `Mineo_Raffaele_EmailSignature.docx` is the canonical formatted email signature.
-- `Mineo_Raffaele_EmailSignatureGenerator.py` is the reproducible source used to regenerate the DOCX.
-- Review the signature whenever there is a potentially important change to current affiliation, academic title, editorial leadership, area-chair roles, website/contact information, or another role that may materially improve the signature.
-- Email signature changes require explicit confirmation from Raffaele before modifying the DOCX, even when the underlying profile information has already been verified and synchronized elsewhere.
-- Minor reviewer assignments, one-off volunteering activities, individual publications, and similar additions should not be inserted into the email signature unless explicitly requested.
-- Email signature separator: use one paragraph containing exactly three ASCII hyphens (`---`), with 6 pt paragraph spacing before and 6 pt after. Use paragraph spacing rather than blank paragraphs, and keep it as text rather than a graphical rule or border.
-- Preserve the remaining formatting, line structure, hyperlink, motto italics, and upright emoji.
-- In the email signature, Area Chair lines must omit conference years; retain years in the website, CV, biographies and canonical academic-activity records.
-- Include `Organizing Committee - IEEE International Symposium on Biomedical Imaging (ISBI 2027), Associate to Technical Program Chairs` in the email signature. Do not add EEAI 2026 Session Chair to the email signature; it remains part of the canonical website/CV academic-service record.
-- In the email signature, keep `Ph.D.` in the first name line for immediate readability, and also present the fuller qualification on its own line as `Italian National PhD in Artificial Intelligence - Health and Life Sciences`.
-- The signature uses **fixed contiguous groups** in this exact order: `Organizing Committee`, `Associate Editor`, `Guest Editor` (Lead before regular), `Area Chair`; **within each group the entries are sorted by descending rank** according to the scientific-standing section above. Never interleave groups for prestige, visually group IEEE acronyms at the expense of ranking, or use conference ratings against journal quartiles. Do not add EEAI to the signature; Area Chair lines omit conference years; only the final service line has 6 pt bottom spacing before the address.
+- Maintain **two** canonical generated files from the **same** `Mineo_Raffaele_EmailSignatureGenerator.py`:
+  - `Mineo_Raffaele_EmailSignature.docx` — **full** signature for composing a new message, keeping every currently authorized role.
+  - `Mineo_Raffaele_EmailSignature_Short.docx` — **short** signature for replies and forwards, approximately **2–4 visual lines**, showing only name, academic title, position, affiliation, and essential email/website contacts.
+- Regenerate **both** on every generator update via `.github/workflows/build-email-signature.yml`, committing both binaries together. Run the non-mutating `Mineo_Raffaele_EmailSignatureValidator.py` after generation; reject workflow results if either signature fails its formatting/content checks.
+- **Typography** for both files: Segoe UI; only `Raffaele Mineo` is bold, **10 pt, #404040**. Honorifics, titles, affiliations, responsibilities, membership, address and every other non-link item are **9 pt, regular, #606060**. Hyperlinks are **9 pt #365F7D, no underline**, using simple Word external hyperlink relationships to survive Outlook copy/paste.
+- **Line layout:** single line spacing (1.0); 0 pt paragraph spacing before/after. Use Word manual line breaks (Shift+Enter / `w:br`) rather than a separate paragraph for every visual line. The full signature can exceptionally separate identity from academic roles using **3–4 pt** after the identity paragraph, without empty paragraphs; the short signature must remain a single paragraph with simple line breaks. Keep no empty lines, borders, logos, icons, visible tables, bright colors, or decorative separators.
+- **Full signature role groups:** Organizing Committee → Associate Editor → Guest Editor (Lead before ordinary) → Area Chair → other appointments when the owner authorizes them. Preserve each category as a contiguous block. Within **each** category apply **descending standing** using the official GII-GRIN-SCIE/ICORE ranking with historical fallbacks for conferences and SCImago (Q1..Q4 then SJR) for editorial journal venues. Never globally compare conference and journal rankings to interleave categories. Venue abbreviations may be used to compact the email signature as long as the roles remain unambiguous and full official names are preserved on website/CV/AcademicActivities.
+- **Currently approved full roles:** `Organizing Committee - IEEE ISBI 2027, Associate to Technical Program Chairs`; `Associate Editor - Frontiers in Communication`; `Lead Guest Editor - Springer Cognitive Computation`; `Area Chair - MICCAI - IEEE ICASSP - IJCNN - IEEE FG`. Year is omitted for all Area Chair appointments in the **email** signature; their dates are preserved on the public site/CV. **EEAI 2026 Session Chair stays out of both signatures**, although still present in website/CV.
+- **Preserve factual data:** academic `Eng. Ph.D.` on the first line, `Italian National PhD in Artificial Intelligence - Health and Life Sciences`, IEEE membership (full only), research title, PeRCeiVe.AI Lab, university, DIEEI department (full only), postal address (full only), and institutional contact links. The public profile currently gives `raffaele.mineo@phd.unict.it`; use that verified existing address and `https://ingraffaelemineo.github.io/`. If a contact or title changes, update both signatures and their tests together.
+- **New institutional design supersedes old display:** omit the former `---` separator, self-referential motto, and emoji **from both email signatures**. They may remain in other profile material where independently applicable; do not reintroduce them to the signatures automatically.
+- When changing the signatures, report explicitly **what was added, removed, and retained**, including any content condensed into acronyms. Review typography, soft breaks, hyperlink relationships, role count, and Outlook paste behavior. A simple Word DOCX cannot guarantee every recipient's Outlook client preserves identical formatting; preserve formatting as far as practical by avoiding Word shapes/tables and nonstandard layout.
+- Email-signature changes require explicit owner confirmation before editing the DOCX; the present two-version redesign has been expressly authorized. Later unrequested profile updates must not silently modify either signature.
+- The ranking policy in **Scientific standing for signature and profile ordering** remains mandatory within role groups; all other profile/CV chronological ordering rules remain separate.
 
 
 ## Publication metadata spreadsheet formatting

@@ -27,7 +27,7 @@ The detailed rules in `profile_private/Mineo_Raffaele_ProfileSync.md` are mandat
 - All substantive website content must be visible on page load; do not introduce collapsible profile sections.
 - Avoid template-like/LLM-like copy and the centered-dot separator.
 - Email-signature changes require explicit user confirmation before editing the signature DOCX.
-- Email signature role order is fixed by category: `Organizing Committee` > `Associate Editor` > `Guest Editor` (Lead ahead of regular) > `Area Chair`; sort roles by descending ranking only *within* each category. See `profile_private/Mineo_Raffaele_ProfileSync.md` for conference GII-GRIN-SCIE/ICORE and journal SCImago rules.
+- Maintain **two** Outlook-compatible email signature DOCX artifacts (full for new messages; short for replies/forwards) from the same generator. They use Segoe UI; only the 10 pt name is bold, remaining text 9 pt regular, and links are #365F7D without underline. Preserve direct copy/paste behavior using simple Word soft line breaks, no graphics/decorative separators, and validate both. Full signature role order is fixed by category: `Organizing Committee` > `Associate Editor` > `Guest Editor` (Lead ahead of regular) > `Area Chair`; sort by descending ranking only *within* each category. See `profile_private/Mineo_Raffaele_ProfileSync.md` for full formatting, omission, and conference GII-GRIN-SCIE/ICORE and journal SCImago rules.
 - `profile_private/` is organizational, not private; never put secrets in this public repository.
 
 ## Completion checks
