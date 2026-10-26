@@ -1,7 +1,7 @@
 """Generate Outlook-friendly full and short academic email signatures.
 
 Keep academic role facts synchronized with the canonical public profile.
-The signatures retain the exact personal motto and upright emoji, without reintroducing decorative separators.
+The signatures start with a single '---' line in normal text style and retain the exact motto and upright emoji.
 """
 from pathlib import Path
 
@@ -26,6 +26,7 @@ MOTTO = "My Life is The Research, and I am truly lucky to be able to live it to 
 # Conference shorthand keeps the signature compact; complete role names remain
 # recorded on the website, in the academic CV, and in AcademicActivities.
 FULL_IDENTITY = [
+    [("text", "---")],  # Required 9 pt #606060 first line, followed by Shift+Enter.
     [("text", "Dr. "), ("name", "Raffaele Mineo"), ("text", ", Eng. Ph.D.")],
     [("text", "Italian National PhD in Artificial Intelligence - Health and Life Sciences | Member, IEEE")],
     [("text", "Research Fellow - PeRCeiVe.AI Lab | University of Catania")],
@@ -50,7 +51,8 @@ FULL_CONTACT = [
 ]
 
 SHORT_LINES = [
-    FULL_IDENTITY[0],
+    FULL_IDENTITY[0],  # The identical --- prefix for replies and forwards.
+    FULL_IDENTITY[1],
     [("text", "Italian National PhD in Artificial Intelligence - Health and Life Sciences")],
     [("text", "Research Fellow | PeRCeiVe.AI Lab | University of Catania")],
     [("link", EMAIL, f"mailto:{EMAIL}"),

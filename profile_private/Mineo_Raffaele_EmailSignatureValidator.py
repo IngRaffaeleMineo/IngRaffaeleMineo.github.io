@@ -23,7 +23,13 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
     assert "Raffaele Mineo" in text and "Eng. Ph.D." in text
     assert "Italian National PhD in Artificial Intelligence - Health and Life Sciences" in text
     assert "Research Fellow" in text and "University of Catania" in text
-    assert "---" not in text  # No decorative separator.
+    assert text.count("---") == 1, "A single three-hyphen prefix is required"
+    assert doc.paragraphs[0].text.startswith("---\nDr. "), "The first line must be exactly --- followed by a soft break before the signature"
+    first_run = doc.paragraphs[0].runs[0]
+    assert first_run.text == "---", "First DOCX run must consist of three literal hyphens"
+    assert first_run.font.name == "Segoe UI" and first_run.font.size == Pt(9)
+    assert first_run.font.bold is False and not first_run.font.italic
+    assert first_run.font.color.rgb is not None and str(first_run.font.color.rgb) == "606060"
     motto = "My Life is The Research, and I am truly lucky to be able to live it to the fullest"
     assert text.count(motto) == 1 and text.count("🙃") == 1
     assert text.index(motto) > text.index("ingraffaelemineo.github.io")
@@ -83,5 +89,5 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
 
 
 if __name__ == "__main__":
-    check(FULL, 3, 8, 2, full=True)
-    check(SHORT, 1, 4, 2, full=False)
+    check(FULL, 3, 9, 2, full=True)
+    check(SHORT, 1, 5, 2, full=False)
