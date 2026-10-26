@@ -53,7 +53,6 @@ FULL_CONTACT = [
 SHORT_LINES = [
     FULL_IDENTITY[0],  # The identical --- prefix for replies and forwards.
     FULL_IDENTITY[1],
-    [("text", "Italian National PhD in Artificial Intelligence - Health and Life Sciences")],
     [("text", "Research Fellow | PeRCeiVe.AI Lab | University of Catania")],
     [("link", EMAIL, f"mailto:{EMAIL}"),
      ("text", " | "), ("link", "ingraffaelemineo.github.io", WEBSITE)],
