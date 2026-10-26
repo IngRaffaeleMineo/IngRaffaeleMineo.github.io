@@ -29,7 +29,7 @@ FULL_IDENTITY = [
     [("text", "---")],  # Required 9 pt #606060 first line, followed by Shift+Enter.
     [("text", "Dr. "), ("name", "Raffaele Mineo"), ("text", ", Eng. Ph.D.")],
     [("text", "Italian National PhD in Artificial Intelligence - Health and Life Sciences | Member, IEEE")],
-    [("text", "Research Fellow - PeRCeiVe.AI Lab | University of Catania")],
+    [("text", "Research Fellow: PeRCeiVe.AI Lab | University of Catania")],
     [("text", "Department of Industrial, Electrical, Electronic and Computer Engineering (DIEEI)")],
 ]
 
@@ -37,26 +37,26 @@ FULL_IDENTITY = [
 # Guest Editor (Lead before regular), Area Chair. Within each category,
 # use descending standing per the repository's GGS/ICORE and SCImago rules.
 FULL_ROLES = [
-    [("text", "Organizing Committee - IEEE ISBI 2027, Associate to Technical Program Chairs")],
-    [("text", "Associate Editor - Frontiers in Communication")],
-    [("text", "Lead Guest Editor - Springer Cognitive Computation")],
-    [("text", "Area Chair - MICCAI - IEEE ICASSP - IJCNN - IEEE FG")],
+    [("text", "Organizing Committee: IEEE ISBI 2027, Associate to Technical Program Chairs")],
+    [("text", "Associate Editor: Frontiers in Communication")],
+    [("text", "Lead Guest Editor: Springer Cognitive Computation")],
+    [("text", "Area Chair: MICCAI - IEEE ICASSP - IJCNN - IEEE FG")],
 ]
 
 FULL_CONTACT = [
     [("text", "Polo Tecnologico, Via Santa Sofia 102, 95123 Catania, Italy")],
     [("text", "Email: "), ("link", EMAIL, f"mailto:{EMAIL}"),
      ("text", " | Web: "), ("link", WEBSITE, WEBSITE)],
-    [("motto", MOTTO), ("emoji", " 🙃")],
 ]
+
+MOTTO_LINE = [[("motto", MOTTO), ("emoji", " 🙃")]]
 
 SHORT_LINES = [
     FULL_IDENTITY[0],  # The identical --- prefix for replies and forwards.
     FULL_IDENTITY[1],
-    [("text", "Research Fellow | PeRCeiVe.AI Lab | University of Catania")],
+    [("text", "Research Fellow: PeRCeiVe.AI Lab | University of Catania")],
     [("link", EMAIL, f"mailto:{EMAIL}"),
      ("text", " | "), ("link", WEBSITE, WEBSITE)],
-    [("motto", MOTTO), ("emoji", " 🙃")],
 ]
 
 
@@ -155,15 +155,19 @@ def add_soft_lines(paragraph, lines):
 
 def build_full():
     document = make_document("Raffaele Mineo - Full email signature")
+    # Equal, restrained inter-block spacing: Department -> roles -> contacts -> motto.
     add_soft_lines(new_paragraph(document, after_pt=3.5), FULL_IDENTITY)
-    add_soft_lines(new_paragraph(document), FULL_ROLES)
-    add_soft_lines(new_paragraph(document), FULL_CONTACT)
+    add_soft_lines(new_paragraph(document, after_pt=3.5), FULL_ROLES)
+    add_soft_lines(new_paragraph(document, after_pt=3.5), FULL_CONTACT)
+    add_soft_lines(new_paragraph(document), MOTTO_LINE)
     document.save(FULL_OUT)
 
 
 def build_short():
     document = make_document("Raffaele Mineo - Short email signature")
-    add_soft_lines(new_paragraph(document), SHORT_LINES)
+    # The same unobtrusive inter-block gap precedes the short signature motto.
+    add_soft_lines(new_paragraph(document, after_pt=3.5), SHORT_LINES)
+    add_soft_lines(new_paragraph(document), MOTTO_LINE)
     document.save(SHORT_OUT)
 
 
