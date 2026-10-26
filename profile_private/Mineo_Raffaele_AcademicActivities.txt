@@ -8,13 +8,14 @@ Member:
 - IEEE Engineering in Medicine and Biology Society Technical Committee on Biomedical Imaging and Image Processing (BIIP) (since 2026)
 
 Organizing Committee / Program Roles:
+- Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2026 - Area Chair
 - IEEE International Symposium on Biomedical Imaging (ISBI) 2026 - Organizing Committee, Associate to Technical Program Chairs
 - European Conference on EDGE AI Technologies and Applications (EEAI) 2026 - Session Chair
-- Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2026 - Area Chair
-- IEEE International Symposium on Biomedical Imaging (ISBI) 2027 - Organizing Committee, Associate to Technical Program Chairs
-- Information Processing in Medical Imaging (IPMI) 2027 - Paper Selection Committee
 - International Joint Conference on Neural Networks (IJCNN) 2027 - Area Chair
 - IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2027 - Area Chair
+- IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2027 - Area Chair
+- IEEE International Symposium on Biomedical Imaging (ISBI) 2027 - Organizing Committee, Associate to Technical Program Chairs
+- Information Processing in Medical Imaging (IPMI) 2027 - Paper Selection Committee
 
 Editorial Roles:
 - Frontiers in Communication - Associate Editor (2026-present)

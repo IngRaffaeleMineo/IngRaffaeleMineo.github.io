@@ -172,6 +172,7 @@ window.PROFILE_DATA = {
       "Session Chair - European Conference on EDGE AI Technologies and Applications (EEAI) 2026",
       "Area Chair - IJCNN 2027",
       "Area Chair - IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2027",
+      "Area Chair - IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2027",
       "Organizing Committee - IEEE ISBI 2027, Associate to Technical Program Chairs",
       "Paper Selection Committee - IPMI 2027"
     ],

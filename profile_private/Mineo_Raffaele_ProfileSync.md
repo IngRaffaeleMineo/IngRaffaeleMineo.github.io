@@ -42,6 +42,7 @@ Whenever a professional or scientific profile item changes, review and update al
 - For the same role across different conference editions, preserve exactly the same role wording. Both IEEE ISBI 2026 and IEEE ISBI 2027 must be written `Organizing Committee - IEEE ISBI YYYY, Associate to Technical Program Chairs` in website data, static HTML, CV and CompleteBio. In AcademicActivities use `IEEE International Symposium on Biomedical Imaging (ISBI) YYYY - Organizing Committee, Associate to Technical Program Chairs`.
 - Preserve the signature's formatted `Organizing Committee - IEEE International Symposium on Biomedical Imaging (ISBI 2027), Associate to Technical Program Chairs` line. Do not add EEAI Session Chair to the signature.
 - Any relevant addition must be inserted in chronological position and checked across `profile-data.js`, `index.html`, CV, academic-activities register, CompleteBio, and other affected files; do not simply append it at the end.
+- When several roles share a year, keep their relative order consistent between website profile data, the static HTML service section, CV, canonical CompleteBio and AcademicActivities; do not independently reorder equal-year roles in different files.
 
 ## Conference-service role synchronization
 
@@ -133,7 +134,7 @@ All maintained profile material lives on the single `main` branch. Public websit
 - In the email signature, Area Chair lines must omit conference years; retain years in the website, CV, biographies and canonical academic-activity records.
 - Include `Organizing Committee - IEEE International Symposium on Biomedical Imaging (ISBI 2027), Associate to Technical Program Chairs` in the email signature. Do not add EEAI 2026 Session Chair to the email signature; it remains part of the canonical website/CV academic-service record.
 - In the email signature, keep `Ph.D.` in the first name line for immediate readability, and also present the fuller qualification on its own line as `Italian National PhD in Artificial Intelligence - Health and Life Sciences`.
-- With the owner's explicit approval, the email signature also lists `Associate to Technical Program Chairs, IEEE International Symposium on Biomedical Imaging (ISBI 2027)` and `Session Chair, European Conference on EDGE AI Technologies and Applications (EEAI 2026)`. Keep the event years for these specific roles; the yearless rule above applies to Area Chair lines.
+- Signature display priority: immediately after the University affiliation block, place the ISBI 2027 Organizing Committee appointment **before** Associate Editor and Lead Guest Editor; then display all Area Chair appointments. The final Area Chair entry carries the 6 pt bottom paragraph spacing before the address. Keep the ICASSP Area Chair line as `IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)` without a year.
 
 
 ## Publication metadata spreadsheet formatting
