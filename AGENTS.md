@@ -27,6 +27,7 @@ The detailed rules in `profile_private/Mineo_Raffaele_ProfileSync.md` are mandat
 - All substantive website content must be visible on page load; do not introduce collapsible profile sections.
 - Avoid template-like/LLM-like copy and the centered-dot separator.
 - Email-signature changes require explicit user confirmation before editing the signature DOCX.
+- Email signature role order is fixed by category: `Organizing Committee` > `Associate Editor` > `Guest Editor` (Lead ahead of regular) > `Area Chair`; sort roles by descending ranking only *within* each category. See `profile_private/Mineo_Raffaele_ProfileSync.md` for conference GII-GRIN-SCIE/ICORE and journal SCImago rules.
 - `profile_private/` is organizational, not private; never put secrets in this public repository.
 
 ## Completion checks
