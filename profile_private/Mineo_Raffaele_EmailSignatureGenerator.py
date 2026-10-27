@@ -33,11 +33,12 @@ FULL_IDENTITY = [
     [("text", "Department of Industrial, Electrical, Electronic and Computer Engineering (DIEEI)")],
 ]
 
-# Fixed contiguous category order: Organizing Committee, Associate Editor,
-# Guest Editor (Lead before regular), Area Chair. Within each category,
+# Fixed contiguous category order: Organizing Committee, Paper Selection Committee,
+# Associate Editor, Guest Editor (Lead before regular), Area Chair. Within each category,
 # use descending standing per the repository's GGS/ICORE and SCImago rules.
 FULL_ROLES = [
     [("text", "Organizing Committee: IEEE ISBI 2027, Associate to Technical Program Chairs")],
+    [("text", "Paper Selection Committee: IPMI 2027")],
     [("text", "Associate Editor: Frontiers in Communication")],
     [("text", "Lead Guest Editor: Springer Cognitive Computation")],
     [("text", "Area Chair: MICCAI - IEEE ICASSP - IJCNN - IEEE FG")],

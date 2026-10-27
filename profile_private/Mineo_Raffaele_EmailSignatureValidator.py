@@ -40,17 +40,18 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
     assert text.index("🙃") > text.index(motto)
     assert "EEAI" not in text
     if full:
-        for phrase in ("Member, IEEE", "Organizing Committee", "Associate Editor", "Lead Guest Editor", "Area Chair", "MICCAI", "ICASSP", "IJCNN", "FG", "ISBI 2027", "DIEEI", "Polo Tecnologico"):
+        for phrase in ("Member, IEEE", "Organizing Committee", "Paper Selection Committee: IPMI 2027", "Associate Editor", "Lead Guest Editor", "Area Chair", "MICCAI", "ICASSP", "IJCNN", "FG", "ISBI 2027", "DIEEI", "Polo Tecnologico"):
             assert phrase in text, f"Full signature missing: {phrase}"
-        assert text.index("Organizing Committee") < text.index("Associate Editor") < text.index("Lead Guest Editor") < text.index("Area Chair")
+        assert text.index("Organizing Committee") < text.index("Paper Selection Committee: IPMI 2027") < text.index("Associate Editor") < text.index("Lead Guest Editor") < text.index("Area Chair")
+        assert text.count("Paper Selection Committee: IPMI 2027") == 1, "IPMI committee appointment must appear exactly once"
         assert text.index("MICCAI") < text.index("ICASSP") < text.index("IJCNN") < text.index("FG")
         assert [p.paragraph_format.space_after for p in doc.paragraphs] == [Pt(3.5), Pt(3.5), Pt(3.5), Pt(0)], "The full signature needs three equal 3.5pt inter-block gaps"
         assert doc.paragraphs[1].text.startswith("Organizing Committee: IEEE ISBI 2027")
         assert "Area Chair: MICCAI - IEEE ICASSP - IJCNN - IEEE FG" in text
-        for role_type in ("Organizing Committee", "Associate Editor", "Lead Guest Editor", "Area Chair"):
+        for role_type in ("Organizing Committee", "Paper Selection Committee", "Associate Editor", "Lead Guest Editor", "Area Chair"):
             assert f"{role_type}: " in text and f"{role_type} - " not in text
     else:
-        assert all(t not in text for t in ("Organizing Committee", "Associate Editor", "Area Chair", "Polo Tecnologico"))
+        assert all(t not in text for t in ("Organizing Committee", "Paper Selection Committee", "IPMI 2027", "Associate Editor", "Area Chair", "Polo Tecnologico"))
         assert [p.paragraph_format.space_after for p in doc.paragraphs] == [Pt(3.5), Pt(0)], "The short signature needs a 3.5pt gap before the motto"
 
     link_nodes = [node for p in doc.paragraphs for node in p._p.iter(qn("w:hyperlink"))]
@@ -101,5 +102,5 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
 
 
 if __name__ == "__main__":
-    check(FULL, 4, 8, 2, full=True)
+    check(FULL, 4, 9, 2, full=True)
     check(SHORT, 2, 3, 2, full=False)
