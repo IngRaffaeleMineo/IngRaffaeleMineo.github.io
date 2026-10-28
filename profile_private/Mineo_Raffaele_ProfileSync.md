@@ -44,6 +44,7 @@ Whenever a professional or scientific profile item changes, review and update al
 - Preserve the ISBI 2027 Organizing Committee appointment (Associate to Technical Program Chairs) in the full email signature. The compact display uses `Organizing Committee: IEEE ISBI 2027, Associate to Technical Program Chairs`; the full official name stays in the website/CV/AcademicActivities. Do not add EEAI Session Chair to either signature.
 - Any relevant addition must be inserted in chronological position and checked across `profile-data.js`, `index.html`, CV, academic-activities register, CompleteBio, and other affected files; do not simply append it at the end.
 - When several roles share a year, keep their relative order consistent between website profile data, the static HTML service section, CV, canonical CompleteBio and AcademicActivities; do not independently reorder equal-year roles in different files.
+- Reviewer appointment: Frontiers in Aging Neuroscience, since 2026. Include it in journal-reviewing listings in the site, CV and academic activities, and in appropriate full/long biographies; do not misclassify it as an editorial appointment. Email signatures are unchanged because they contain selected leadership and editorial roles only.
 
 ## Conference-service role synchronization
 
