@@ -1,6 +1,6 @@
 COMPLETE BIOGRAPHICAL PROFILE / PROFILO BIOGRAFICO COMPLETO
 Dr. Eng. Raffaele Mineo
-Updated / Aggiornato: 26 October 2026 / 26 ottobre 2026
+Updated / Aggiornato: 28 October 2026 / 28 ottobre 2026
 
 Purpose
 This file is the exhaustive maintained biographical profile. Unlike the ShortBio and LongBio, it is intended to retain all currently maintained professional, academic, scientific, service, reviewing, teaching, technical and scholarly-profile information present in the repository.
@@ -226,18 +226,20 @@ TECHNICAL COMPETENCIES
 PUBLICATIONS AND RESEARCH OUTPUTS
 Current maintained records: 28
 
-1. 2026 | Conference | SignEval 2026 Challenge Results [joint first author]
+1. 2027 | Conference | Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication
+   Authors: Raffaele Mineo
+   Venue: Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025 Doctoral Symposium; Lecture Notes in Computer Science, vol. 16489 (Springer)
+   Event year: 2025 (Doctoral Symposium held alongside MICCAI 2025)
+   Citation key: mineo2027advancing
+
+2. 2026 | Conference | SignEval 2026 Challenge Results [joint first author]
    Authors: Ahmed Abul Hasanaath, Raffaele Mineo, Hamzah Luqman, Sarah Alyami, Maad Alowaifeer, Amelia Sorrenti, Gaia Caligiore, Sabina Fontana, Egidio Ragonese, Giovanni Bellitto, Federica Proietto Salanitri, Concetto Spampinato, Motaz Alfarraj, Mufti Mahmud, Simone Palazzo, Nour Imane Zeghib
    Venue: IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
   Link: https://openaccess.thecvf.com/content/CVPR2026W/MSLR/html/Hasanaath_SignEval_2026_Challenge_Results_CVPRW_2026_paper.html
 
-2. 2026 | Patent | Procedimento e sistema di elaborazione di immagini angiografiche
+3. 2026 | Patent | Procedimento e sistema di elaborazione di immagini angiografiche
    Authors: G. M. De Ferrari, F. D'Ascenzo, O. De Filippo, M. Iannaccone, M. Aldinucci, J. M. Hughes, M. Millesimo, W. Grosso Marra, G. Quadri, F. Proietto Salanitri, G. Bellitto, C. Spampinato, R. Mineo, S. Palazzo
    Venue: Italian patent no. 102024000014434 - granted 20 July 2026 (UIBM)
-
-3. 2026 | Conference | Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication
-   Authors: Raffaele Mineo
-   Venue: International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)
 
 4. 2026 | Conference | A Benchmark for Radar-Based Italian Sign Language Recognition using Frequency-Domain Range-Time Maps
    Authors: Raffaele Mineo, Amelia Sorrenti, Gaia Caligiore, Federica Proietto Salanitri, Giovanni Bellitto, Senya Polikovsky, Sabina Fontana, Egidio Ragonese, Concetto Spampinato, Simone Palazzo

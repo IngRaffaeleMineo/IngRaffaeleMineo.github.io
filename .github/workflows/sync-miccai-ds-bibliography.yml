@@ -1,0 +1,41 @@
+name: Sync MICCAI DS LNCS 16489 publication masters
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'profile_private/Mineo_Raffaele_SyncMICCAIDS2027.py'
+      - '.github/workflows/sync-miccai-ds-bibliography.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install existing publication-document validation dependencies
+        run: python -m pip install python-docx openpyxl
+      - name: Update existing DOCX and XLSX records without adding duplicates
+        run: python profile_private/Mineo_Raffaele_SyncMICCAIDS2027.py
+      - name: Validate publication archive, metadata, table formatting and counts
+        run: python profile_private/Mineo_Raffaele_PublicationsIntegrity.py
+      - name: Validate descending topic chronology and DOCX/XLSX parity
+        run: python profile_private/Mineo_Raffaele_PublicationsChronologyAudit.py
+      - name: Commit only the two updated publication masters
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profile_private/Mineo_Raffaele_PublicationsMetadata.xlsx profile_private/Mineo_Raffaele_PublicationsList.docx
+          if ! git diff --cached --quiet; then
+            git commit -m "Update MICCAI DS Springer LNCS 16489 in publication masters"
+            git pull --rebase origin main
+            git push origin main
+          fi

@@ -168,6 +168,14 @@ All maintained profile material lives on the single `main` branch. Public websit
 - The ranking policy in **Scientific standing for signature and profile ordering** remains mandatory within role groups; all other profile/CV chronological ordering rules remain separate.
 
 
+## MICCAI 2025 Doctoral Symposium / LNCS 16489 bibliographic correction (28 October 2026)
+
+- The canonical existing scholarly output `Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication` remains in `Research Synthesis and Scholarly Outputs` with one author (Raffaele Mineo) and unchanged abstract. It is **not** a new publication, so the canonical inventory remains 28 records.
+- The user-supplied BibTeX citation key is `mineo2027advancing`. Use `year={2027}` in all bibliographic records, while explicitly preserving **MICCAI 2025** as the event year in the proceedings booktitle: `Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025 Doctoral Symposium`. Publisher `Springer`, series `Lecture Notes in Computer Science`, volume `16489`; type `@inproceedings` / `Conference`.
+- Springer official book page https://link.springer.com/book/9783032252432 confirms the title, LNCS volume and publisher, **but currently shows Aug 2026 as the book date and 2027 as copyright**. This inconsistency is not silently resolved: the `2027` scholarly output year is adopted from the author's supplied BibTeX pending a chapter-level final Springer publication record. Do not fabricate a DOI or a chapter URL.
+- In the publication DOCX/XLSX, preserve existing formatting, the eleven-column structured table, table banding and 15 pt row heights. The existing archive file `2026-07_MICCAI_Advancing_Healthcare_with_Multimodal_AI.pdf` retains its original document-date filename unless the actual PDF edition is replaced and its dating verified.
+- Future changes to the event/publication-year distinction must update `profile-data.js`, `index.html`, CV/PDF, CompleteBio, publication XLSX/DOCX and the archived manifest together. The `@inproceedings` block in the author-provided format is retained in the metadata XLSX Bibtex column.
+
 ## Publication metadata spreadsheet formatting
 
 - `Mineo_Raffaele_PublicationsMetadata.xlsx` must keep its publication records inside the structured Excel Table named `Tabella1`.

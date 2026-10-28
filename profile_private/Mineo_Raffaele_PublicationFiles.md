@@ -35,6 +35,8 @@ A record should have one corresponding archived artifact whenever a legitimate c
 | Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication | `2026-07_MICCAI_Advancing_Healthcare_with_Multimodal_AI.pdf` |
 | Proceedings of the International Workshop on Personalized Incremental Learning in Medicine (PILM ’25) | `2025_ACM_SIGMM_PILM_Proceedings.pdf` |
 
+> **Bibliographic update (28 October 2026):** *Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication* is cited in the author's supplied Springer LNCS 16489 BibTeX with publication year **2027**, although the symposium took place in **2025**. The archived filename retains its original `2026-07` document-dating prefix because the original archived PDF is not replaced or relabeled merely due to a bibliographic correction. Springer currently displays both 2027 copyright and an August 2026 volume date: https://link.springer.com/book/9783032252432 . See the bibliography source of truth for the author's year choice.
+
 ## Exclusion
 
 MAPT / "Memory-Augmented Prompt Tuning for Self-Supervised Continual Learning in Medical Imaging" is not a real publication and must not be added to this manifest or the profile.

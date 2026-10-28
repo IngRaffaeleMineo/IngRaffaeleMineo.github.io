@@ -660,14 +660,20 @@ window.PROFILE_DATA = {
     {
       "title": "Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication",
       "authors": "Raffaele Mineo",
-      "venue": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
-      "acronym": "MICCAI",
+      "venue": "Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025 Doctoral Symposium; Lecture Notes in Computer Science, vol. 16489 (Springer)",
+      "acronym": "MICCAI DS",
       "type": "Conference",
-      "year": 2026,
+      "year": 2027,
       "link": "",
       "abstract": "This doctoral research explores multimodal deep learning to enhance diagnosis, cognitive monitoring, and communication accessibility in healthcare. Across three clinical domains - cardiovascular diagnostics, neurocognitive assessment, and sign language recognition - we develop transformer-based pipelines tailored for real-time applicability, interpretability, and privacy compliance. In the cardiovascular setting, we propose spatio-temporal models for non-invasive estimation of FFR and iFR from single-view coronary angiography, integrating convolutional and transformer encoders with multi-task supervision. These innovations culminate in the STARFLOW system, a deployable platform achieving high accuracy in multicenter studies, and protected by national and EU patents. For cognitive screening, we introduce pipelines that analyze facial micro-movements and eye-gaze trajectories using phase-based motion magnification, attention-based encoders, and a novel Time-Aware Positional Embedding (TAPE) module. These systems enable automated scoring of MMSE and MoCA using commodity tablets, facilitating contactless and scalable cognitive health tools. To promote inclusivity, we release MultiMedaLIS, the first multimodal dataset of Italian medical sign language, and develop a GDPR-compliant radar-based recognition pipeline using Range-Doppler Maps and temporal transformers. This system ensures robust gesture classification under privacy and environmental constraints. Collectively, this work contributes a unified framework for interpretable and adaptive AI in healthcare, advancing real-world integration through methodological innovation, validated deployment, and alignment with clinical needs.",
       "jointFirst": false,
-      "topic": "synthesis"
+      "topic": "synthesis",
+      "eventYear": 2025,
+      "booktitle": "Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025 Doctoral Symposium",
+      "series": "Lecture Notes in Computer Science",
+      "volume": "16489",
+      "publisher": "Springer",
+      "bibtex": "@inproceedings{mineo2027advancing,\n  title={Advancing Healthcare with Multimodal AI: Enhanced Diagnosis, Cognitive Monitoring, and Inclusive Medical Communication},\n  author={Mineo, Raffaele},\n  booktitle={Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025 Doctoral Symposium},\n  series={Lecture Notes in Computer Science},\n  volume={16489},\n  year={2027},\n  organization={Springer}\n}"
     },
     {
       "title": "Proceedings of the International Workshop on Personalized Incremental Learning in Medicine (PILM ’25)",
