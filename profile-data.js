@@ -192,6 +192,7 @@ window.PROFILE_DATA = {
       "Pattern Recognition, since 2026",
       "IET Cyber-Systems and Robotics, since 2026",
       "BioData Mining, since 2026",
+      "BMC Medical Informatics and Decision Making, since 2026",
       "Disability and Rehabilitation: Assistive Technology, since 2026",
       "Frontiers in Digital Health, since 2026",
       "Frontiers in Aging Neuroscience, since 2026",

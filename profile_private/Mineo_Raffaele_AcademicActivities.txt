@@ -34,9 +34,12 @@ Reviewer - Journals:
 - Machine Vision and Applications (MVAP) (since 2023)
 - ACM Transactions on Intelligent Systems and Technology (TIST) (since 2024)
 - IEEE Transactions on Medical Imaging (TMI) (since 2025)
-- IEEE Open Journal of the Computer Society (OJCS) (since 2025)
 - Nature Communications (since 2025)
+- IEEE Open Journal of the Computer Society (OJCS) (since 2025)
+- Pattern Recognition (since 2026)
+- IET Cyber-Systems and Robotics (since 2026)
 - BioData Mining (since 2026)
+- BMC Medical Informatics and Decision Making (since 2026)
 - Disability and Rehabilitation: Assistive Technology (since 2026)
 - Frontiers in Digital Health (since 2026)
 - Frontiers in Aging Neuroscience (since 2026)
@@ -44,8 +47,6 @@ Reviewer - Journals:
 - International Journal of Cognitive Computing in Engineering (IJCCE) (since 2026)
 - Journal of Imaging Informatics in Medicine (JIIM) (since 2026)
 - IEEE Transactions on Biomedical Engineering (TBME) (since 2026)
-- Pattern Recognition (since 2026)
-- IET Cyber-Systems and Robotics (since 2026)
 
 Reviewer - Conferences:
 - ECCV 2024
