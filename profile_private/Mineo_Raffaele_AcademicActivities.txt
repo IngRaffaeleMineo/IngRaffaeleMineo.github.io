@@ -14,6 +14,7 @@ Organizing Committee / Program Roles:
 - International Joint Conference on Neural Networks (IJCNN) 2027 - Area Chair
 - IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2027 - Area Chair
 - IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2027 - Area Chair
+- IEEE International Symposium on Biomedical Imaging (ISBI) 2027 - Area Chair
 - IEEE International Symposium on Biomedical Imaging (ISBI) 2027 - Organizing Committee, Associate to Technical Program Chairs
 - Information Processing in Medical Imaging (IPMI) 2027 - Paper Selection Committee
 

@@ -41,7 +41,7 @@ FULL_ROLES = [
     [("text", "Paper Selection Committee: IPMI 2027")],
     [("text", "Associate Editor: Frontiers in Communication")],
     [("text", "Lead Guest Editor: Springer Cognitive Computation")],
-    [("text", "Area Chair: MICCAI - IEEE ICASSP - IJCNN - IEEE FG")],
+    [("text", "Area Chair: MICCAI - IEEE ICASSP - IJCNN - IEEE FG - IEEE ISBI")],
 ]
 
 FULL_CONTACT = [

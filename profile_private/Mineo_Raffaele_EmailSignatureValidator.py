@@ -44,10 +44,12 @@ def check(path, n_paragraphs, n_soft_breaks, n_links, full):
             assert phrase in text, f"Full signature missing: {phrase}"
         assert text.index("Organizing Committee") < text.index("Paper Selection Committee: IPMI 2027") < text.index("Associate Editor") < text.index("Lead Guest Editor") < text.index("Area Chair")
         assert text.count("Paper Selection Committee: IPMI 2027") == 1, "IPMI committee appointment must appear exactly once"
-        assert text.index("MICCAI") < text.index("ICASSP") < text.index("IJCNN") < text.index("FG")
+        assert text.index("MICCAI") < text.index("ICASSP") < text.index("IJCNN") < text.index("FG") < text.rindex("IEEE ISBI")
         assert [p.paragraph_format.space_after for p in doc.paragraphs] == [Pt(3.5), Pt(3.5), Pt(3.5), Pt(0)], "The full signature needs three equal 3.5pt inter-block gaps"
         assert doc.paragraphs[1].text.startswith("Organizing Committee: IEEE ISBI 2027")
-        assert "Area Chair: MICCAI - IEEE ICASSP - IJCNN - IEEE FG" in text
+        assert "Area Chair: MICCAI - IEEE ICASSP - IJCNN - IEEE FG - IEEE ISBI" in text
+        assert text.count("ISBI 2027") == 1, "The committee role retains its event year"
+        assert text.count("IEEE ISBI") == 2, "ISBI appears under both distinct roles"
         for role_type in ("Organizing Committee", "Paper Selection Committee", "Associate Editor", "Lead Guest Editor", "Area Chair"):
             assert f"{role_type}: " in text and f"{role_type} - " not in text
     else:
